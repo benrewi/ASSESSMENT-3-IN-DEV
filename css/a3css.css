@@ -1,0 +1,257 @@
+/******************************************/
+/*********** Universal settings ***********/
+/******************************************/
+
+/* Defining all colours used, and assigning names */
+:root {
+    --primary-green: #3D483D;
+    --medium-green: #4D5B4D;
+    --muted-green: #6F7F6F;
+    --accent-green: #DEE3DE;
+    --light-green: #EBEFEB;
+    --text-input: #F1F4F1;
+    --white: #ffffff;
+    --nav-inactive: rgba(255, 255, 255, 0.65)
+}
+
+/* Defining fonts to refer to in code */
+.font--cabin {
+    font-family: 'Cabin', sans-serif;
+}
+
+.font--dm {
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+
+/*Setting backgroun colour for the navbar*/
+.navbar {
+    background-color: var(--primary-green);
+}
+
+/* Setting the font size for the span property on the navbar */
+.navbar-span {
+    font-size: 1.75rem;
+}
+
+/* Adding bold to the active link - overriding the bootstrap defaults */
+.navbar-dark .nav-link.active {
+    font-weight: 700;
+}
+
+/* Overriding bootstrap inactive navbar link to improve accessibility and colour contrast */
+.navbar-nav .nav-link {
+    color: var(--nav-inactive);
+}
+
+/* Overriding bootstrap navbar hover to improve accessibility and colour contrast */
+.navbar-nav .nav-link:hover {
+    color: var(--white);
+}
+
+/* Overriding bootstrap active to improve accessibility and colour contrast */
+.navbar-nav .nav-link.active {
+    color: var(--white);
+    font-weight: 700;
+}
+
+/******************************************/
+/***************** BUTTON *****************/
+/******************************************/
+
+/* Overriding bootstrap default btn properties to ensure consistent use of buttons across the site */
+.btn {
+    background: var(--white);
+    color: var(--primary-green);
+    border-radius: 6px;
+    font-weight: 800;
+    padding: 10px 12px;
+    border: 2px solid var(--medium-green);
+    font-size: 18px;
+}
+
+/* Setting a large width for buttons that have a fixed width */
+.btn--wide {
+    width: 260px;
+}
+
+/* Setting border to white for buttons that go on a greenbackground */
+.btn--white {
+    border-color: var(--white);
+}
+
+/* Adding the hover propertied for the btn, changing border, text and background colours */
+.btn:hover,
+.btn:focus {
+    background: var(--medium-green);
+    color: var(--white);
+    border-color: var(--white);
+}
+
+/******************************************/
+/************ SECTION SETTINGS ************/
+/******************************************/
+
+/* Defining default font colour and background colour for each section */
+
+/* Setting the background colour and default font colour for index-intro */
+.index-intro {
+    background: linear-gradient(to bottom,
+            var(--primary-green) 0%,
+            var(--medium-green) 50%);
+    color: var(--white);
+}
+
+/* Setting background colour and font colour for index-section section */
+.index-second {
+    background-color: var(--light-green);
+    color: var(--primary-green)
+}
+
+/* Setting background colour and font colour for index-third section */
+.index-third {
+    background-color: var(--accent-green);
+    color: var(--primary-green)
+}
+
+/* Setting background colour and font colour for footer */
+.footer {
+    background-color: var(--primary-green);
+    color: var(--white);
+}
+
+/* Setting up the background colour and default font colour for the contact section that shows on mobile */
+.index-mobile-contact {
+    background-color: var(--light-green);
+    color: var(--primary-green);
+}
+
+
+/******************************************/
+/************** CARD SETTINGS *************/
+/******************************************/
+
+/* Setting up defaults for cards, and adding custom CSS to enable the ability to scroll through cards, as this is not a default bootstrap functionality */
+
+/* Defining font colour to be used on all cards */
+.card {
+    color: var(--medium-green);
+}
+
+.item-footer-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 0.75rem;
+flex-wrap: wrap;
+}
+
+
+
+.index-mobile-contact {
+    background-color: var(--light-green);
+    color: var(--primary-green);
+}
+
+.external-link {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.external-link:hover {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.external-link--green {
+    color: var(--primary-green);
+    text-decoration: none;
+}
+
+
+
+/* FORM  */
+.search-field{
+    max-width: 1000px;
+}
+
+.form-field-label{
+    padding-left: 6px;
+}
+
+
+/* --- Universal Scrollable Card Wrapper --- */
+
+.item-scroll-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1.5rem;
+    padding: 20px 10px;
+    scroll-snap-type: x mandatory; 
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+/* Hide scrollbars for a cleaner UI */
+.item-scroll-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.item-scroll-wrapper .card {
+    width: 100%;
+    max-width: 390px;
+    min-width: 286px; 
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    display: flex;
+    border: none;
+    background-color: var(--white);
+}
+
+/* Standardized Image Proportions */
+.item-scroll-wrapper .card-img-top {
+    height: 250px; 
+    object-fit: cover;
+}
+
+/* Centering logic for wide screens */
+@media (min-width: 1250px) {
+    .item-scroll-wrapper {
+        justify-content: center;
+    }
+
+
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .navbar-span {
+        font-size: 20px;
+    }
+}
+
+
+
+@media (max-width: 991px) {
+    .btn {
+        font-size: 17px;
+    }
+}
+
+/* Responsive Button Behavior (Stacked at 500px) */
+/* Force the drop at 500px */
+@media (max-width: 576px) {
+    .item-footer-content {
+        display: block; /* Switch from flex to block to force stacking */
+    }
+
+    .item-footer-content .btn {
+        display: block; /* Ensure buttons take full width */
+        width: 100%;
+        margin-top: 10px; /* Add spacing between buttons */
+    }
+}
