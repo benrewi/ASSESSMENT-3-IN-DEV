@@ -17,794 +17,284 @@
 
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-dark py-3 px-1 px-lg-5" aria-label="Main navigation">
-
-  <div class="container-fluid px-4 px-lg-5">
-      <a class="navbar-brand d-flex align-items-center gap-1 gap-sm-3" href="index.html">
-          <img src="images/icons/logo-white.svg" alt="Snazzy Paws Grooming Logo" width="42" height="40"
-              loading="eager">
-          <span class="font--cabin fst-italic navbar-span">Snazzy Paws Grooming</span></a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-2 font--dm text-center">
-              <li class="nav-item">
-                  <a class="nav-link active p-2 p-lg-3" aria-current="page" href="index.html">HOME</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link p-2 p-xl-3" href="services.html">SERVICES</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link p-2 p-xl-3" href="gallery.html">GALLERY</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link p-2 p-xl-3" href="contact.html">CONTACT US</a>
-              </li>
-              <li class="nav-item">
-                  <a class="btn btn--white" href="booking.html">BOOK NOW</a>
-              </li>
-          </ul>
-      </div>
-
-
-  </div>
-
-</nav>
-
-
-
-
-
-
-<section>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<style>
-  /* The container that holds the cards in a single row */
-  .card-scroll-wrapper {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    gap: 1.5rem;
-    padding: 20px 15px;
-    scroll-snap-type: x mandatory; /* Makes cards "snap" into place when scrolling */
-    -webkit-overflow-scrolling: touch;
-    justify-content: flex-start;
-  }
-
-  /* Center the cards only if the screen is wide enough to fit all 3 */
-  @media (min-width: 1250px) {
-    .card-scroll-wrapper {
-      justify-content: center;
-    }
-  }
-
-  /* The Card Logic: 390px normally, but 100% width on small screens */
-  .card-scroll-wrapper .card {
-    width: 100%; 
-    max-width: 390px; /* Your desired max width */
-    min-width: 280px; /* Ensures it never gets too skinny for content */
-    flex: 0 0 auto;
-    scroll-snap-align: center; /* Part of the snapping logic */
-    border: none;
-    border-radius: 15px;
-  }
-
-  /* Hide scrollbar for a clean mobile app look */
-  .card-scroll-wrapper::-webkit-scrollbar {
-    display: none;
-  }
-  .card-scroll-wrapper {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-</style>
-
-<div class="container-fluid">
-  <div id="responsiveCardCarousel" class="carousel slide" data-bs-ride="false">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        
-        <div class="card-scroll-wrapper">
-          
-          <div class="card shadow-sm bg-light">
-            <img src="https://via.placeholder.com/390x200/444/fff?text=Card+1" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Responsive Design</h5>
-              <p class="card-text">On a 320px screen, I'll be about 290px wide. On a laptop, I'll stop growing at 390px.</p>
-              <button class="btn btn-primary">View Project</button>
-            </div>
-          </div>
-
-          <div class="card shadow-sm bg-light">
-            <img src="https://via.placeholder.com/390x200/666/fff?text=Card+2" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Smart Scrolling</h5>
-              <p class="card-text">Notice how you can swipe between us on mobile? We stay in one row inside the carousel.</p>
-              <button class="btn btn-primary">View Project</button>
-            </div>
-          </div>
-
-          <div class="card shadow-sm bg-light">
-            <img src="https://via.placeholder.com/390x200/888/fff?text=Card+3" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">No JS Required</h5>
-              <p class="card-text">This uses pure CSS flexbox and Bootstrap's layout to keep things lightweight.</p>
-              <button class="btn btn-primary">View Project</button>
-            </div>
-          </div>
-
-        </div> </div>
-    </div>
-  </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-</section>
-
-<section>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <style>
-    /* The "magic" container */
-    .grooming-scroll-wrapper {
-      display: flex;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      gap: 1.5rem;
-      padding: 20px 10px;
-      /* Snaps cards to center on mobile for a premium feel */
-      scroll-snap-type: x mandatory; 
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none; /* Hide scrollbar Firefox */
-    }
-  
-    /* Hide scrollbar Chrome/Safari */
-    .grooming-scroll-wrapper::-webkit-scrollbar {
-      display: none;
-    }
-  
-    /* Card Sizing: Max 390px, but shrinks to fit 320px screens */
-    .grooming-scroll-wrapper .card {
-      width: 100%;
-      max-width: 390px;
-      min-width: 286px; /* Your minimum for 320px screens */
-      flex: 0 0 auto;
-      scroll-snap-align: center;
-      display: flex;
-      flex-direction: column;
-    }
-  
-    /* Centering logic for large desktops */
-    @media (min-width: 1250px) {
-      .grooming-scroll-wrapper {
-        justify-content: center;
-      }
-    }
-  
-    /* Equal height buttons in footer */
-    .card-footer .btn {
-      min-width: 110px;
-    }
-  </style>
-  
-  <section class="index-second py-5 bg-light">
-    <div class="container px-4 px-lg-5">
-      <div class="text-center mb-5">
-        <h2 class="fw-bold">Featured grooming services</h2>
-        <p class="fs-4 fst-italic text-muted">Refined treatments designed for your dog's wellbeing</p>
-      </div>
-  
-      <div class="grooming-scroll-wrapper">
-  
-        <div class="card shadow-sm border-0">
-          <img src="images/index/teeth.webp" class="card-img-top" alt="Dog with toothbrush" width="400" height="267">
-          <div class="text-center border-bottom py-3 px-2">
-            <h3 class="card-title h5 fw-bold mb-0">Teeth brushing</h3>
-          </div>
-          <div class="card-body">
-            <p class="fw-semibold text-center">Fresh breath, better oral health</p>
-            <ul class="text-start small">
-              <li>Pet safe toothpaste</li>
-              <li>Gentle plaque removal</li>
-              <li>Improves breath</li>
-              <li>Supports dental hygiene</li>
-            </ul>
-          </div>
-          <div class="card-footer bg-white border-top-0 pb-3">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="small">
-                <p class="mb-0 text-muted">Starting from:</p>
-                <p class="fw-bold mb-0 text-primary">$10 – $15*</p>
-              </div>
-              <a href="booking.html" class="btn btn-dark shadow-sm rounded-pill px-4">Book</a>
-            </div>
-          </div>
-        </div>
-  
-        <div class="card shadow-sm border-0">
-          <img src="images/index/full-package.webp" class="card-img-top" alt="Dog during full groom" width="400" height="267">
-          <div class="text-center border-bottom py-3 px-2">
-            <h3 class="card-title h5 fw-bold mb-0">Full Grooming Package</h3>
-          </div>
-          <div class="card-body">
-            <p class="fw-semibold text-center">Complete care from nose to tail</p>
-            <ul class="text-start small">
-              <li>Bath and haircut</li>
-              <li>Teeth brushing included</li>
-              <li>Nail trim and ear cleaning</li>
-              <li>Full professional groom</li>
-            </ul>
-          </div>
-          <div class="card-footer bg-white border-top-0 pb-3">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="small">
-                <p class="mb-0 text-muted">Starting from:</p>
-                <p class="fw-bold mb-0 text-primary">$60 – $120*</p>
-              </div>
-              <a href="booking.html" class="btn btn-dark shadow-sm rounded-pill px-4">Book</a>
-            </div>
-          </div>
-        </div>
-  
-        <div class="card shadow-sm border-0">
-          <img src="images/index/deshed.webp" class="card-img-top" alt="Dog during deshedding" width="400" height="267">
-          <div class="text-center border-bottom py-3 px-2">
-            <h3 class="card-title h5 fw-bold mb-0">De-shedding add-on</h3>
-          </div>
-          <div class="card-body">
-            <p class="fw-semibold text-center">Reduce shedding for a healthier coat</p>
-            <ul class="text-start small">
-              <li>Removes loose fur and undercoat</li>
-              <li>Reduces shedding by up to 90%</li>
-              <li>Promotes healthier skin and coat</li>
-              <li>Special de-shedding shampoo</li>
-            </ul>
-          </div>
-          <div class="card-footer bg-white border-top-0 pb-3">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="small">
-                <p class="mb-0 text-muted">Starting from:</p>
-                <p class="fw-bold mb-0 text-primary">$20 – $40**</p>
-              </div>
-              <a href="booking.html" class="btn btn-dark shadow-sm rounded-pill px-4">Book</a>
-            </div>
-          </div>
-        </div>
-  
-      </div> <div class="terms text-center mt-4">
-        <p class="small text-muted mb-1">*Pricing is indicative only. Actual price may differ depending on breed and dog size.</p>
-        <p class="small text-muted mb-0">**De-shedding treatment is only available as an add on to the Bath and brush, or Haircut treatments.</p>
-      </div>
-    </div>
-  </section>
-  
-<section>
-  <style>
-    /* The "magic" container */
-    .grooming-scroll-wrapper {
-      display: flex;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      gap: 1.5rem;
-      padding: 20px 10px;
-      scroll-snap-type: x mandatory; 
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none; 
-    }
-  
-    .grooming-scroll-wrapper::-webkit-scrollbar {
-      display: none;
-    }
-  
-    /* Card Sizing */
-    .grooming-scroll-wrapper .card {
-      width: 100%;
-      max-width: 390px;
-      min-width: 286px; 
-      flex: 0 0 auto;
-      scroll-snap-align: center;
-      display: flex;
-      flex-direction: column;
-      overflow: hidden; /* Keeps the rounded corners clean */
-    }
-  
-    /* Image Proportion Fix */
-    .grooming-scroll-wrapper .card-img-top {
-      width: 100%;
-      height: 250px; /* Set a fixed height that looks good */
-      object-fit: cover; /* This is the key: it crops instead of squashing */
-      object-position: center; /* Keeps the dog's face centered */
-    }
-  
-    @media (min-width: 1250px) {
-      .grooming-scroll-wrapper {
-        justify-content: center;
-      }
-    }
-  </style>
-  
-  <section class="index-second py-5 bg-light">
-    <div class="container px-4 px-lg-5">
-      <div class="grooming-scroll-wrapper">
-  
-        <div class="card shadow-sm border-0">
-          <img src="images/index/teeth.webp" class="card-img-top" alt="Dog with toothbrush">
-          <div class="text-center border-bottom py-3 px-2">
-            <h3 class="card-title h5 fw-bold mb-0">Teeth brushing</h3>
-          </div>
-          </div>
-  
-        <div class="card shadow-sm border-0">
-          <img src="images/index/full-package.webp" class="card-img-top" alt="Dog during full groom">
-          <div class="text-center border-bottom py-3 px-2">
-            <h3 class="card-title h5 fw-bold mb-0">Full Grooming Package</h3>
-          </div>
-          </div>
-  
-        <div class="card shadow-sm border-0">
-          <img src="images/index/deshed.webp" class="card-img-top" alt="Dog during deshedding">
-          <div class="text-center border-bottom py-3 px-2">
-            <h3 class="card-title h5 fw-bold mb-0">De-shedding add-on</h3>
-          </div>
-          </div>
-  
-      </div>
-    </div>
-  </section>
-
-
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-      
-      <style>
-          /* 1. The Scroll Container */
-          .grooming-scroll-wrapper {
-              display: flex;
-              flex-wrap: nowrap;
-              overflow-x: auto;
-              gap: 1.5rem;
-              padding: 20px 10px;
-              /* Smooth snapping on mobile */
-              scroll-snap-type: x mandatory; 
-              -webkit-overflow-scrolling: touch;
-              scrollbar-width: none; /* Hide scrollbar Firefox */
-          }
-  
-          /* Hide scrollbar Chrome/Safari */
-          .grooming-scroll-wrapper::-webkit-scrollbar {
-              display: none;
-          }
-  
-          /* 2. The Card Logic: Max 390px, Responsive down to 286px */
-          .grooming-scroll-wrapper .card {
-              width: 100%;
-              max-width: 390px;
-              min-width: 286px; 
-              flex: 0 0 auto;
-              scroll-snap-align: center;
-              display: flex;
-              flex-direction: column;
-              border: none;
-              transition: transform 0.3s ease;
-          }
-  
-          /* 3. Image Aspect Ratio Fix: Prevents Squashing */
-          .grooming-scroll-wrapper .card-img-top {
-              width: 100%;
-              height: 250px; /* Fixed height for all images */
-              object-fit: cover; /* Crops edges instead of squashing */
-              object-position: center;
-          }
-  
-          /* 4. Desktop Centering */
-          @media (min-width: 1250px) {
-              .grooming-scroll-wrapper {
-                  justify-content: center;
-              }
-          }
-  
-          /* Custom spacing for the list items */
-          .card-body ul li {
-              margin-bottom: 0.5rem;
-              color: #444;
-          }
-  
-          /* Brand Color Adjustment (Optional) */
-          .btn-book {
-              background-color: #333;
-              color: white;
-              border-radius: 50px;
-              padding: 8px 24px;
-          }
-          .btn-book:hover {
-              background-color: #000;
-              color: white;
-          }
-      </style>
-  </head>
-  <body>
-  
-  <section class="index-second py-5 bg-light">
-      <div class="container px-4 px-lg-5">
-          <div class="text-center mb-5">
-              <h2 class="fw-bold">Featured grooming services</h2>
-              <p class="fs-4 fst-italic text-muted">Refined treatments designed for your dog's wellbeing</p>
-          </div>
-      </div>
-  
-      <div class="container-fluid">
-          <div class="grooming-scroll-wrapper">
-  
-              <div class="card shadow-sm">
-                  <img src="images/index/teeth.webp" class="card-img-top" alt="Dog with toothbrush">
-                  <div class="text-center border-bottom py-3 px-2">
-                      <h3 class="card-title h5 fw-bold mb-0">Teeth brushing</h3>
-                  </div>
-                  <div class="card-body">
-                      <p class="fw-semibold text-center">Fresh breath, better oral health</p>
-                      <ul class="text-start ps-3 small">
-                          <li>Pet safe toothpaste</li>
-                          <li>Gentle plaque removal</li>
-                          <li>Improves breath</li>
-                          <li>Supports dental hygiene</li>
-                      </ul>
-                  </div>
-                  <div class="card-footer bg-white border-top-0 pb-4">
-                      <div class="d-flex justify-content-between align-items-center">
-                          <div>
-                              <p class="small text-muted mb-0">Starting from:</p>
-                              <p class="fw-bold mb-0">$10 – $15*</p>
-                          </div>
-                          <a href="booking.html" class="btn btn-book shadow-sm">Book now</a>
-                      </div>
-                  </div>
-              </div>
-  
-              <div class="card shadow-sm">
-                  <img src="images/index/full-package.webp" class="card-img-top" alt="Dog during full groom">
-                  <div class="text-center border-bottom py-3 px-2">
-                      <h3 class="card-title h5 fw-bold mb-0">Full Grooming Package</h3>
-                  </div>
-                  <div class="card-body">
-                      <p class="fw-semibold text-center">Complete care from nose to tail</p>
-                      <ul class="text-start ps-3 small">
-                          <li>Bath and haircut</li>
-                          <li>Teeth brushing included</li>
-                          <li>Nail trim and ear cleaning</li>
-                          <li>Full professional groom</li>
-                      </ul>
-                  </div>
-                  <div class="card-footer bg-white border-top-0 pb-4">
-                      <div class="d-flex justify-content-between align-items-center">
-                          <div>
-                              <p class="small text-muted mb-0">Starting from:</p>
-                              <p class="fw-bold mb-0">$60 – $120*</p>
-                          </div>
-                          <a href="booking.html" class="btn btn-book shadow-sm">Book now</a>
-                      </div>
-                  </div>
-              </div>
-  
-              <div class="card shadow-sm">
-                  <img src="images/index/deshed.webp" class="card-img-top" alt="Dog during deshedding">
-                  <div class="text-center border-bottom py-3 px-2">
-                      <h3 class="card-title h5 fw-bold mb-0">De-shedding add-on</h3>
-                  </div>
-                  <div class="card-body">
-                      <p class="fw-semibold text-center">Reduce shedding for a healthier coat</p>
-                      <ul class="text-start ps-3 small">
-                          <li>Removes loose fur and undercoat</li>
-                          <li>Reduces shedding by up to 90%</li>
-                          <li>Promotes healthier skin and coat</li>
-                          <li>Special de-shedding shampoo</li>
-                      </ul>
-                  </div>
-                  <div class="card-footer bg-white border-top-0 pb-4">
-                      <div class="d-flex justify-content-between align-items-center">
-                          <div>
-                              <p class="small text-muted mb-0">Starting from:</p>
-                              <p class="fw-bold mb-0">$20 – $40**</p>
-                          </div>
-                          <a href="booking.html" class="btn btn-book shadow-sm">Book now</a>
-                      </div>
-                  </div>
-              </div>
-  
-          </div> </div>
-  
-      <div class="container mt-4">
-          <div class="terms text-center px-4">
-              <p class="small text-muted mb-1">*Pricing is indicative only. Actual price may differ depending on breed and dog size.</p>
-              <p class="small text-muted mb-0">**De-shedding treatment is only available as an add on to the Bath and brush, or Haircut treatments.</p>
-          </div>
-      </div>
-  </section>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-      
-      <style>
-          /* 1. The Scroll Container */
-          .grooming-scroll-wrapper {
-              display: flex;
-              flex-wrap: nowrap;
-              overflow-x: auto;
-              gap: 1.5rem;
-              padding: 20px 10px;
-              scroll-snap-type: x mandatory; 
-              -webkit-overflow-scrolling: touch;
-              scrollbar-width: none; 
-          }
-  
-          .grooming-scroll-wrapper::-webkit-scrollbar {
-              display: none;
-          }
-  
-          /* 2. The Card Logic */
-          .grooming-scroll-wrapper .card {
-              width: 100%;
-              max-width: 390px;
-              min-width: 286px; 
-              flex: 0 0 auto;
-              scroll-snap-align: center;
-              display: flex;
-              flex-direction: column;
-              border: none;
-          }
-  
-          /* 3. Image Fix */
-          .grooming-scroll-wrapper .card-img-top {
-              width: 100%;
-              height: 250px; 
-              object-fit: cover;
-              object-position: center;
-          }
-  
-          /* 4. Desktop Centering */
-          @media (min-width: 1250px) {
-              .grooming-scroll-wrapper {
-                  justify-content: center;
-              }
-          }
-  
-          /* 5. The "Button Drop" Logic for 500px */
-          @media (max-width: 500px) {
-              .card-footer-content {
-                  display: flex;
-                  flex-direction: column; /* Stacks price and button */
-                  text-align: center;
-              }
-              .btn-book {
-                  width: 100%; /* Full width button */
-                  margin-top: 15px; /* Spacing between price and button */
-              }
-          }
-  
-          .btn-book {
-              background-color: #333;
-              color: white;
-              border-radius: 50px;
-              padding: 8px 24px;
-              transition: all 0.3s ease;
-          }
-          .btn-book:hover {
-              background-color: #000;
-              color: white;
-          }
-      </style>
-  </head>
-  <body>
-  
-  <section class="index-second py-5 bg-light">
-      <div class="container px-4 px-lg-5">
-          <div class="text-center mb-5">
-              <h2 class="fw-bold">Featured grooming services</h2>
-              <p class="fs-4 fst-italic text-muted">Refined treatments designed for your dog's wellbeing</p>
-          </div>
-      </div>
-  
-      <div class="container-fluid">
-          <div class="grooming-scroll-wrapper">
-  
-              <div class="card shadow-sm">
-                  <img src="images/index/teeth.webp" class="card-img-top" alt="Dog with toothbrush">
-                  <div class="text-center border-bottom py-3 px-2">
-                      <h3 class="card-title h5 fw-bold mb-0">Teeth brushing</h3>
-                  </div>
-                  <div class="card-body">
-                      <p class="fw-semibold text-center">Fresh breath, better oral health</p>
-                      <ul class="text-start ps-3 small">
-                          <li>Pet safe toothpaste</li>
-                          <li>Gentle plaque removal</li>
-                          <li>Improves breath</li>
-                          <li>Supports dental hygiene</li>
-                      </ul>
-                  </div>
-                  <div class="card-footer bg-white border-top-0 pb-4">
-                      <div class="card-footer-content d-flex justify-content-between align-items-center">
-                          <div>
-                              <p class="small text-muted mb-0">Starting from:</p>
-                              <p class="fw-bold mb-0">$10 – $15*</p>
-                          </div>
-                          <a href="booking.html" class="btn btn-book shadow-sm">Book now</a>
-                      </div>
-                  </div>
-              </div>
-  
-              <div class="card shadow-sm">
-                  <img src="images/index/full-package.webp" class="card-img-top" alt="Dog during full groom">
-                  <div class="text-center border-bottom py-3 px-2">
-                      <h3 class="card-title h5 fw-bold mb-0">Full Grooming Package</h3>
-                  </div>
-                  <div class="card-body">
-                      <p class="fw-semibold text-center">Complete care from nose to tail</p>
-                      <ul class="text-start ps-3 small">
-                          <li>Bath and haircut</li>
-                          <li>Teeth brushing included</li>
-                          <li>Nail trim and ear cleaning</li>
-                          <li>Full professional groom</li>
-                      </ul>
-                  </div>
-                  <div class="card-footer bg-white border-top-0 pb-4">
-                      <div class="card-footer-content d-flex justify-content-between align-items-center">
-                          <div>
-                              <p class="small text-muted mb-0">Starting from:</p>
-                              <p class="fw-bold mb-0">$60 – $120*</p>
-                          </div>
-                          <a href="booking.html" class="btn btn-book shadow-sm">Book now</a>
-                      </div>
-                  </div>
-              </div>
-  
-              <div class="card shadow-sm">
-                  <img src="images/index/deshed.webp" class="card-img-top" alt="Dog during deshedding">
-                  <div class="text-center border-bottom py-3 px-2">
-                      <h3 class="card-title h5 fw-bold mb-0">De-shedding add-on</h3>
-                  </div>
-                  <div class="card-body">
-                      <p class="fw-semibold text-center">Reduce shedding for a healthier coat</p>
-                      <ul class="text-start ps-3 small">
-                          <li>Removes loose fur and undercoat</li>
-                          <li>Reduces shedding by up to 90%</li>
-                          <li>Promotes healthier skin and coat</li>
-                          <li>Special de-shedding shampoo</li>
-                      </ul>
-                  </div>
-                  <div class="card-footer bg-white border-top-0 pb-4">
-                      <div class="card-footer-content d-flex justify-content-between align-items-center">
-                          <div>
-                              <p class="small text-muted mb-0">Starting from:</p>
-                              <p class="fw-bold mb-0">$20 – $40**</p>
-                          </div>
-                          <a href="booking.html" class="btn btn-book shadow-sm">Book now</a>
-                      </div>
-                  </div>
-              </div>
-  
-          </div> 
-      </div>
-  
-      <div class="container mt-4">
-          <div class="terms text-center px-4">
-              <p class="small text-muted mb-1">*Pricing is indicative only.</p>
-              <p class="small text-muted mb-0">**De-shedding is an add-on only.</p>
-          </div>
-      </div>
-  </section>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  
-  </body>
-  </html>
-
-
-
-
 <body>
 
-    <footer class="footer py-5">
+    <nav class="navbar navbar-expand-lg navbar-dark py-3 px-1 px-lg-5" aria-label="Main navigation">
+
+        <div class="container-fluid px-4 px-lg-5">
+            <a class="navbar-brand d-flex align-items-center gap-1 gap-sm-3" href="index.html">
+                <img src="images/icons/logo-white.svg" alt="Snazzy Paws Grooming Logo" width="42" height="40"
+                    loading="eager">
+                <span class="font--cabin fst-italic navbar-span">Snazzy Paws Grooming</span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-2 font--dm text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active p-2 p-lg-3" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-xl-3" href="services.html">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-xl-3" href="gallery.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-xl-3" href="contact.html">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn--white" href="booking.html">BOOK NOW</a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </nav>
+
+    <section class="index-third py-5">
         <div class="container px-4 px-lg-5">
-            <div class="row text-center text-lg-start">
-                <!-- Footer column 1 -->
-                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                    <div
-                        class="d-flex justify-content-center justify-content-lg-start align-items-center gap-3 mb-2">
-                        <img src="images/icons/logo-white.svg" alt="Snazzy Paws Grooming Logo" width="42"
-                            height="40" loading="lazy">
-                        <span class="fw-bold fs-5 fst-italic">Snazzy Paws Grooming</span>
-                    </div>
-                    <div
-                        class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3">
-                        <p>Open 9:00am - 5:00pm Monday to Saturday</p>
-                    </div>
-                    <div
-                        class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold font--cabin fs-1">What our clients say</h2>
+                <span class="font--dm fs-4 fst-italic">Real results from happy dogs and their owners</span>
+            </div>
+        </div>
 
-                        <span class="fw-bold fs-5">Check out our socials!</span>
-                    </div>
-                    <div
-                        class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3">
+        <div class="container-fluid">
 
-                        <a href="https://www.facebook.com/Snazzypaws/" target="_blank" rel="noopener noreferrer">
-                            <img src="images/icons/facebooksvg.svg" alt="Facebook (opens in a new tab)" width="30"
-                                height="30" loading="lazy">
-                        </a>
-                        <a href="https://www.instagram.com/snazzypawsdoggroomingnarangba/?hl=en" target="_blank"
-                            rel="noopener noreferrer">
-                            <img src="images/icons/instagram.svg" alt="Instagram (opens in a new tab)" width="30"
-                                height="30" loading="lazy">
-                        </a>
-                        <a href="https://www.tiktok.com/your-real-link" target="_blank" rel="noopener noreferrer">
-                            <img src="images/icons/tiktok.svg" alt="TikTok (opens in a new tab)" width="30"
-                                height="30" loading="lazy">
-                        </a>
+            <div class="item-scroll-wrapper gap-4 pb-3">
+
+                <!-- Card 1 -->
+
+                <div class="card shadow-sm">
+                    <div id="t1" class="carousel slide media-carousel" data-bs-ride="false" data-bs-touch="true"
+                        aria-label="Testimonial photos for Full package treatment">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/index/full-package-after.webp" class="d-block w-100 testimonial-img"
+                                    alt="Full package after" loading="lazy">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/index/full-package-before.webp" class="d-block w-100 testimonial-img"
+                                    alt="Full package before" loading="lazy">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#t1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#t1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold mb-3">Beryl</h3>
+                        <hr>
+                    </div>
+                    <div class="card-body py-3 ">
+                        <blockquote class="mb-3">
+                            <p class="mb-0 fst-italic">“Beryl came home looking absolutely gorgeous. Her
+                                coat was soft, and she smelled amazing. You could tell she was comfortable
+                                the whole time. Best groom she’s ever had.”</p>
+                        </blockquote>
+                        <p class="fw-semibold mb-1">Full grooming package</p>
+                    </div>
+                    <div class="card-footer bg-white border-top text-center">
+                        <p class="mb-2 text-center">From Dave - Morrinsville</p>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
 
-                    <div class="d-flex justify-content-center justify-content-lg-start">
-                        <div class="mx-auto text-center text-lg-start">
-                            <span class="fw-bold fs-5 d-block mb-3">Quick links</span>
-                            <ul class="list-unstyled ps-0 mb-0">
-                                <li><a class="external-link" href="index.html">HOME</a></li>
-                                <li><a class="external-link" href="services.html">SERVICES</a></li>
-                                <li><a class="external-link" href="gallery.html">GALLERY</a></li>
-                                <li><a class="external-link" href="contact.html">CONTACT US</a></li>
-                                <li><a class="external-link" href="booking.html">MAKE A BOOKING</a></li>
-                            </ul>
+                <!-- Card 1 -->
+
+                <div class="card shadow-sm">
+                    <div id="t2" class="carousel slide media-carousel" data-bs-ride="false" data-bs-touch="true"
+                        aria-label="Testimonial photos for Full package treatment">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/index/full-package-after.webp" class="d-block w-100 testimonial-img"
+                                    alt="Full package after" loading="lazy">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/index/full-package-before.webp" class="d-block w-100 testimonial-img"
+                                    alt="Full package before" loading="lazy">
+                            </div>
                         </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#t2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#t2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold mb-3">Beryl</h3>
+                        <hr>
+                    </div>
+                    <div class="card-body py-3 ">
+                        <blockquote class="mb-3">
+                            <p class="mb-0 fst-italic">“Beryl came home looking absolutely gorgeous. Her
+                                coat was soft, and she smelled amazing. You could tell she was comfortable
+                                the whole time. Best groom she’s ever had.”</p>
+                        </blockquote>
+                        <p class="fw-semibold mb-1">Full grooming package</p>
+                    </div>
+                    <div class="card-footer bg-white border-top text-center">
+                        <p class="mb-2 text-center">From Dave - Morrinsville</p>
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                    <div class="d-flex justify-content-center justify-content-lg-start">
-                        <div class="mx-auto text-center text-lg-start">
-                            <span class="fw-bold fs-5 d-block mb-3">Contact us</span>
+                <!-- Card 1 -->
 
-                            <p class="mb-0">Shop 3 - 81 Main Street</p>
-                            <p class="mb-0">Central CBD District</p>
-                            <p class="mb-0">Hamilton 2879</p>
-                            <p class="mt-4 mb-0">Phone: (000) 123 12335</p>
-                            <p class="mb-0">Email: <a
-                                    href="mailto:hello@snazzypawsgrooming.co.nz?subject=General%20enquiry"
-                                    class="external-link">
-                                    hello@snazzypawsgrooming.co.nz
-                                </a></p>
+                <div class="card shadow-sm">
+                    <div id="t3" class="carousel slide media-carousel" data-bs-ride="false" data-bs-touch="true"
+                        aria-label="Testimonial photos for Full package treatment">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/index/full-package-after.webp" class="d-block w-100 testimonial-img"
+                                    alt="Full package after" loading="lazy">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/index/full-package-before.webp" class="d-block w-100 testimonial-img"
+                                    alt="Full package before" loading="lazy">
+                            </div>
                         </div>
-
-
+                        <button class="carousel-control-prev" type="button" data-bs-target="#t3" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#t3" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold mb-3">Beryl</h3>
+                        <hr>
+                    </div>
+                    <div class="card-body py-3 ">
+                        <blockquote class="mb-3">
+                            <p class="mb-0 fst-italic">“Beryl came home looking absolutely gorgeous. Her
+                                coat was soft, and she smelled amazing. You could tell she was comfortable
+                                the whole time. Best groom she’s ever had.”</p>
+                        </blockquote>
+                        <p class="fw-semibold mb-1">Full grooming package</p>
+                    </div>
+                    <div class="card-footer bg-white border-top text-center">
+                        <p class="mb-2 text-center">From Dave - Morrinsville</p>
                     </div>
                 </div>
             </div>
         </div>
-
-    </footer>
-
+    </section>
 
 
 
 
-</main>
+
+
+    </section>
 
 
 
+
+
+
+
+    <main>
+        <footer class="footer py-5">
+            <div class="container px-4 px-lg-5">
+                <div class="row text-center text-lg-start">
+                    <!-- Footer column 1 -->
+                    <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                        <div
+                            class="d-flex justify-content-center justify-content-lg-start align-items-center gap-3 mb-2">
+                            <img src="images/icons/logo-white.svg" alt="Snazzy Paws Grooming Logo" width="42"
+                                height="40" loading="lazy">
+                            <span class="fw-bold fs-5 fst-italic">Snazzy Paws Grooming</span>
+                        </div>
+                        <div
+                            class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3">
+                            <p>Open 9:00am - 5:00pm Monday to Saturday</p>
+                        </div>
+                        <div
+                            class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3">
+
+                            <span class="fw-bold fs-5">Check out our socials!</span>
+                        </div>
+                        <div
+                            class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3">
+
+                            <a href="https://www.facebook.com/Snazzypaws/" target="_blank" rel="noopener noreferrer">
+                                <img src="images/icons/facebooksvg.svg" alt="Facebook (opens in a new tab)" width="30"
+                                    height="30" loading="lazy">
+                            </a>
+                            <a href="https://www.instagram.com/snazzypawsdoggroomingnarangba/?hl=en" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="images/icons/instagram.svg" alt="Instagram (opens in a new tab)" width="30"
+                                    height="30" loading="lazy">
+                            </a>
+                            <a href="https://www.tiktok.com/your-real-link" target="_blank" rel="noopener noreferrer">
+                                <img src="images/icons/tiktok.svg" alt="TikTok (opens in a new tab)" width="30"
+                                    height="30" loading="lazy">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+
+                        <div class="d-flex justify-content-center justify-content-lg-start">
+                            <div class="mx-auto text-center text-lg-start">
+                                <span class="fw-bold fs-5 d-block mb-3">Quick links</span>
+                                <ul class="list-unstyled ps-0 mb-0">
+                                    <li><a class="external-link" href="index.html">HOME</a></li>
+                                    <li><a class="external-link" href="services.html">SERVICES</a></li>
+                                    <li><a class="external-link" href="gallery.html">GALLERY</a></li>
+                                    <li><a class="external-link" href="contact.html">CONTACT US</a></li>
+                                    <li><a class="external-link" href="booking.html">MAKE A BOOKING</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                        <div class="d-flex justify-content-center justify-content-lg-start">
+                            <div class="mx-auto text-center text-lg-start">
+                                <span class="fw-bold fs-5 d-block mb-3">Contact us</span>
+
+                                <p class="mb-0">Shop 3 - 81 Main Street</p>
+                                <p class="mb-0">Central CBD District</p>
+                                <p class="mb-0">Hamilton 2879</p>
+                                <p class="mt-4 mb-0">Phone: (000) 123 12335</p>
+                                <p class="mb-0">Email: <a
+                                        href="mailto:hello@snazzypawsgrooming.co.nz?subject=General%20enquiry"
+                                        class="external-link">
+                                        hello@snazzypawsgrooming.co.nz
+                                    </a></p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+
+
+
+
+    </main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
