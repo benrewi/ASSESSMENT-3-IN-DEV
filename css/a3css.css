@@ -35,10 +35,6 @@
     font-size: 1.75rem;
 }
 
-/* Adding bold to the active link - overriding the bootstrap defaults */
-.navbar-dark .nav-link.active {
-    font-weight: 700;
-}
 
 /* Overriding bootstrap inactive navbar link to improve accessibility and colour contrast */
 .navbar-nav .nav-link {
@@ -149,10 +145,7 @@ flex-wrap: wrap;
 
 
 
-.index-mobile-contact {
-    background-color: var(--light-green);
-    color: var(--primary-green);
-}
+
 
 .external-link {
     color: var(--white);
