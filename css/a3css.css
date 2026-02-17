@@ -214,7 +214,7 @@ flex-wrap: wrap;
     object-fit: cover;
 }
 
-    .carousel-inner {
+    .carousel-inner, .carousel {
     touch-action: pan-y; /* Allows vertical scrolling of the page, but lets JS handle horizontal swipes */
         
 }
