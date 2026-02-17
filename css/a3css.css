@@ -206,7 +206,9 @@ flex-wrap: wrap;
     height: 250px; 
     object-fit: cover;
 }
-
+body { margin: 0; }
+.item-scroll-wrapper { outline: 2px solid red; }
+.item-scroll-wrapper .card { outline: 2px solid blue; }
 
 
 .testimonial-img {
