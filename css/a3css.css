@@ -214,24 +214,8 @@ flex-wrap: wrap;
     object-fit: cover;
 }
 
-    .carousel-inner, .carousel {
-    touch-action: pan-y; /* Allows vertical scrolling of the page, but lets JS handle horizontal swipes */
-        
-}
-/* 1. Allows horizontal touch to reach the Bootstrap JS */
-.carousel {
-    touch-action: pan-y !important;
-}
 
-/* 2. Ensures the images are explicitly sized so the swipe 'grabs' the right area */
-.carousel-item {
-    width: 100%;
-}
 
-.testimonial-img {
-    pointer-events: auto; /* Ensures touch events aren't ignored */
-    touch-action: pan-y;
-}
 .testimonial-img {
     user-select: none;
     -webkit-user-drag: none;
