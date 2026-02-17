@@ -1,17 +1,34 @@
+<!-- Setting doc type -->
 <!DOCTYPE html>
+
+<!-- adding html doc, and language -->
 <html lang="en">
 
 <head>
+    <!-- web page title -->
     <title>Snazzy Paws Grooming - Home</title>
+
+    <!-- adding charset to ensure all characters can be used without breaking -->
     <meta charset="utf-8">
+
+    <!-- ensuring browser displays according to the device screen width, and zoom level is at 100% -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- adding page description to improve accessibility -->
     <meta name="description"
         content="Snazzy Paws Grooming provides professional dog grooming services in Hamilton CBD. Quality care, experienced groomers and easy online booking for your pet.">
 
+    <!-- pre-loading google fonts - helps improve performance-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- adding bootstrap stylesheet-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- adding css style sheet -->
     <link rel="stylesheet" href="css/a3css.css">
+
+    <!-- adding custom fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
 
@@ -19,21 +36,36 @@
 
 <body>
 
+    <!-- defining the nave and adding bootstrap navbar. setting the navbar collapse to 992px. navbar dark to indicate dark navbar and white text. py-3 to add 16px of padding top and bottom and px-lg-5 to have 48px padding at screen size 992 and above. px-1 to add 4px left and right once navbar has collapsed. Aria label defining navigation bar for accessibility-->
     <nav class="navbar navbar-expand-lg navbar-dark py-3 px-1 px-lg-5" aria-label="Main navigation">
 
-        <div class="container-fluid px-1 px-md-5">
+        <!-- Using container fluid to make the navbar wider -->
+        <div class="container-fluid">
+
+            <!-- Adding the logo and business name. d-flex to make the logo and text sit on the same line, align-items-center to vertically align, and gap to add space between the logo and text. Loading eager to prioritise loading of the logo as it is important for the initial page load -->
             <a class="navbar-brand d-flex align-items-center gap-1 gap-sm-3" href="index.html">
+
+                <!-- Adding the logo image. Alt text provided for accessibility and in case of image load failure. Width and height provided to prevent layout shifts as the image loads -->
                 <img src="images/icons/logo-white.svg" alt="Snazzy Paws Grooming Logo" width="42" height="40"
                     loading="eager">
-                <span class="font--cabin fst-italic navbar-span">Snazzy Paws Grooming</span></a>
 
+                    <!-- Adding the brand name text. Setting the font, and adding italics and font size-->
+                <span class="font--cabin fst-italic fs-3">Snazzy Paws Grooming</span></a>
+
+                <!-- Adding the navbar toggler. navbar toggler applies bootstrap styling when the navigation bar collapses, and button ensures it's clickable. data-bs-toggler applies the javascript behaviour. data-bs-target applies the id so the menu will open when selected. Aria items added for accessibility -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
                 aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- Adding the space for the menu items. collapse and navbar-collapse bootstrap classes to apply the collapsing behaviour and styling. id added to link to the toggler button -->
+
             <div class="collapse navbar-collapse" id="mainNav">
+
+                <!-- Unordered list for the menu items. ms-auto to push the menu items to the right, mb-2 to add margin bottom when collapsed, mb-lg-0 to remove margin bottom at 992px and above. align-items-lg-center to vertically align items at 992px and above, gap to add space between menu items, font--dm to apply font, and text-center to center text when the menu is collapsed -->
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-2 font--dm text-center">
+
+                    <!-- list item for the navigation. p-2 to apply 8px padding to the button, and p-lg-3 to increase padding of menu items when navbar is collapsed-->
                     <li class="nav-item">
                         <a class="nav-link active p-2 p-lg-3" aria-current="page" href="index.html">HOME</a>
                     </li>
@@ -47,81 +79,118 @@
                         <a class="nav-link p-2 p-xl-3" href="contact.html">CONTACT US</a>
                     </li>
                     <li class="nav-item">
+                        <!-- Adding the Book Now button. btn class to apply button styling, and btn--white to apply custom styling. Shadow to add a shadow effect to make it stand out as a cta -->
                         <a class="btn btn--white shadow" href="booking.html">BOOK NOW</a>
                     </li>
                 </ul>
             </div>
-
-
         </div>
-
     </nav>
 
+    <!-- Adding the main content of the page within the main tag -->
     <main id="main">
+
+        <!-- Adding the first section of the page. index-intro class for custom styling, and py-5 to add 48px of padding top and bottom -->
         <section class="index-intro pb-5 pt-2">
 
-
+            <!-- Container to hold the content -->
             <div class="container">
-                <div class="open-hours fs-5 text-center font--dm mb-5">
+
+                <!-- Adding opening hours. fs-5 to set font size, text-center to align text center, font--dm to apply font, and mb-5 to add 48px margin bottom -->
+                <div class="fs-5 text-center font--dm mb-5">
                     <p>Open 9:00am to 5:30pm Monday - Saturday</p>
                 </div>
+
+                <!-- Row to hold the content in 2 columns. Using bootstrap grid system to make it responsive. On smaller screens, the columns will stack, and on medium screens and above, they will sit side by side. -->
                 <div class="row">
+
+                    <!-- First column for the text content. col-12 to take up full width on smaller screens. col-md-6 to take up half the width on medium screens and above. d-flex to make it a flex container, flex-column to stack items vertically, justify-content-between to space items out, gap-1 to add space between items, and py-xl-0 to remove vertical padding at extra large screen sizes as the spacing is enough without it -->
                     <div class="col-12 col-md-6 d-flex flex-column justify-content-between gap-1 py-xl-0">
 
 
-
+                        <!-- Heading for the section. fw-bold to make the text bold, and font--cabin to apply the font. break in the middle to ensure that this will always display on 2 lines -->
                         <h1 class="fw-bold font--cabin">Premium Dog <br>Grooming Services</h1>
+
+                        <!-- list for the intro summary. fs-5 to set font size, ps-2 to add padding to the left, lh-base to set line height, and list-unstyled to remove bullet points -->
                         <ul class="fs-5 ps-2 lh-base list-unstyled">
                             <li>Professional dog grooming services</li>
                             <li>Tailored care of every pooch</li>
                             <li>Online bookings available</li>
                         </ul>
+
+                        <!-- Adding the main image for smaller screens. d-md-none to hide this image on medium screens and above, text-center to align center, my-4 to add margin top and bottom. img-fluid to make the image responsive, fetchpriority high and loading eager to prioritise loading. Width and height provided to prevent layout shifts as the image loads -->
                         <div class="d-md-none text-center my-4">
                             <img src="images/index/main-image.webp" alt="Main image - dog with glasses"
                                 class="img-fluid" fetchpriority="high" loading="eager" width="561" height="350">
                         </div>
+
+                        <!-- Defining rules for the 2 buttons. d-flex for a flex container, flex-column to stack on smaller screens, flex-md-row to make them sit side by side on medium screens and above, gap-lg-4 to add more space between buttons on larger screens, gap-3 to add space between buttons on smaller screens, pb-3 to add padding bottom -->
                         <div class="d-flex flex-column flex-md-row gap-lg-4 gap-3 pb-3 w-100">
+
+                            <!-- Adding the button. btn for button styling, btn--white for custom styling, shadow to add a shadow effect, text-center to center the text, and flex-grow-1 to make the buttons take up equal space -->
                             <a href="services.html"
-                                class="btn btn--white shadow d-flex justify-content-center flex-grow-1">Our
+                                class="btn btn--white shadow  flex-grow-1 text-center">Our
                                 Services</a>
                             <a href="booking.html"
-                                class="btn btn--white shadow d-flex justify-content-center flex-grow-1">Book
+                                class="btn btn--white shadow  flex-grow-1 text-center">Book
                                 Now</a>
                         </div>
 
                     </div>
-                    <div class="col-12 col-md-6 d-none d-md-block text-lg-end">
+
+                    <!-- Second column for the image. d-none to hide on smaller screens col-md-6 to take up half the width on medium screens and above and d-md-block to display as block on medium screens and above. text-end to align the image to the right. Image is the same as the one in the first column, but this will only display on medium screens and above -->
+                    <div class="d-none col-md-6 d-md-block text-end">
                         <img src="images/index/main-image.webp" alt="Main image - dog with glasses" class="img-fluid"
                             fetchpriority="high" loading="eager" width="561" height="350">
                     </div>
                 </div>
             </div>
-
-
         </section>
 
+        <!-- Adding the second section for the features-->
         <section class="index-second py-5">
-            <div class="container px-4 px-lg-5">
+            <!-- Container for the heading -->
+            <div class="container">
+
+                <!-- Heading section. text-center to align center, mb-5 to add margin bottom -->
                 <div class="text-center mb-5">
+
+                    <!-- Main section heading. fw-bold to make the text bold, font--cabin to apply the font, and fs-1 to set the font size -->
                     <h2 class="fw-bold font--cabin fs-1">Featured grooming services</h2>
+
+                    <!-- Subheading for the section. font--dm to apply font, fs-4 to set  font size, and fst-italic to make the text italic -->
                     <span class="font--dm fs-4 fst-italic">Refined treatments designed for your dog's wellbeing</span>
                 </div>
             </div>
 
+            <!-- Container for the item scroll wrapper. container-fluid used to allow the contents to spill to the edges of the screen when resized and prevent jumping as the screen width reduces-->
             <div class="container-fluid">
 
+                <!-- Adding a custom class for the feature cards. Container will allow the contents to slide across the screen when the user resizes the window, or accesses the website on a device with a smaller screen width -->
                 <div class="item-scroll-wrapper gap-4 pb-3">
 
                     <!-- Card 1 -->
 
+                    <!-- Add a bootstrap card container with a shadow -->
                     <div class="card shadow-sm">
+
+                        <!-- Adding the image for the card. Alt text provided for accessibility and in case of image load failure. Width and height provided to prevent layout shifts as the image loads -->
                         <img src="images/index/teeth.webp" class="card-img-top" alt="Dog with toothbrush" width="400"
                             height="267">
+
+                            <!-- Adding a div for the card header. text-center to align center, border-bottom to add a border at the bottom, py-3 to add padding top and bottom, and px-2 to add padding left and right -->
+
                         <div class="text-center border-bottom py-3 px-2">
                             <h3 class="card-title fw-bold mb-0">Teeth brushing</h3>
                         </div>
+
+                        <!-- Card body for the contents of the card -->
                         <div class="card-body">
+
+                            <!-- Adding a line of text to summarise the treatment. fw-semibold to make the text semi bold, and text-center to align center -->
                             <p class="fw-semibold  text-center">Fresh breath, better oral health</p>
+
+                            <!-- Unordered list to outline feature. text-start to align text to the left, and ps-3 to add padding to the left -->
                             <ul class="text-start ps-3">
                                 <li>Pet safe toothpaste</li>
                                 <li>Gentle plaque removal</li>
@@ -129,12 +198,18 @@
                                 <li>Supports dental hygiene</li>
                             </ul>
                         </div>
+
+                        <!-- Card footer for the pricing and book now button. bg-white to override bootstrap default, and border-top to add a border at the top to separate from the body section -->
                         <div class="card-footer bg-white border-top">
+
+                            <!-- Adding a div for the footer content. font--dm to apply font, and fs-5 to set font size -->
                             <div class="item-footer-content font--dm fs-5">
                                 <div>
                                     <p class="mb-0">Starting from:</p>
                                     <p class="fw-bold mb-0">$10 – $15*</p>
                                 </div>
+
+                                <!-- Adding book now button. btn for button styling, shadow to add a shadow effect, and linking to the booking page -->
                                 <a href="booking.html" class="btn shadow-sm">
                                     Book now
                                 </a>
@@ -145,6 +220,7 @@
 
                     <!-- Card 2 -->
 
+                    <!-- Explanation the same as card 1 -->
                     <div class="card shadow-sm">
                         <img src="images/index/full-package.webp" class="card-img-top" alt="Dog during full groom"
                             width="400" height="267">
@@ -176,6 +252,7 @@
 
                     <!-- Card 3 -->
 
+                    <!-- Explanation the same as card 1 -->
                     <div class="card shadow-sm">
                         <img src="images/index/deshed.webp" class="card-img-top" alt="Dog during deshedding" width="400"
                             height="267">
@@ -207,9 +284,14 @@
                 </div>
             </div>
 
+            <!-- Adding a container for the terms and conditions related to the pricing. mt-2 to add margin top -->
+            <div class="container mt-2">
 
-            <div class="container mt-2 px-4 px-lg-5">
+                <!-- Adding a div for the terms. text-center to align center -->
                 <div class="terms text-center">
+
+                    <!-- Adding text. small to reduce font size, mb-1 to add margin bottom to the first line, and mb-0 to remove margin bottom from the second line -->
+
                     <p class="small mb-1">*Pricing is indicative only. Actual price may differ depending on breed
                         and dog size.</p>
                     <p class="small mb-0">*De-shedding treatment is only available as an add on to the Bath and
@@ -218,62 +300,95 @@
             </div>
         </section>
 
+        <!-- Adding the third section for the testimonial cards with padding of 20px top and bottom of the section using bottstrap property py-5-->
         <section class="index-third py-5">
-            <div class="container px-4 px-lg-5">
+
+        <!-- Heading container to center the content. px-lg-5 adds 48px of padding horizontally at 992px or above. px-4 sets the padding to 24px when the screen is below 992px -->
+            <div class="container">
+
+                <!-- class for the heading, to make the header and the text below is centered. mb-5 adds a margin of 5 at the bottom of the heading section-->
                 <div class="text-center mb-5">
                     <h2 class="fw-bold font--cabin fs-1">What our clients say</h2>
                     <span class="font--dm fs-4 fst-italic">Real results from happy dogs and their owners</span>
                 </div>
             </div>
 
+            <!-- Container for the item scroll wrapper. container-fluid has been used to allow the contents to spill to the edges of the screen when resized and prevent jumping as the screen width reduces-->
             <div class="container-fluid">
 
+                <!-- Adding a custom class for the testimonial cards. This is a container that will allow the contents to slide across the screen when the user resizes the window, or accesses the website on a device with a smaller screen width -->
                 <div class="item-scroll-wrapper gap-4 pb-3">
 
                     <!-- Card 1 -->
-
+                    <!-- Add a bootstrap card container with a shadow -->
                     <div class="card shadow-sm">
+
+                        <!-- div for before and after images and button functionality. id=t1 to align button behaviours. Slide provides animation when selecting the button. data-bs-ride=false prevents images from cycling automatically. dt-touch=true allows users to swipe using a mobile device. -->
                         <div id="t1" class="carousel slide media-carousel" data-bs-ride="false" data-bs-touch="true"
                             aria-label="Testimonial photos for Full package treatment">
+
+                            <!-- carousel inner for the images -->
                             <div class="carousel-inner">
+
+                                <!-- image 1. Active ensures this image is displayed first when the carousel loads. d-block makes the image act as a block element, and removes any inline spacing issues. w-100 forces the image to take up 100$ of the with of the container. Alt text provided in case of image load failure, and to provide accessibility content, loading lazy improves performance by not prioritising this image on initial page load-->
                                 <div class="carousel-item active">
                                     <img src="images/index/full-package-after.webp"
                                         class="d-block w-100 testimonial-img" alt="Full package after" loading="lazy">
                                 </div>
+
+                                <!-- Adding the secong image. Same elements as above, however no active tag as this should not display by default -->
                                 <div class="carousel-item">
                                     <img src="images/index/full-package-before.webp"
                                         class="d-block w-100 testimonial-img" alt="Full package before" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- Images added and carousel inner closed. Buttons now added to the media carousel to allow users to click and view images.
+                             t1 id references, to ensure the image related to t1 is aligned with behaviour of the button. data-bs-slide to indicate direction of the button. Aria button set to false and visually hidden text provided to ensure appropriate message provided to user-->
                             <button class="carousel-control-prev" type="button" data-bs-target="#t1"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
+
+                            <!-- Same as above, however this is the button for the Next button -->
                             <button class="carousel-control-next" type="button" data-bs-target="#t1"
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
+
+                        <!-- Images added to top section of the card in the carousel inner and closed.
+                         Card body opened to add the contents of the card -->
                         <div class="card-body">
-                            <h3 class="card-title fw-bold text-center mb-3">Beryl</h3>
+
+                            <!-- h5 header for pet name/testimonial title. mb-0 to remove any margins as the spacing is being provided by the card body container and the line below. Increasing font size using fs-4, making the text bold, and aligning center -->
+                            <h5 class="card-title fs-4 fw-bold text-center mb-0">Beryl</h5>
+
+                            <!-- Adding a line to separate the card title from the testimonial-->
                             <hr>
-                        </div>
-                        <div class="py-3 ">
-                            <blockquote class="mb-3">
-                                <p class="mb-0 fst-italic text-center">“Beryl came home looking absolutely gorgeous. Her
-                                    coat was soft, and she smelled amazing. You could tell she was comfortable
-                                    the whole time. Best groom she’s ever had.”</p>
+
+                            <!-- Using blockquote to define that this is a quote from a customer -->
+                            <blockquote>
+
+                                <!-- Adding the quote using p. Setting margin to 0 as blockquote is adding spacing for the bottom. Font ste to italic and text aligned center -->
+                                <p class="m-0 fst-italic text-center">“Beryl came home looking absolutely gorgeous. Her coat was soft, and she smelled amazing. You could tell she was comfortable the whole time. Best groom she’s ever had.”</p>
                             </blockquote>
-                            <p class="fw-semibold text-center mb-1">Full grooming package</p>
+
+                            <!-- adding text for the package. Setting m-1 to remove any padding, as the card-body container is already doing this-->
+                            <p class="fw-semibold text-center m-0">Full grooming package</p>
                         </div>
-                        <div class="card-footer bg-white border-top text-center">
-                            <p class="mb-2 text-center">From Dave - Morrinsville</p>
+
+                        <!-- Closing card body and adding footer. Adding bg-white to override bootstrap default, and adding a border top to separate from the body section-->
+                        <div class="card-footer bg-white border-top">
+
+                            <!-- Adding footer text. m-1 used to add padding, to ensure padding is consistent in the card-->
+                            <p class="m-1 text-center">From Dave - Morrinsville</p>
                         </div>
                     </div>
 
-                    <!-- Card 2 -->
+                    <!-- Card 2 - same implementation as card 1 -->
 
                     <div class="card shadow-sm text-center">
                         <div id="t2" class="carousel slide media-carousel" data-bs-ride="false" data-bs-touch="true"
@@ -300,11 +415,10 @@
                             </button>
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title fw-bold mb-3">Henry</h3>
+                            <h5 class="card-title fs-4 fw-bold mb-0">Henry</h5>
                             <hr>
-                        </div>
-                        <div class="card-body py-3 ">
-                            <blockquote class="mb-3">
+
+                            <blockquote>
                                 <p class="mb-0 fst-italic">“Henry sheds a lot, but the difference after this was
                                     huge. His coat felt lighter and there was way less hair around the house. He
                                     was calm, happy, and looked great.”</p>
@@ -312,11 +426,11 @@
                             <p class="fw-semibold mb-1">Bath and brush with de-shedding add-on</p>
                         </div>
                         <div class="card-footer bg-white border-top text-center">
-                            <p class="mb-2 text-center">From Jessica - Hamilton</p>
+                            <p class="m-1 text-center">From Jessica - Hamilton</p>
                         </div>
                     </div>
 
-                    <!-- Card 3 -->
+                    <!-- Card 3 - same implementation as card 1-->
 
                     <div class="card shadow-sm text-center">
                         <div id="t3" class="carousel slide media-carousel" data-bs-ride="false" data-bs-touch="true"
@@ -343,11 +457,9 @@
                             </button>
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title fw-bold mb-3">Jan</h3>
+                            <h5 class="card-title fs-4 fw-bold mb-0">Jan</h5>
                             <hr>
-                        </div>
-                        <div class="card-body py-3 ">
-                            <blockquote class="mb-3">
+                            <blockquote>
                                 <p class="mb-0 fst-italic">“Jan’s haircut was perfect. Clean, tidy, and exactly
                                     what
                                     we asked for. Her face especially looked so
@@ -356,41 +468,64 @@
                             <p class="fw-semibold mb-1">Haircut package</p>
                         </div>
                         <div class="card-footer bg-white border-top text-center">
-                            <p class="mb-2 text-center">From Mayvis - Cambridge</p>
+                            <p class="m-1 text-center">From Mayvis - Cambridge</p>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Adding a new container for the leave review button. adding a top margin to add spacing between the container above -->
+            <div class="container mt-5">
+
+                    <!-- Adding a button. btn for button styling, btn--wide for custom styling, shadow for shadow effect, d-flex and justify-content-center to center the text, and mx-auto to center the button within the container -->
+                    <a href="review.html" class="btn btn--wide shadow d-flex justify-content-center mx-auto">
+                        Leave us a review
+                    </a>
+            </div>
         </section>
 
+        <!-- Adding contact section for display in mobile. d-lg-none to hide this section on large screens and above -->
         <section class="index-mobile-contact py-5 d-lg-none">
-            <div class="container px-4 px-lg-5">
+            <div class="container">
+
+                <!-- Heading for the contact section. text-center to align center, fw-bold to make the text bold, font--cabin to apply the font, and fs-1 to set the font size -->
                 <div class="text-center">
                     <h2 class="fw-bold font--cabin fs-1">Contact us</h2>
                 </div>
             </div>
-            <div class="container py-3">
-                <div class="contact-card">
-                    <div class="contact-wrapper mx-auto">
 
-                        <div class="contact-box d-flex align-items-center gap-4 py-4">
-                            <div class="icon-col text-center">
+            <!-- Adding a card to hold the contact information. text-center to align center, and contact-card for custom styling -->
+            <div class="container py-3">
+                <div class="contact-card text-center">
+
+                    <!-- Adding wrapper for contact information. d-inline-flex to make it an inline flex container, flex-column to stack items vertically, and align-items-start to align items to the left, which still centered in the parent. -->
+                    <div class="contact-wrapper d-inline-flex flex-column align-items-start">
+
+                        <!-- Adding contact information. Icon and text in a box for each item. d-inline-flex to make it a flex container, align-items-center to vertically align the icon and text, gap to add space between the icon and text, and py-4 to add padding top and bottom -->
+                        <div class="contact-box d-inline-flex align-items-center gap-4 py-4">
+
+                            <!-- Adding a div for the icon. setting sizing for page loading. Aria hidden as icon is decorative and no value added. -->
+                            <div class="icon-col">
                                 <img src="images/icons/phone.svg" alt="" aria-hidden="true" width="44" height="44"
                                     loading="lazy">
                             </div>
+                            <!-- text-start to align text to the left. mb-1 to add margin bottom to the first line, and mb-0 to remove margin bottom from the second line. fw-bold to make the phone number stand out -->
                             <div class="contact-text text-start">
                                 <p class="mb-1">Call us</p>
                                 <p class="mb-0 fw-bold">(000) 123 123345</p>
                             </div>
                         </div>
 
-                        <div class="contact-box d-flex align-items-center gap-4 py-4">
-                            <div class="icon-col text-center">
+                        <!-- Contact 2 - ad above -->
+                        <div class="contact-box d-inline-flex align-items-center gap-4 py-4">
+                            <div class="icon-col">
                                 <img src="images/icons/email.svg" alt="" aria-hidden="true" width="44" height="44"
                                     loading="lazy">
                             </div>
                             <div class="contact-text text-start">
                                 <p class="mb-1">E-mail us</p>
+
+                                <!-- Adding a mailto link to allow users to click and email directly. external-link to external-link--green for custom styling, and fw-bold to make the email address stand out -->
                                 <a href="mailto:hello@snazzypawsgrooming.co.nz?subject=General%20enquiry"
                                     class="external-link--green fw-bold">
                                     hello@snazzypawsgrooming.co.nz
@@ -398,8 +533,8 @@
                             </div>
                         </div>
 
-                        <div class="contact-box d-flex align-items-center gap-4 py-4">
-                            <div class="icon-col text-center">
+                        <div class="contact-box d-inline-flex align-items-center gap-4 py-4">
+                            <div class="icon-col">
                                 <img src="images/icons/location.svg" alt="" aria-hidden="true" width="44" height="59"
                                     loading="lazy">
                             </div>
@@ -416,26 +551,42 @@
 
         </section>
 
+
+        <!-- Adding the footer for the page. Footer tag used to indicate this is the footer of the page. py-5 to add padding top and bottom -->
         <footer class="footer py-5">
-            <div class="container px-4 px-lg-5">
+            <div class="container">
+
+                <!-- Adding a row to hold the footer content. text-center to align center on smaller screens, and text-lg-start to align left on larger screens -->
                 <div class="row text-center text-lg-start">
-                    <!-- Footer column 1 -->
+                    <!-- Footer column 1. col-12 to take up full width on smaller screens, col-lg-4 to take up 1/3 of the width on larger screens, mb-4 to add margin bottom on smaller screens, and mb-lg-0 to remove margin bottom on larger screens -->
                     <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                        <!-- Adding logo and business name. d-flex to make the logo and text sit on the same line, align-items-center to vertically align, gap to add space between the logo and text, justify-content-center to center on smaller screens, and justify-content-lg-start to align left on larger screens. mb-2 to add margin bottom -->
                         <div
                             class="d-flex justify-content-center justify-content-lg-start align-items-center gap-3 mb-2">
+
+                            <!-- Adding logo image. Alt text provided for accessibility and in case of image load failure. Width and height provided to prevent layout shifts as the image loads -->
                             <img src="images/icons/logo-white.svg" alt="Snazzy Paws Grooming Logo" width="42"
                                 height="40" loading="lazy">
+
+                                <!-- Adding business name. fw-bold to make the text bold, fs-5 to set font size, and fst-italic to make the text italic -->
                             <span class="fw-bold fs-5 fst-italic">Snazzy Paws Grooming</span>
                         </div>
+
+                        <!-- Adding opening hours. d-flex to make it a flex container, justify-content-center to center on smaller screens, justify-content-lg-start to align left on larger screens, align-items-center to vertically align, gap to add space between items, and mb-3 to add margin bottom -->
                         <div
                             class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3">
                             <p>Open 9:00am - 5:00pm Monday to Saturday</p>
                         </div>
+
+                        <!-- Adding social media links. d-flex to make it a flex container, justify-content-center to center on smaller screens, justify-content-lg-start to align left on larger screens, align-items-center to vertically align, gap to add space between items, and mb-3 to add margin bottom -->
                         <div
                             class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3">
 
+                            <!-- fw-bold to make the text bold, and fs-5 to set font size -->
                             <span class="fw-bold fs-5">Check out our socials!</span>
                         </div>
+
+                        <!-- Adding social media icons with links. d-flex to make it a flex container, justify-content-center to center on smaller screens, justify-content-lg-start to align left on larger screens, align-items-center to vertically align, gap to add space between items, and mb-3 to add margin bottom -->
                         <div
                             class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3">
 
@@ -454,9 +605,14 @@
                             </a>
                         </div>
                     </div>
+
+                    <!-- Footer column 2. col-12 to take up full width on smaller screens, col-lg-4 to take up 1/3 of the width on larger screens, mb-4 to add margin bottom on smaller screens, and mb-lg-0 to remove margin bottom on larger screens -->
                     <div class="col-12 col-lg-4 mb-4 mb-lg-0">
 
+                            <!-- Adding quick links. d-flex to make it a flex container, justify-content-center to center on smaller screens, justify-content-lg-start to align left on larger screens, mx-auto to center the content within the column on smaller screens, text-center to align text center on smaller screens, and text-lg-start to align text left on larger screens -->
                         <div class="d-flex justify-content-center justify-content-lg-start">
+
+                            <!-- Adding quick links for navigation. mx-auto to center the content within the column on smaller screens, text-center to align text center on smaller screens, and text-lg-start to align text left on larger screens -->
                             <div class="mx-auto text-center text-lg-start">
                                 <span class="fw-bold fs-5 d-block mb-3">Quick links</span>
                                 <ul class="list-unstyled ps-0 mb-0">
@@ -470,15 +626,23 @@
                         </div>
                     </div>
 
+                    <!-- Adding contact information. col-12 to take up full width on smaller screens, col-lg-4 to take up 1/3 of the width on larger screens -->
                     <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+
+                        <!-- Adding alignment rules. d-flex to make it a flex container, justify-content-center to center on smaller screens, justify-content-lg-start to align left on larger screens, mx-auto to center the content within the column on smaller screens, text-center to align text center on smaller screens, and text-lg-start to align text left on larger screens -->
                         <div class="d-flex justify-content-center justify-content-lg-start">
                             <div class="mx-auto text-center text-lg-start">
+
+                                <!-- Adding column heading. fw-bold to make the text bold, fs-5 to set font size, and d-block to make it display on a new line. mb-3 to add margin bottom -->
                                 <span class="fw-bold fs-5 d-block mb-3">Contact us</span>
 
+                                <!-- Adding contact information text. mb-0 to remove margin bottom, and mt-4 to add margin top to the phone number to create spacing from the address above. external-link class for custom styling on the email address -->
                                 <p class="mb-0">Shop 3 - 81 Main Street</p>
                                 <p class="mb-0">Central CBD District</p>
                                 <p class="mb-0">Hamilton 2879</p>
                                 <p class="mt-4 mb-0">Phone: (000) 123 12335</p>
+
+                                <!-- Adding email with mailto link to allow users to click and email directly. external-link class for custom styling -->
                                 <p class="mb-0">Email: <a
                                         href="mailto:hello@snazzypawsgrooming.co.nz?subject=General%20enquiry"
                                         class="external-link">

@@ -30,10 +30,7 @@
     background-color: var(--primary-green);
 }
 
-/* Setting the font size for the span property on the navbar */
-.navbar-span {
-    font-size: 1.75rem;
-}
+
 
 
 /* Overriding bootstrap inactive navbar link to improve accessibility and colour contrast */
@@ -152,7 +149,7 @@ flex-wrap: wrap;
     text-decoration: none;
 }
 
-.external-link:hover {
+.external-link:hover, .external-link--green:hover {
     text-decoration: underline;
     font-weight: 700;
 }
@@ -206,9 +203,7 @@ flex-wrap: wrap;
     height: 250px; 
     object-fit: cover;
 }
-body { margin: 0; }
-.item-scroll-wrapper { outline: 2px solid red; }
-.item-scroll-wrapper .card { outline: 2px solid blue; }
+
 
 
 .testimonial-img {
