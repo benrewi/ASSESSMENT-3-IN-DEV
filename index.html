@@ -49,7 +49,7 @@
                 <img src="images/icons/logo-white.svg" alt="Snazzy Paws Grooming Logo" width="42" height="40"
                     loading="eager">
 
-                    <!-- Adding the brand name text. Setting the font, and adding italics and font size-->
+                    <!-- Adding the brand name text. Setting the font, and adding italics and font size to fs-3 for 28px -->
                 <span class="font--cabin fst-italic fs-3">Snazzy Paws Grooming</span></a>
 
                 <!-- Adding the navbar toggler. navbar toggler applies bootstrap styling when the navigation bar collapses, and button ensures it's clickable. data-bs-toggler applies the javascript behaviour. data-bs-target applies the id so the menu will open when selected. Aria items added for accessibility -->
@@ -62,10 +62,10 @@
 
             <div class="collapse navbar-collapse" id="mainNav">
 
-                <!-- Unordered list for the menu items. ms-auto to push the menu items to the right, mb-2 to add margin bottom when collapsed, mb-lg-0 to remove margin bottom at 992px and above. align-items-lg-center to vertically align items at 992px and above, gap to add space between menu items, font--dm to apply font, and text-center to center text when the menu is collapsed -->
+                <!-- Unordered list for the menu items. ms-auto to push the menu items to the right, mb-2 to add 8px margin bottom when collapsed, mb-lg-0 to remove margin bottom at 992px and above. align-items-lg-center to vertically align items at 992px and above, gap to add space between menu items, font--dm to apply font, and text-center to center text when the menu is collapsed -->
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-2 font--dm text-center">
 
-                    <!-- list item for the navigation. p-2 to apply 8px padding to the button, and p-lg-3 to increase padding of menu items when navbar is collapsed-->
+                    <!-- list item for the navigation. p-2 to apply 8px padding to the button, and p-lg-3 to increase padding of menu items to 16px when navbar is collapsed-->
                     <li class="nav-item">
                         <a class="nav-link active p-2 p-lg-3" aria-current="page" href="index.html">HOME</a>
                     </li>
@@ -90,13 +90,13 @@
     <!-- Adding the main content of the page within the main tag -->
     <main id="main">
 
-        <!-- Adding the first section of the page. index-intro class for custom styling, and py-5 to add 48px of padding top and bottom -->
+        <!-- Adding the first section of the page. index-intro class for custom styling, pb-5 to add 48px of padding bottom and pt-2 to add 8px of top padding -->
         <section class="index-intro pb-5 pt-2">
 
             <!-- Container to hold the content -->
             <div class="container">
 
-                <!-- Adding opening hours. fs-5 to set font size, text-center to align text center, font--dm to apply font, and mb-5 to add 48px margin bottom -->
+                <!-- Adding opening hours. fs-5 to set font size to 20px, text-center to align text center, font--dm to apply font, and mb-5 to apply 48px margin bottom -->
                 <div class="fs-5 text-center font--dm mb-5">
                     <p>Open 9:00am to 5:30pm Monday - Saturday</p>
                 </div>
@@ -104,27 +104,27 @@
                 <!-- Row to hold the content in 2 columns. Using bootstrap grid system to make it responsive. On smaller screens, the columns will stack, and on medium screens and above, they will sit side by side. -->
                 <div class="row">
 
-                    <!-- First column for the text content. col-12 to take up full width on smaller screens. col-md-6 to take up half the width on medium screens and above. d-flex to make it a flex container, flex-column to stack items vertically, justify-content-between to space items out, gap-1 to add space between items, and py-xl-0 to remove vertical padding at extra large screen sizes as the spacing is enough without it -->
+                    <!-- First column for the text content. col-12 to take up all columns on smaller screens. col-md-6 to take up half the width on medium screens and above. d-flex to make it a flex container, flex-column to stack items vertically, justify-content-between to space items out, gap-1 to add space between items, and py-xl-0 to remove vertical padding at extra large screen sizes as the spacing is enough without it -->
                     <div class="col-12 col-md-6 d-flex flex-column justify-content-between gap-1 py-xl-0">
 
 
                         <!-- Heading for the section. fw-bold to make the text bold, and font--cabin to apply the font. break in the middle to ensure that this will always display on 2 lines -->
                         <h1 class="fw-bold font--cabin">Premium Dog <br>Grooming Services</h1>
 
-                        <!-- list for the intro summary. fs-5 to set font size, ps-2 to add padding to the left, lh-base to set line height, and list-unstyled to remove bullet points -->
+                        <!-- list for the intro summary. fs-5 to set font size to 20px, ps-2 to add 8px padding to the left, lh-base to set line height, and list-unstyled to remove bullet points -->
                         <ul class="fs-5 ps-2 lh-base list-unstyled">
                             <li>Professional dog grooming services</li>
                             <li>Tailored care of every pooch</li>
                             <li>Online bookings available</li>
                         </ul>
 
-                        <!-- Adding the main image for smaller screens. d-md-none to hide this image on medium screens and above, text-center to align center, my-4 to add margin top and bottom. img-fluid to make the image responsive, fetchpriority high and loading eager to prioritise loading. Width and height provided to prevent layout shifts as the image loads -->
+                        <!-- Adding the main image for smaller screens. d-md-none to hide this image on medium screens and above, text-center to align center, my-4 to add 16px margin top and bottom. img-fluid to make the image responsive, fetchpriority high and loading eager to prioritise loading. Width and height provided to prevent layout shifts as the image loads -->
                         <div class="d-md-none text-center my-4">
                             <img src="images/index/main-image.webp" alt="Main image - dog with glasses"
                                 class="img-fluid" fetchpriority="high" loading="eager" width="561" height="350">
                         </div>
 
-                        <!-- Defining rules for the 2 buttons. d-flex for a flex container, flex-column to stack on smaller screens, flex-md-row to make them sit side by side on medium screens and above, gap-lg-4 to add more space between buttons on larger screens, gap-3 to add space between buttons on smaller screens, pb-3 to add padding bottom -->
+                        <!-- Defining rules for the 2 buttons. d-flex for a flex container, flex-column to stack on smaller screens, flex-md-row to make them sit side by side on medium screens and above, gap-lg-4 to add 24px gap between buttons on larger screens, gap-3 to add 16px between buttons on smaller screens, pb-3 to add 16px padding bottom -->
                         <div class="d-flex flex-column flex-md-row gap-lg-4 gap-3 pb-3 w-100">
 
                             <!-- Adding the button. btn for button styling, btn--white for custom styling, shadow to add a shadow effect, text-center to center the text, and flex-grow-1 to make the buttons take up equal space -->
@@ -152,13 +152,13 @@
             <!-- Container for the heading -->
             <div class="container">
 
-                <!-- Heading section. text-center to align center, mb-5 to add margin bottom -->
+                <!-- Heading section. text-center to align center, mb-5 to add 48px margin bottom -->
                 <div class="text-center mb-5">
 
-                    <!-- Main section heading. fw-bold to make the text bold, font--cabin to apply the font, and fs-1 to set the font size -->
+                    <!-- Main section heading. fw-bold to make the text bold, font--cabin to apply the font, and fs-1 to set the font size to 40px -->
                     <h2 class="fw-bold font--cabin fs-1">Featured grooming services</h2>
 
-                    <!-- Subheading for the section. font--dm to apply font, fs-4 to set  font size, and fst-italic to make the text italic -->
+                    <!-- Subheading for the section. font--dm to apply font, fs-4 to set 24px font size, and fst-italic to make the text italic -->
                     <span class="font--dm fs-4 fst-italic">Refined treatments designed for your dog's wellbeing</span>
                 </div>
             </div>
@@ -178,7 +178,7 @@
                         <img src="images/index/teeth.webp" class="card-img-top" alt="Dog with toothbrush" width="400"
                             height="267">
 
-                            <!-- Adding a div for the card header. text-center to align center, border-bottom to add a border at the bottom, py-3 to add padding top and bottom, and px-2 to add padding left and right -->
+                            <!-- Adding a div for the card header. text-center to align center, border-bottom to add a border at the bottom, py-3 to add 16px padding top and bottom, and px-2 to add 8px padding left and right -->
 
                         <div class="text-center border-bottom py-3 px-2">
                             <h3 class="card-title fw-bold mb-0">Teeth brushing</h3>
@@ -190,7 +190,7 @@
                             <!-- Adding a line of text to summarise the treatment. fw-semibold to make the text semi bold, and text-center to align center -->
                             <p class="fw-semibold  text-center">Fresh breath, better oral health</p>
 
-                            <!-- Unordered list to outline feature. text-start to align text to the left, and ps-3 to add padding to the left -->
+                            <!-- Unordered list to outline feature. text-start to align text to the left, and ps-3 to add 16px padding to the left -->
                             <ul class="text-start ps-3">
                                 <li>Pet safe toothpaste</li>
                                 <li>Gentle plaque removal</li>
@@ -202,9 +202,11 @@
                         <!-- Card footer for the pricing and book now button. bg-white to override bootstrap default, and border-top to add a border at the top to separate from the body section -->
                         <div class="card-footer bg-white border-top">
 
-                            <!-- Adding a div for the footer content. font--dm to apply font, and fs-5 to set font size -->
+                            <!-- Adding a div for the footer content. font--dm to apply font, and fs-5 to set font size to 20px  -->
                             <div class="item-footer-content font--dm fs-5">
                                 <div>
+
+                                    <!-- Text for the pricing. mb-0 to remove margin bottom, and fw-bold to make the price stand out -->
                                     <p class="mb-0">Starting from:</p>
                                     <p class="fw-bold mb-0">$10 – $15*</p>
                                 </div>
@@ -284,13 +286,13 @@
                 </div>
             </div>
 
-            <!-- Adding a container for the terms and conditions related to the pricing. mt-2 to add margin top -->
+            <!-- Adding a container for the terms and conditions related to the pricing. mt-2 to add 8px margin top -->
             <div class="container mt-2">
 
                 <!-- Adding a div for the terms. text-center to align center -->
                 <div class="terms text-center">
 
-                    <!-- Adding text. small to reduce font size, mb-1 to add margin bottom to the first line, and mb-0 to remove margin bottom from the second line -->
+                    <!-- Adding text. small to reduce font size, mb-1 to add 4px margin bottom to the first line, and mb-0 to remove margin bottom from the second line -->
 
                     <p class="small mb-1">*Pricing is indicative only. Actual price may differ depending on breed
                         and dog size.</p>
@@ -306,8 +308,9 @@
         <!-- Heading container to center the content. px-lg-5 adds 48px of padding horizontally at 992px or above. px-4 sets the padding to 24px when the screen is below 992px -->
             <div class="container">
 
-                <!-- class for the heading, to make the header and the text below is centered. mb-5 adds a margin of 5 at the bottom of the heading section-->
+                <!-- class for the heading, to make the header and the text below is centered. mb-5 adds a margin of 48px at the bottom of the heading section-->
                 <div class="text-center mb-5">
+
                     <h2 class="fw-bold font--cabin fs-1">What our clients say</h2>
                     <span class="font--dm fs-4 fst-italic">Real results from happy dogs and their owners</span>
                 </div>
@@ -316,7 +319,7 @@
             <!-- Container for the item scroll wrapper. container-fluid has been used to allow the contents to spill to the edges of the screen when resized and prevent jumping as the screen width reduces-->
             <div class="container-fluid">
 
-                <!-- Adding a custom class for the testimonial cards. This is a container that will allow the contents to slide across the screen when the user resizes the window, or accesses the website on a device with a smaller screen width -->
+                <!-- Adding a custom class for the testimonial cards. This is a container that will allow the contents to slide across the screen when the user resizes the window, or accesses the website on a device with a smaller screen width. gap-4 to add 24px gap between cards within item-scroll, and pb3 to add 16px padding below the continer. -->
                 <div class="item-scroll-wrapper gap-4 pb-3">
 
                     <!-- Card 1 -->
