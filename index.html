@@ -375,18 +375,18 @@
                             <!-- Using blockquote to define that this is a quote from a customer -->
                             <blockquote>
 
-                                <!-- Adding the quote using p. Setting margin to 0 as blockquote is adding spacing for the bottom. Font ste to italic and text aligned center -->
+                                <!-- Adding the quote using p. Setting margin to 0 as blockquote is adding spacing for the bottom. Font style to italic and text aligned center -->
                                 <p class="m-0 fst-italic text-center">“Beryl came home looking absolutely gorgeous. Her coat was soft, and she smelled amazing. You could tell she was comfortable the whole time. Best groom she’s ever had.”</p>
                             </blockquote>
 
-                            <!-- adding text for the package. Setting m-1 to remove any padding, as the card-body container is already doing this-->
+                            <!-- adding text for the package. Setting m-0 to remove any padding, as the card-body container is already doing this-->
                             <p class="fw-semibold text-center m-0">Full grooming package</p>
                         </div>
 
                         <!-- Closing card body and adding footer. Adding bg-white to override bootstrap default, and adding a border top to separate from the body section-->
                         <div class="card-footer bg-white border-top">
 
-                            <!-- Adding footer text. m-1 used to add padding, to ensure padding is consistent in the card-->
+                            <!-- Adding footer text. m-1 used to add 4px padding, to ensure padding is consistent in the card-->
                             <p class="m-1 text-center">From Dave - Morrinsville</p>
                         </div>
                     </div>
@@ -487,24 +487,24 @@
             </div>
         </section>
 
-        <!-- Adding contact section for display in mobile. d-lg-none to hide this section on large screens and above -->
+        <!-- Adding contact section for display in mobile. d-lg-none to hide this section on large screens and above. py-5 to add 48px to each side -->
         <section class="index-mobile-contact py-5 d-lg-none">
             <div class="container">
 
-                <!-- Heading for the contact section. text-center to align center, fw-bold to make the text bold, font--cabin to apply the font, and fs-1 to set the font size -->
+                <!-- Heading for the contact section. text-center to align center, fw-bold to make the text bold, font--cabin to apply the font, and fs-1 to set the font size to 40px -->
                 <div class="text-center">
                     <h2 class="fw-bold font--cabin fs-1">Contact us</h2>
                 </div>
             </div>
 
-            <!-- Adding a card to hold the contact information. text-center to align center, and contact-card for custom styling -->
+            <!-- Adding a card to hold the contact information. text-center to align center, and contact-card for custom styling. py-3 to add 16px padding top and bottom -->
             <div class="container py-3">
                 <div class="contact-card text-center">
 
                     <!-- Adding wrapper for contact information. d-inline-flex to make it an inline flex container, flex-column to stack items vertically, and align-items-start to align items to the left, which still centered in the parent. -->
                     <div class="contact-wrapper d-inline-flex flex-column align-items-start">
 
-                        <!-- Adding contact information. Icon and text in a box for each item. d-inline-flex to make it a flex container, align-items-center to vertically align the icon and text, gap to add space between the icon and text, and py-4 to add padding top and bottom -->
+                        <!-- Adding contact information. Icon and text in a box for each item. d-inline-flex to make it a flex container, align-items-center to vertically align the icon and text, gap to add space between the icon and text, and py-4 to add 24px padding top and bottom -->
                         <div class="contact-box d-inline-flex align-items-center gap-4 py-4">
 
                             <!-- Adding a div for the icon. setting sizing for page loading. Aria hidden as icon is decorative and no value added. -->
@@ -512,7 +512,7 @@
                                 <img src="images/icons/phone.svg" alt="" aria-hidden="true" width="44" height="44"
                                     loading="lazy">
                             </div>
-                            <!-- text-start to align text to the left. mb-1 to add margin bottom to the first line, and mb-0 to remove margin bottom from the second line. fw-bold to make the phone number stand out -->
+                            <!-- text-start to align text to the left. mb-1 to add 4px margin bottom to the first line, and mb-0 to remove margin bottom from the second line. fw-bold to make the phone number stand out -->
                             <div class="contact-text text-start">
                                 <p class="mb-1">Call us</p>
                                 <p class="mb-0 fw-bold">(000) 123 123345</p>
@@ -555,15 +555,17 @@
         </section>
 
 
-        <!-- Adding the footer for the page. Footer tag used to indicate this is the footer of the page. py-5 to add padding top and bottom -->
+        <!-- Adding the footer for the page. Footer tag used to indicate this is the footer of the page. py-5 to add 48px padding top and bottom -->
         <footer class="footer py-5">
             <div class="container">
 
                 <!-- Adding a row to hold the footer content. text-center to align center on smaller screens, and text-lg-start to align left on larger screens -->
                 <div class="row text-center text-lg-start">
-                    <!-- Footer column 1. col-12 to take up full width on smaller screens, col-lg-4 to take up 1/3 of the width on larger screens, mb-4 to add margin bottom on smaller screens, and mb-lg-0 to remove margin bottom on larger screens -->
+
+                    <!-- Footer column 1. col-12 to take up full width on smaller screens, col-lg-4 to take up 1/3 of the width on larger screens, mb-4 to add 24px margin bottom on smaller screens, and mb-lg-0 to remove margin bottom on larger screens -->
                     <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                        <!-- Adding logo and business name. d-flex to make the logo and text sit on the same line, align-items-center to vertically align, gap to add space between the logo and text, justify-content-center to center on smaller screens, and justify-content-lg-start to align left on larger screens. mb-2 to add margin bottom -->
+
+                        <!-- Adding logo and business name. d-flex to make the logo and text sit on the same line, align-items-center to vertically align, gap to add 16px between the logo and text, justify-content-center to center on smaller screens, and justify-content-lg-start to align left on larger screens. mb-2 to add 8px margin bottom -->
                         <div
                             class="d-flex justify-content-center justify-content-lg-start align-items-center gap-3 mb-2">
 
@@ -571,25 +573,25 @@
                             <img src="images/icons/logo-white.svg" alt="Snazzy Paws Grooming Logo" width="42"
                                 height="40" loading="lazy">
 
-                                <!-- Adding business name. fw-bold to make the text bold, fs-5 to set font size, and fst-italic to make the text italic -->
+                                <!-- Adding business name. fw-bold to make the text bold, fs-5 to set 20px font size, and fst-italic to make the text italic -->
                             <span class="fw-bold fs-5 fst-italic">Snazzy Paws Grooming</span>
                         </div>
 
-                        <!-- Adding opening hours. d-flex to make it a flex container, justify-content-center to center on smaller screens, justify-content-lg-start to align left on larger screens, align-items-center to vertically align, gap to add space between items, and mb-3 to add margin bottom -->
+                        <!-- Adding opening hours. d-flex to make it a flex container, justify-content-center to center on smaller screens, justify-content-lg-start to align left on larger screens, align-items-center to vertically align, gap to add 24px between items, and mb-3 to add 16px margin bottom -->
                         <div
                             class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3">
                             <p>Open 9:00am - 5:00pm Monday to Saturday</p>
                         </div>
 
-                        <!-- Adding social media links. d-flex to make it a flex container, justify-content-center to center on smaller screens, justify-content-lg-start to align left on larger screens, align-items-center to vertically align, gap to add space between items, and mb-3 to add margin bottom -->
+                        <!-- same as aboe -->
                         <div
                             class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3">
 
-                            <!-- fw-bold to make the text bold, and fs-5 to set font size -->
+                            <!-- fw-bold to make the text bold, and fs-5 to set font size to 48px -->
                             <span class="fw-bold fs-5">Check out our socials!</span>
                         </div>
 
-                        <!-- Adding social media icons with links. d-flex to make it a flex container, justify-content-center to center on smaller screens, justify-content-lg-start to align left on larger screens, align-items-center to vertically align, gap to add space between items, and mb-3 to add margin bottom -->
+                        <!-- Adding social media icons with links. d-flex to make it a flex container, justify-content-center to center on smaller screens, justify-content-lg-start to align left on larger screens, align-items-center to vertically align, gap to add space between items, and mb-3 to add 16px margin bottom -->
                         <div
                             class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3">
 
@@ -609,7 +611,7 @@
                         </div>
                     </div>
 
-                    <!-- Footer column 2. col-12 to take up full width on smaller screens, col-lg-4 to take up 1/3 of the width on larger screens, mb-4 to add margin bottom on smaller screens, and mb-lg-0 to remove margin bottom on larger screens -->
+                    <!-- Footer column 2. col-12 to take up full width on smaller screens, col-lg-4 to take up 1/3 of the width on larger screens, mb-4 to add 24px margin bottom on smaller screens, and mb-lg-0 to remove margin bottom on larger screens -->
                     <div class="col-12 col-lg-4 mb-4 mb-lg-0">
 
                             <!-- Adding quick links. d-flex to make it a flex container, justify-content-center to center on smaller screens, justify-content-lg-start to align left on larger screens, mx-auto to center the content within the column on smaller screens, text-center to align text center on smaller screens, and text-lg-start to align text left on larger screens -->
@@ -617,7 +619,11 @@
 
                             <!-- Adding quick links for navigation. mx-auto to center the content within the column on smaller screens, text-center to align text center on smaller screens, and text-lg-start to align text left on larger screens -->
                             <div class="mx-auto text-center text-lg-start">
+
+                                <!-- Adding column heading. fw-bold to make the text bold, fs-5 to set 20px font size, and d-block to make it display on a new line. mb-3 to add 16px margin bottom -->
                                 <span class="fw-bold fs-5 d-block mb-3">Quick links</span>
+
+                                <!-- Adding the links for navigation. list-unstyled to remove bullet points, ps-0 to remove padding from the left, and mb-0 to remove margin bottom -->
                                 <ul class="list-unstyled ps-0 mb-0">
                                     <li><a class="external-link" href="index.html">HOME</a></li>
                                     <li><a class="external-link" href="services.html">SERVICES</a></li>
@@ -629,17 +635,17 @@
                         </div>
                     </div>
 
-                    <!-- Adding contact information. col-12 to take up full width on smaller screens, col-lg-4 to take up 1/3 of the width on larger screens -->
+                    <!-- Adding contact information. col-12 to take up full width on smaller screens, col-lg-4 to take up 1/3 of the width on larger screens. mb-4 to add 24px on smaller screens, and mb-lg-0 to remove the margin on larger screens-->
                     <div class="col-12 col-lg-4 mb-4 mb-lg-0">
 
                         <!-- Adding alignment rules. d-flex to make it a flex container, justify-content-center to center on smaller screens, justify-content-lg-start to align left on larger screens, mx-auto to center the content within the column on smaller screens, text-center to align text center on smaller screens, and text-lg-start to align text left on larger screens -->
                         <div class="d-flex justify-content-center justify-content-lg-start">
                             <div class="mx-auto text-center text-lg-start">
 
-                                <!-- Adding column heading. fw-bold to make the text bold, fs-5 to set font size, and d-block to make it display on a new line. mb-3 to add margin bottom -->
+                                <!-- Adding column heading. fw-bold to make the text bold, fs-5 to set 20px font size, and d-block to make it display on a new line. mb-3 to add 16px margin bottom -->
                                 <span class="fw-bold fs-5 d-block mb-3">Contact us</span>
 
-                                <!-- Adding contact information text. mb-0 to remove margin bottom, and mt-4 to add margin top to the phone number to create spacing from the address above. external-link class for custom styling on the email address -->
+                                <!-- Adding contact information text. mb-0 to remove margin bottom, and mt-4 to add 24px margin top to the phone number to create spacing from the address above. external-link class for custom styling on the email address -->
                                 <p class="mb-0">Shop 3 - 81 Main Street</p>
                                 <p class="mb-0">Central CBD District</p>
                                 <p class="mb-0">Hamilton 2879</p>
@@ -652,8 +658,6 @@
                                         hello@snazzypawsgrooming.co.nz
                                     </a></p>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
