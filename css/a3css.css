@@ -217,6 +217,13 @@ gap: 0.75rem;
     transform: translateY(-50%);
 }
 
+.media-carousel,
+.media-carousel .carousel-inner,
+.media-carousel .carousel-item,
+.media-carousel img {
+  touch-action: pan-y;
+}
+
 
 /* Centering logic for wide screens */
 @media (min-width: 1250px) {
