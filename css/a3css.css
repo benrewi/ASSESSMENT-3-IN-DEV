@@ -78,6 +78,21 @@
     border-color: var(--white);
 }
 
+.btn--card{
+    border-color: var(--primary-green);
+    transition: all 0.3s ease;
+}
+
+.btn--card:hover {
+    background: var(--primary-green);
+    color: var(--white);
+    border-color: var(--primary-green);
+    transform: translateY(-3px); /* Moves card up */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12); /* Adds shadow */
+    transition: all 0.3s ease; /* Smooth animation */
+    cursor: pointer;
+}
+
 /******************************************/
 /************ SECTION SETTINGS ************/
 /******************************************/
@@ -85,7 +100,7 @@
 /* Defining default font colour and background colour for each section */
 
 /* Setting the background colour and default font colour for index-intro */
-.index-intro {
+.index-intro, .services-intro {
     background: linear-gradient(to bottom,
             var(--primary-green) 0%,
             var(--medium-green) 50%);
@@ -93,7 +108,7 @@
 }
 
 /* Setting background colour and font colour for index-section section */
-.index-second {
+.index-second, .services-features-section {
     background-color: var(--light-green);
     color: var(--primary-green)
 }
@@ -166,6 +181,33 @@ gap: 0.75rem;
     padding-left: 6px;
 }
 
+.form-select {
+    height: 50px;
+}
+
+
+/*  */
+.form-control,
+.form-select,
+.form-control::placeholder{
+  font-size: 17px;
+}
+
+
+
+/* Adding a border to the button to separate from the search field */
+.input-group .btn {
+    border-left: 1px solid #4D5B4D;
+  }
+
+  /* Miscellaneous */
+
+  .section-divider{
+    height: 3px;
+    background-color: var(--primary-green);
+    border: none;
+    opacity: 1;
+  }
 
 /* --- Universal Scrollable Card Wrapper --- */
 
@@ -193,14 +235,21 @@ gap: 0.75rem;
     background-color: var(--white);
 }
 
-/* Standardized Image Proportions */
+/* Standardized Image Proportions for the images in the features section*/
 .item-scroll-wrapper .card-img-top {
     width: 100%;
     height: 250px; 
     object-fit: cover;
 }
 
+.service-card-grid .card{
+    min-height: 275px;
+}
 
+.item-footer-content .btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
 
 .testimonial-img {
     user-select: none;
@@ -217,11 +266,14 @@ gap: 0.75rem;
     transform: translateY(-50%);
 }
 
-.media-carousel,
-.media-carousel .carousel-inner,
-.media-carousel .carousel-item,
-.media-carousel img {
-  touch-action: pan-y;
+.card-hover:hover {
+    transform: translateY(-5px); /* Moves card up */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12); /* Adds shadow */
+    transition: all 0.3s ease; /* Smooth animation */
+    cursor: pointer;
+}
+.card-hover {
+    transition: all 0.3s ease; /* Smooth transition back */
 }
 
 
@@ -233,6 +285,16 @@ gap: 0.75rem;
 
 
 }
+
+/* Centering logic for wide screens */
+@media (min-width: 1200px) {
+    .item-scroll-wrapper {
+        justify-content: center;
+    }
+
+
+}
+
 
 
 
