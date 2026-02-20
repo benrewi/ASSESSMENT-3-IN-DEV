@@ -50,7 +50,7 @@
                     loading="eager">
 
                     <!-- Adding the brand name text. Setting the font, and adding italics and font size to fs-5 for 20px, and fs-3 for 28px above screen sizes of 576px -->
-                <span class="font--cabin fst-italic fs-5 fs-3-sm">Snazzy Paws Grooming</span></a>
+                <span class="navbar-brand-name font--cabin fst-italic">Snazzy Paws Grooming</span></a>
 
                 <!-- Adding the navbar toggler. navbar toggler applies bootstrap styling when the navigation bar collapses, and button ensures it's clickable. data-bs-toggler applies the javascript behaviour. data-bs-target applies the id so the menu will open when selected. Aria items added for accessibility -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
@@ -503,9 +503,9 @@
                 </div>
             </div>
 
-            <!-- Adding a card to hold the contact information. text-center to align center, and contact-card for custom styling. py-3 to add 16px padding top and bottom -->
+            <!-- Adding a card to hold the contact information. text-center to align center, text-break to ensure the text wraps as the screen size reduces, and contact-card for custom styling. py-3 to add 16px padding top and bottom -->
             <div class="container py-3">
-                <div class="contact-card text-center">
+                <div class="contact-card text-center text-break">
 
                     <!-- Adding wrapper for contact information. d-inline-flex to make it an inline flex container, flex-column to stack items vertically, and align-items-start to align items to the left, which still centered in the parent. -->
                     <div class="contact-wrapper d-inline-flex flex-column align-items-start">
@@ -519,7 +519,7 @@
                                     loading="lazy">
                             </div>
                             <!-- text-start to align text to the left. mb-1 to add 4px margin bottom to the first line, and mb-0 to remove margin bottom from the second line. fw-bold to make the phone number stand out -->
-                            <div class="contact-text text-start">
+                            <div class="contact-text test-wrap text-start">
                                 <p class="mb-1">Call us</p>
                                 <p class="mb-0 fw-bold">(000) 123 123345</p>
                             </div>
