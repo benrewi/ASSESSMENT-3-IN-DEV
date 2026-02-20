@@ -87,9 +87,9 @@
     background: var(--primary-green);
     color: var(--white);
     border-color: var(--primary-green);
-    transform: translateY(-3px); /* Moves card up */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.12); /* Adds shadow */
-    transition: all 0.3s ease; /* Smooth animation */
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
