@@ -18,12 +18,14 @@
 .font--cabin {
     font-family: 'Cabin', sans-serif;
 }
+
 .font--dm {
     font-family: 'DM Sans', sans-serif;
 }
 
 
-.contact-form, .contact-card{
+.contact-form,
+.contact-card {
     background-color: var(--accent-green);
 }
 
@@ -32,7 +34,7 @@
     background-color: var(--primary-green);
 }
 
-.navbar-brand{
+.navbar-brand {
     font-size: 26px;
 }
 
@@ -85,7 +87,7 @@
     border-color: var(--white);
 }
 
-.btn--card{
+.btn--card {
     border-color: var(--primary-green);
     transition: all 0.3s ease;
 }
@@ -95,7 +97,7 @@
     color: var(--white);
     border-color: var(--primary-green);
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -107,7 +109,8 @@
 /* Defining default font colour and background colour for each section */
 
 /* Setting the background colour and default font colour for index-intro */
-.index-intro, .services-intro {
+.index-intro,
+.services-intro {
     background: linear-gradient(to bottom,
             var(--primary-green) 0%,
             var(--medium-green) 50%);
@@ -115,7 +118,9 @@
 }
 
 /* Setting background colour and font colour for index-section section */
-.index-second, .services-features-section, .contact-page {
+.index-second,
+.services-features-section,
+.contact-page {
     background-color: var(--light-green);
     color: var(--primary-green)
 }
@@ -152,10 +157,10 @@
 
 /* Setting the footer for the cards that include both pricing and a button. This ensures that the price will sit on the left, and button on the right. Flex wrap allows the button to drop  */
 .item-footer-content {
-display: flex;
-justify-content: space-between;
-align-items: center;
-gap: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
 }
 
 
@@ -167,7 +172,8 @@ gap: 0.75rem;
     text-decoration: none;
 }
 
-.external-link:hover, .external-link--green:hover {
+.external-link:hover,
+.external-link--green:hover {
     text-decoration: underline;
     font-weight: 700;
 }
@@ -180,15 +186,16 @@ gap: 0.75rem;
 
 
 /* FORM  */
-.search-field{
+.search-field {
     max-width: 1000px;
 }
 
-.form-field-label{
+.form-field-label {
     padding-left: 6px;
 }
 
-.select.form-select, input.form-control{
+.select.form-select,
+input.form-control {
     height: 50px;
 }
 
@@ -196,8 +203,8 @@ gap: 0.75rem;
 /*  */
 .form-control,
 .form-select,
-.form-control::placeholder{
-  font-size: 17px;
+.form-control::placeholder {
+    font-size: 17px;
 }
 
 
@@ -205,16 +212,16 @@ gap: 0.75rem;
 /* Adding a border to the button to separate from the search field */
 .input-group .btn {
     border-left: 1px solid #4D5B4D;
-  }
+}
 
-  /* Miscellaneous */
+/* Miscellaneous */
 
-  .section-divider{
+.section-divider {
     height: 3px;
     background-color: var(--primary-green);
     border: none;
     opacity: 1;
-  }
+}
 
 /* --- Universal Scrollable Card Wrapper --- */
 
@@ -222,7 +229,7 @@ gap: 0.75rem;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    scroll-snap-type: x mandatory; 
+    scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
 }
@@ -245,18 +252,18 @@ gap: 0.75rem;
 /* Standardized Image Proportions for the images in the features section*/
 .item-scroll-wrapper .card-img-top {
     width: 100%;
-    height: 250px; 
+    height: 250px;
     object-fit: cover;
 }
 
-.service-card-grid .card{
+.service-card-grid .card {
     min-height: 275px;
 }
 
 .item-footer-content .btn {
     white-space: nowrap;
     flex-shrink: 0;
-  }
+}
 
 .testimonial-img {
     user-select: none;
@@ -274,16 +281,21 @@ gap: 0.75rem;
 }
 
 .card-hover:hover {
-    transform: translateY(-5px); /* Moves card up */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.12); /* Adds shadow */
-    transition: all 0.3s ease; /* Smooth animation */
+    transform: translateY(-5px);
+    /* Moves card up */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    /* Adds shadow */
+    transition: all 0.3s ease;
+    /* Smooth animation */
     cursor: pointer;
 }
+
 .card-hover {
-    transition: all 0.3s ease; /* Smooth transition back */
+    transition: all 0.3s ease;
+    /* Smooth transition back */
 }
 
-.carousel-indicators button.gallery-thumbnail{
+.carousel-indicators button.gallery-thumbnail {
     width: 80px;
 }
 
@@ -291,46 +303,63 @@ gap: 0.75rem;
     opacity: 0.5;
 }
 
-.carousel-item img{
-    max-width: 900px;
-    height: auto;
+
+
+.carousel-item img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
 }
 
-.carousel-caption{
+.carousel-caption {
     position: static;
     color: var(--primary-green)
 }
 
-.carousel-indicators.gallery-thumbnails{
+.carousel-indicators.gallery-thumbnails {
     position: static;
+    overflow-x: scroll;
 
 
-    
+
 }
 
-.carousel-indicators.gallery-thumbnails > button {
+.carousel-indicators.gallery-thumbnails>button {
     flex: 0 0 auto;
-    width: 80px;     /* match your thumbnail width */
-    height: 80px;   
-  }
-  .carousel-indicators.gallery-thumbnails > button img {
+    width: 80px;
+    /* match your thumbnail width */
+    height: 80px;
+}
+
+.carousel-indicators.gallery-thumbnails>button img {
     display: block;
     border-radius: 6px;
 
-  }
+}
 
-  .carousel-inner{
-    background-color: var(--accent-green);
+.carousel-inner {
     max-width: 900px;
     border-radius: 6px;
-  }
+}
 
+.carousel-item {
+    height: clamp(300px, 50vw, 600px); /* responsive height */
+    background: var(--accent-green);
+  }
 
 /* Centering logic for wide screens */
 @media (min-width: 991px) {
     .item-scroll-wrapper {
         justify-content: center;
     }
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+
 }
 
 
@@ -351,7 +380,7 @@ gap: 0.75rem;
         margin-top: 10px;
     }
 
-    .navbar-brand{
+    .navbar-brand {
         font-size: 17px;
     }
 }
