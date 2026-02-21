@@ -1,0 +1,524 @@
+<!-- Setting doc type -->
+<!DOCTYPE html>
+
+<!-- adding html doc, and language -->
+<html lang="en">
+
+<head>
+    <!-- web page title -->
+    <title>Snazzy Paws Grooming - Home</title>
+
+    <!-- adding charset to ensure all characters can be used without breaking -->
+    <meta charset="utf-8">
+
+    <!-- ensuring browser displays according to the device screen width, and zoom level is at 100% -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- adding page description to improve accessibility -->
+    <meta name="description"
+        content="Snazzy Paws Grooming provides professional dog grooming services in Hamilton CBD. Quality care, experienced groomers and easy online booking for your pet.">
+
+    <!-- pre-loading google fonts - helps improve performance-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- adding bootstrap stylesheet-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- adding css style sheet -->
+    <link rel="stylesheet" href="css/a3css.css">
+
+    <!-- adding custom fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- defining the nave and adding bootstrap navbar. setting the navbar collapse to 992px. navbar dark to indicate dark navbar and white text. py-3 to add 16px of padding top and bottom and px-lg-5 to have 48px padding at screen size 992 and above. px-1 to add 4px left and right once navbar has collapsed. Aria label defining navigation bar for accessibility-->
+    <nav class="navbar navbar-expand-lg navbar-dark py-3 px-1 px-lg-5" aria-label="Main navigation">
+
+        <!-- Using container fluid to make the navbar wider -->
+        <div class="container-fluid">
+
+            <!-- Adding the logo and business name. d-flex to make the logo and text sit on the same line, align-items-center to vertically align, and gap to add space between the logo and text. Loading eager to prioritise loading of the logo as it is important for the initial page load -->
+            <a class="navbar-brand d-flex align-items-center gap-1 gap-sm-3" href="index.html">
+
+                <!-- Adding the logo image. Alt text provided for accessibility and in case of image load failure. Width and height provided to prevent layout shifts as the image loads -->
+                <img src="images/icons/logo-white.svg" alt="Snazzy Paws Grooming Logo" width="42" height="40"
+                    loading="eager">
+
+                <!-- Adding the brand name text. Setting the font, and adding italics and font size to fs-5 for 20px, and fs-3 for 28px above screen sizes of 576px -->
+                <span class="navbar-brand-name font--cabin fst-italic">Snazzy Paws Grooming</span></a>
+
+            <!-- Adding the navbar toggler. navbar toggler applies bootstrap styling when the navigation bar collapses, and button ensures it's clickable. data-bs-toggler applies the javascript behaviour. data-bs-target applies the id so the menu will open when selected. Aria items added for accessibility -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Adding the space for the menu items. collapse and navbar-collapse bootstrap classes to apply the collapsing behaviour and styling. id added to link to the toggler button -->
+
+            <div class="collapse navbar-collapse" id="mainNav">
+
+                <!-- Unordered list for the menu items. ms-auto to push the menu items to the right, mb-2 to add 8px margin bottom when collapsed, mb-lg-0 to remove margin bottom at 992px and above. align-items-lg-center to vertically align items at 992px and above, gap to add space between menu items, font--dm to apply font, and text-center to center text when the menu is collapsed -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-2 font--dm text-center">
+
+                    <!-- list item for the navigation. p-2 to apply 8px padding to the button, and p-lg-3 to increase padding of menu items to 16px when navbar is collapsed-->
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-xl-3" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-xl-3" href="services.html">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active p-2 p-xl-3" href="gallery.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-xl-3" href="contact.html">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Adding the Book Now button. btn class to apply button styling, and btn--white to apply custom styling. Shadow to add a shadow effect to make it stand out as a cta -->
+                        <a class="btn btn--white shadow" href="booking.html">BOOK NOW</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main id="main">
+        <section class="gallery-page py-5">
+            <div class="container px-4 px-lg-5 mb-5">
+                <div class="text-center mb-5 font--dm">
+                    <h1 class="fw-bold">Gallery</h1>
+                    <p class="fs-4 fst-italic">See the transformations we make every day!</p>
+                </div>
+                <div class="gallery-carousel mx-auto">
+                    <div id="carouselExampleCaptions" class="carousel slide w-100">
+
+                        <div class="gallery-carousel-inner">
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/gallery/haircut-after-gallery.jpg"
+                                        class="d-block mx-auto img-fluid" alt="White dog after a haircut" width="550"
+                                        height="600" loading="lazy">
+                                    <div class="carousel-caption p-0 mt-2 d-none d-md-block">
+                                        <h3>Service: Haircut</h3>
+                                        <p class="fs-5">Jan's post haircut glow up</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/gallery/haircut-before-gallery.jpg"
+                                        class="d-block mx-auto img-fluid" alt="White dog before haircut" height="600"
+                                        width="550" loading="lazy">
+                                    <div class="carousel-caption p-0 mt-2 d-none d-md-block">
+                                        <h3>Service: Haircut</h3>
+                                        <p class="fs-5">Before Jan's haircut</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/gallery/deshed-after-gallery.jpg" class="d-block mx-auto img-fluid"
+                                        alt="Long haired dog after de-shedding add on" width="550" height="600"
+                                        loading="lazy">
+                                    <div class="carousel-caption p-0 mt-2 d-none d-md-block">
+                                        <h3>Service: Bath and brush with de-shedding add on</h3>
+                                        <p class="fs-5">Henry's post grooming glow up</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="images/gallery/deshed-before-gallery.jpg"
+                                        class="d-block mx-auto img-fluid"
+                                        alt="Long haired dog before de-shedding add on" width="550" height="600"
+                                        loading="lazy">
+                                    <div class="carousel-caption p-0 mt-2 d-none d-md-block">
+                                        <h3>Service: Bath and brush with de-shedding add on</h3>
+                                        <p class="fs-5">Henry before receiving his Bath and brush and deshedding
+                                            treatment
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="d-block mx-auto img-fluid"
+                                        src="images/gallery/full-package-after-gallery.jpg"
+                                        alt="Dog after full grooming package" width="550" height="600" loading="lazy">
+                                    <div class="carousel-caption p-0 mt-2 d-none d-md-block">
+                                        <h3>First slide label</h3>
+                                        <p class="fs-5">Some representative placeholder content for the first slide.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="d-block mx-auto img-fluid"
+                                        src="images/gallery/full-package-before-gallery.jpg"
+                                        alt="Dog before full grooming package" width="550" height="600" loading="lazy">
+                                    <div class="carousel-caption p-0 mt-2 d-none d-md-block">
+                                        <h3>First slide label</h3>
+                                        <p class="fs-5">Some representative placeholder content for the first slide.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="d-block mx-auto img-fluid" src="images/gallery/full-package-gallery.jpg"
+                                        alt="Dog wrapped in towel during full package treatment" width="900"
+                                        height="600" loading="lazy">
+                                    <div class="carousel-caption p-0 mt-2 d-none d-md-block">
+                                        <h3>First slide label</h3>
+                                        <p class="fs-5">Some representative placeholder content for the first slide.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="d-block mx-auto img-fluid" src="images/gallery/deshed-gallery.jpg"
+                                        alt="Dog getting deshedding treatment" width="900" height="600" loading="lazy">
+                                    <div class="carousel-caption p-0 mt-2 d-none d-md-block">
+                                        <h3>First slide label</h3>
+                                        <p class="fs-5">Some representative placeholder content for the first slide.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="d-block mx-auto img-fluid" src="images/gallery/toothbrush-gallery.jpg"
+                                        alt="Dog holding toothbrush in mouth" width="900" height="600" loading="lazy">
+                                    <div class="carousel-caption p-0 mt-2 d-none d-md-block">
+                                        <h3>First slide label</h3>
+                                        <p class="fs-5">Some representative placeholder content for the first slide.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="d-block mx-auto img-fluid" src="images/gallery/express-gallery.jpg"
+                                        alt="Dog during Express groom service" width="900" height="600" loading="lazy">
+                                    <div class="carousel-caption p-0 mt-2 d-none d-md-block">
+                                        <h3>First slide label</h3>
+                                        <p class="fs-5">Some representative placeholder content for the first slide.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="d-block mx-auto img-fluid" src="images/gallery/spa-gallery.jpg"
+                                        alt="Dog during spa treatment" height="600" width="550" loading="lazy">
+                                    <div class="carousel-caption p-0 mt-2 d-none d-md-block">
+                                        <h3>First slide label</h3>
+                                        <p class="fs-5">Some representative placeholder content for the first
+                                            slide.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="d-block mx-auto img-fluid"
+                                        src="images/gallery/medicinal-bath-gallery.jpg" alt="Dog during medicinal bath"
+                                        width="900" height="600" loading="lazy">
+                                    <div class="carousel-caption p-0 mt-2 d-none d-md-block">
+                                        <h3>First slide label</h3>
+                                        <p class="fs-5">Some representative placeholder content for the first
+                                            slide.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="d-block mx-auto img-fluid"
+                                        src="images/gallery/special-breed-cut-gallery.jpg"
+                                        alt="Dog after special breeds cut" width="900" height="600" loading="lazy">
+                                    <div class="carousel-caption p-0 mt-2 d-none d-md-block">
+                                        <h3>First slide label</h3>
+                                        <p class="fs-5">Some representative placeholder content for the
+                                            first slide.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="d-block mx-auto img-fluid" src="images/gallery/haircut-gallery.jpg"
+                                        alt="Dog getting their hair cut" width="900" height="600" loading="lazy">
+                                    <div class="carousel-caption p-0 mt-2 d-none d-md-block">
+                                        <h3>First slide label</h3>
+                                        <p class="fs-5">Some representative placeholder content for
+                                            the first slide.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="d-block mx-auto img-fluid"
+                                        src="images/gallery/nail-clipping-gallery.jpg"
+                                        alt="Dog getting their nails clipped by groomer" width="900" height="600"
+                                        loading="lazy">
+                                    <div class="carousel-caption p-0 mt-2 d-none d-md-block">
+                                        <h3>First slide label</h3>
+                                        <p class="fs-5">Some representative placeholder content
+                                            for the first slide.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="d-block mx-auto img-fluid" src="images/gallery/puppy-gallery.jpg"
+                                        alt="Puppy during puppy package" width="900" height="600" loading="lazy">
+                                    <div class="carousel-caption p-0 mt-2 d-none d-md-block">
+                                        <h3>First slide label</h3>
+                                        <p class="fs-5">Some representative placeholder
+                                            content for the first slide.</p>
+                                    </div>
+                                </div>
+
+
+
+
+                            <button class="carousel-control-prev m-2" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next m-2" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+
+
+
+                        </div>
+
+                        <!-- move to here -->
+
+                        <div class="carousel-indicators custom-thumbnails">
+
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="gallery-thumbnail active" aria-current="true" aria-label="Slide 1"><img
+                                    src="images/gallery/haircut-after-thumbnail.jpg" alt="Show image 1 haircut after"
+                                    width="80" height="80" loading="lazy"></button>
+
+
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                class="gallery-thumbnail" aria-label="Slide 2"><img
+                                    src="images/gallery/haircut-before-thumbnail.jpg" alt="Show image 2 haircut before"
+                                    width="80" height="80" loading="lazy"></button>
+
+
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                class="gallery-thumbnail" aria-label="Slide 3"><img
+                                    src="images/gallery/deshed-after-thumbnail.jpg" alt="Show image 3 de shedding after"
+                                    width="80" height="80" loading="lazy"></button>
+
+
+
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                class="gallery-thumbnail" aria-label="Slide 4"><img
+                                    src="images/gallery/deshed-before-thumbnail.jpg"
+                                    alt="Show image 4 de shedding before" width="80" height="80"
+                                    loading="lazy"></button>
+
+
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                                class="gallery-thumbnail" aria-label="Slide 5"><img
+                                    src="images/gallery/full-package-after-thumbnail.jpg"
+                                    alt="Show image 5 full package after" width="80" height="80"
+                                    loading="lazy"></button>
+
+
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                                class="gallery-thumbnail" aria-label="Slide 6"><img
+                                    src="images/gallery/full-package-before-thumbnail.jpg"
+                                    alt="Show image 6 full package before" width="80" height="80"
+                                    loading="lazy"></button>
+
+
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                                class="gallery-thumbnail" aria-label="Slide 7"><img
+                                    src="images/gallery/full-package-thumbnail.jpg"
+                                    alt="Show image 7 full package towel" width="80" height="80"
+                                    loading="lazy"></button>
+
+
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+                                class="gallery-thumbnail" aria-label="Slide 8"><img
+                                    src="images/gallery/deshed-thumbnail.jpg" alt="Show image 8 de shedding treatment"
+                                    width="80" height="80" loading="lazy"></button>
+
+
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
+                                class="gallery-thumbnail" aria-label="Slide 9"><img
+                                    src="images/gallery/toothbrush-thumbnail.jpg" alt="Show image 9 toothbrush"
+                                    width="80" height="80" loading="lazy"></button>
+
+
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9"
+                                class="gallery-thumbnail" aria-label="Slide 10"><img
+                                    src="images/gallery/express-thumbnail.jpg" alt="Show image 10 express groom"
+                                    width="80" height="80" loading="lazy">
+                            </button>
+
+
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10"
+                                class="gallery-thumbnail" aria-label="Slide 11"><img
+                                    src="images/gallery/spa-thumbnail.jpg" alt="Show image 11 spa package" width="80"
+                                    height="80" loading="lazy"></button>
+
+
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11"
+                                class="gallery-thumbnail" aria-label="Slide 12"><img
+                                    src="images/gallery/medicinal-bath-thumbnail.jpg" alt="Show image 12 medicinal bath"
+                                    width="80" height="80" loading="lazy"></button>
+
+
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="12"
+                                class="gallery-thumbnail" aria-label="Slide 13"><img
+                                    src="images/gallery/special-breed-cut-thumbnail.jpg"
+                                    alt="Show image 13 special breed cut" width="80" height="80"
+                                    loading="lazy"></button>
+
+
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="13"
+                                class="gallery-thumbnail" aria-label="Slide 14"><img
+                                    src="images/gallery/haircut-thumbnail.jpg" alt="Show image 14 haircut in progress"
+                                    width="80" height="80" loading="lazy"></button>
+
+
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="14"
+                                class="gallery-thumbnail" aria-label="Slide 15"><img
+                                    src="images/gallery/nail-clipping-thumbnail.jpg" alt="Show image 15 nail clipping"
+                                    width="80" height="80" loading="lazy"></button>
+
+
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="15"
+                                class="gallery-thumbnail" aria-label="Slide 1"><img
+                                    src="images/gallery/puppy-thumbnail.jpg" alt="Show image 16 puppy package"
+                                    width="80" height="80" loading="lazy"></button>
+                        </div>
+                    </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+        <footer class="footer py-5">
+            <div class="container">
+
+                <!-- Adding a row to hold the footer content. text-center to align center on smaller screens, and text-lg-start to align left on larger screens -->
+                <div class="row text-center text-lg-start">
+
+                    <!-- Footer column 1. col-12 to take up full width on smaller screens, col-lg-4 to take up 1/3 of the width on larger screens, mb-4 to add 24px margin bottom on smaller screens, and mb-lg-0 to remove margin bottom on larger screens -->
+                    <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+
+                        <!-- Adding logo and business name. d-flex to make the logo and text sit on the same line, align-items-center to vertically align, gap to add 16px between the logo and text, justify-content-center to center on smaller screens, and justify-content-lg-start to align left on larger screens. mb-2 to add 8px margin bottom -->
+                        <div
+                            class="d-flex justify-content-center justify-content-lg-start align-items-center gap-3 mb-2">
+
+                            <!-- Adding logo image. Alt text provided for accessibility and in case of image load failure. Width and height provided to prevent layout shifts as the image loads -->
+                            <img src="images/icons/logo-white.svg" alt="Snazzy Paws Grooming Logo" width="42"
+                                height="40" loading="lazy">
+
+                            <!-- Adding business name. fw-bold to make the text bold, fs-5 to set 20px font size, and fst-italic to make the text italic -->
+                            <span class="fw-bold fs-5 fst-italic">Snazzy Paws Grooming</span>
+                        </div>
+
+                        <!-- Adding opening hours. d-flex to make it a flex container, justify-content-center to center on smaller screens, justify-content-lg-start to align left on larger screens, align-items-center to vertically align, gap to add 24px between items, and mb-3 to add 16px margin bottom -->
+                        <div
+                            class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3">
+                            <p>Open 9:00am - 5:00pm Monday to Saturday</p>
+                        </div>
+
+                        <!-- same as aboe -->
+                        <div
+                            class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3">
+
+                            <!-- fw-bold to make the text bold, and fs-5 to set font size to 48px -->
+                            <span class="fw-bold fs-5">Check out our socials!</span>
+                        </div>
+
+                        <!-- Adding social media icons with links. d-flex to make it a flex container, justify-content-center to center on smaller screens, justify-content-lg-start to align left on larger screens, align-items-center to vertically align, gap to add space between items, and mb-3 to add 16px margin bottom -->
+                        <div
+                            class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3">
+
+                            <a href="https://www.facebook.com/Snazzypaws/" target="_blank" rel="noopener noreferrer">
+                                <img src="images/icons/facebooksvg.svg" alt="Facebook (opens in a new tab)" width="30"
+                                    height="30" loading="lazy">
+                            </a>
+                            <a href="https://www.instagram.com/snazzypawsdoggroomingnarangba/?hl=en" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="images/icons/instagram.svg" alt="Instagram (opens in a new tab)" width="30"
+                                    height="30" loading="lazy">
+                            </a>
+                            <a href="https://www.tiktok.com/your-real-link" target="_blank" rel="noopener noreferrer">
+                                <img src="images/icons/tiktok.svg" alt="TikTok (opens in a new tab)" width="30"
+                                    height="30" loading="lazy">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Footer column 2. col-12 to take up full width on smaller screens, col-lg-4 to take up 1/3 of the width on larger screens, mb-4 to add 24px margin bottom on smaller screens, and mb-lg-0 to remove margin bottom on larger screens -->
+                    <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+
+                        <!-- Adding quick links. d-flex to make it a flex container, justify-content-center to center on smaller screens, justify-content-lg-start to align left on larger screens, mx-auto to center the content within the column on smaller screens, text-center to align text center on smaller screens, and text-lg-start to align text left on larger screens -->
+                        <div class="d-flex justify-content-center justify-content-lg-start">
+
+                            <!-- Adding quick links for navigation. mx-auto to center the content within the column on smaller screens, text-center to align text center on smaller screens, and text-lg-start to align text left on larger screens -->
+                            <div class="mx-auto text-center text-lg-start">
+
+                                <!-- Adding column heading. fw-bold to make the text bold, fs-5 to set 20px font size, and d-block to make it display on a new line. mb-3 to add 16px margin bottom -->
+                                <span class="fw-bold fs-5 d-block mb-3">Quick links</span>
+
+                                <!-- Adding the links for navigation. list-unstyled to remove bullet points, ps-0 to remove padding from the left, and mb-0 to remove margin bottom -->
+                                <ul class="list-unstyled ps-0 mb-0">
+                                    <li><a class="external-link" href="index.html">HOME</a></li>
+                                    <li><a class="external-link" href="services.html">SERVICES</a></li>
+                                    <li><a class="external-link" href="gallery.html">GALLERY</a></li>
+                                    <li><a class="external-link" href="contact.html">CONTACT US</a></li>
+                                    <li><a class="external-link" href="booking.html">MAKE A BOOKING</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Adding contact information. col-12 to take up full width on smaller screens, col-lg-4 to take up 1/3 of the width on larger screens. mb-4 to add 24px on smaller screens, and mb-lg-0 to remove the margin on larger screens-->
+                    <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+
+                        <!-- Adding alignment rules. d-flex to make it a flex container, justify-content-center to center on smaller screens, justify-content-lg-start to align left on larger screens, mx-auto to center the content within the column on smaller screens, text-center to align text center on smaller screens, and text-lg-start to align text left on larger screens -->
+                        <div class="d-flex justify-content-center justify-content-lg-start">
+                            <div class="mx-auto text-center text-lg-start">
+
+                                <!-- Adding column heading. fw-bold to make the text bold, fs-5 to set 20px font size, and d-block to make it display on a new line. mb-3 to add 16px margin bottom -->
+                                <span class="fw-bold fs-5 d-block mb-3">Contact us</span>
+
+                                <!-- Adding contact information text. mb-0 to remove margin bottom, and mt-4 to add 24px margin top to the phone number to create spacing from the address above. external-link class for custom styling on the email address -->
+                                <p class="mb-0">Shop 3 - 81 Main Street</p>
+                                <p class="mb-0">Central CBD District</p>
+                                <p class="mb-0">Hamilton 2879</p>
+                                <p class="mt-4 mb-0">Phone: (000) 123 12335</p>
+
+                                <!-- Adding email with mailto link to allow users to click and email directly. external-link class for custom styling -->
+                                <p class="mb-0">Email: <a
+                                        href="mailto:hello@snazzypawsgrooming.co.nz?subject=General%20enquiry"
+                                        class="external-link">
+                                        hello@snazzypawsgrooming.co.nz
+                                    </a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+
+
+
+
+    </main>
+
+
+
+
+
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

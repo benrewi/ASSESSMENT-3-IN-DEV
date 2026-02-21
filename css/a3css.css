@@ -283,6 +283,79 @@ gap: 0.75rem;
     transition: all 0.3s ease; /* Smooth transition back */
 }
 
+.carousel-indicators button.gallery-thumbnail{
+    width: 80px;
+    height:80px;
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+.carousel-indicators button.gallery-thumbnail:active{
+border: 2px solid var(--primary-green);
+}
+
+.carousel-indicators button.gallery-thumbnail:not(.active){
+    opacity: 0.5;
+}
+
+.gallery-carousel .carousel-caption{
+    position: static;
+    color: var(--primary-green);
+}
+
+.gallery-carousel .carousel-indicators{
+    position: static;
+    margin: 12px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+}
+
+.carousel-item img {
+    max-height: 600px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.gallery-carousel-inner .carousel-inner{
+    max-width: 900px;
+    border-radius: 6px;
+    background-color: var(--light-green);
+    overflow: hidden;
+}
+
+.custom-thumbnails{
+    display: flex;
+    overflow-x: auto;
+    gap: 6px;
+    padding: 12px 0;
+    scrollbar-width: none;
+  }
+  
+  .custom-thumbnails::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .custom-thumbnails button{
+    border: 0;
+    background: transparent;
+    padding: 0;
+    flex: 0 0 auto;
+  }
+  
+  .custom-thumbnails button img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+  
+  /* inactive lighter */
+  .custom-thumbnails button:not(.active) img{
+    opacity: 0.6;
+  }
 
 
 
