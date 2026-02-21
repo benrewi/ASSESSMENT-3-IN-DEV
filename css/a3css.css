@@ -283,103 +283,48 @@ gap: 0.75rem;
     transition: all 0.3s ease; /* Smooth transition back */
 }
 
-
+.carousel-indicators button.gallery-thumbnail{
+    width: 80px;
+}
 
 .carousel-indicators button.gallery-thumbnail:not(.active) {
     opacity: 0.5;
 }
-.carousel-indicators.gallery-thumbnails > button.active img {
-    opacity: 1;
-  }
 
-.carousel-indicators{
-    position: static;
-    border-radius: 4px;
-}
-
-.carousel-indicators.gallery-thumbnails {
-    position: static;
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 0.5rem;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding: 1rem 0.5rem 0;
-    margin: 0;
-    width: 100%;
-    scrollbar-gutter: stable;
-    scroll-snap-type: x mandatory;
-  }
-  
-  .carousel-indicators.gallery-thumbnails > button {
-    flex: 0 0 auto;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    width: auto;
+.carousel-item img{
+    max-width: 900px;
     height: auto;
-  }
+}
 
-  .carousel-indicators.gallery-thumbnails img {
-    display: block;
-    opacity: 0.5;
-    border-radius: 4px;
-  }
-  
-  .gallery-thumbnails button {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-  }
-  
-  .gallery-thumbnails::-webkit-scrollbar {
-    height: 8px;
-  }
-  
-  .gallery-thumbnails::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.35);
-    border-radius: 999px;
-  }
-
-  .carousel-caption{
+.carousel-caption{
     position: static;
-    color: var(--primary-green);
-    background-color: var(--accent-green);
-  }
-
-  
-  .carousel-item{
-    background-color: var(--accent-green);
-    max-width: 900px;
-  }
-
-  .carousel-item img{
-    max-height: 600px;
-    width: auto;
-  }
-
-  .gallery-carousel{
-    display: flex;
-    flex-direction: column;
-    gap:1rem;
-  }
-
-  .gallery-carousel .carousel{
-    position: relative;
-    max-width: 900px;
-    margin: 0 auto;
-    background-color: var(--accent-green);
-  }
-
-  .gallery-carousel .carousel-inner,
-.gallery-carousel .carousel-item {
-  background-color: var(--accent-green);
+    color: var(--primary-green)
 }
 
-/* thumbnails span full container width */
-.gallery-carousel .gallery-thumbnails {
-  width: 100%;
-  max-width: none;
+.carousel-indicators.gallery-thumbnails{
+    position: static;
+
+
+    
 }
+
+.carousel-indicators.gallery-thumbnails > button {
+    flex: 0 0 auto;
+    width: 80px;     /* match your thumbnail width */
+    height: 80px;   
+  }
+  .carousel-indicators.gallery-thumbnails > button img {
+    display: block;
+    border-radius: 6px;
+
+  }
+
+  .carousel-inner{
+    background-color: var(--accent-green);
+    max-width: 900px;
+    border-radius: 6px;
+  }
+
 
 /* Centering logic for wide screens */
 @media (min-width: 991px) {
