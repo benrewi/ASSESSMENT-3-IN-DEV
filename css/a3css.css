@@ -285,78 +285,42 @@ gap: 0.75rem;
 
 .carousel-indicators button.gallery-thumbnail{
     width: 80px;
-    height:80px;
-    border: none;
-    background: transparent;
-    padding: 0;
+    height: 80px;
 }
 
-.carousel-indicators button.gallery-thumbnail:active{
-border: 2px solid var(--primary-green);
-}
-
-.carousel-indicators button.gallery-thumbnail:not(.active){
+.carousel-indicators button.gallery-thumbnail:not(.active) {
     opacity: 0.5;
 }
 
-.gallery-carousel .carousel-caption{
+.carousel-indicators{
     position: static;
-    color: var(--primary-green);
 }
 
-.gallery-carousel .carousel-indicators{
-    position: static;
-    margin: 12px 0 0;
+.gallery-thumbnails {
+    position: static;            /* keeps the row below the carousel */
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 6px;
-}
-
-.carousel-item img {
-    max-height: 600px;
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-
-.gallery-carousel-inner .carousel-inner{
-    max-width: 900px;
-    border-radius: 6px;
-    background-color: var(--light-green);
-    overflow: hidden;
-}
-
-.custom-thumbnails{
-    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
     overflow-x: auto;
-    gap: 6px;
-    padding: 12px 0;
-    scrollbar-width: none;
+    overflow-y: hidden;
+    padding: 0.75rem 0.5rem 0;
+    margin: 0;
+    scroll-snap-type: x mandatory;
   }
   
-  .custom-thumbnails::-webkit-scrollbar{
-    display: none;
-  }
-  
-  .custom-thumbnails button{
-    border: 0;
-    background: transparent;
-    padding: 0;
+  .gallery-thumbnails button {
     flex: 0 0 auto;
+    scroll-snap-align: start;
   }
   
-  .custom-thumbnails button img{
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
+  .gallery-thumbnails::-webkit-scrollbar {
+    height: 8px;
   }
   
-  /* inactive lighter */
-  .custom-thumbnails button:not(.active) img{
-    opacity: 0.6;
+  .gallery-thumbnails::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 999px;
   }
-
 
 
 /* Centering logic for wide screens */
