@@ -292,18 +292,13 @@ input.form-control {
     transition: all 0.3s ease;
 }
 
-.carousel-indicators button.gallery-thumbnail {
-    width: 80px;
-}
 
-.carousel-indicators button.gallery-thumbnail:not(.active) {
-    opacity: 0.5;
-}
 
 .carousel-item img {
-    object-fit: contain;
     width: 100%;
-    height: calc(100% - 100px);
+    height: calc(100% - 90px);
+  object-fit: contain;
+    
 }
 
 .carousel-caption {
@@ -328,13 +323,16 @@ input.form-control {
 }
 
 .carousel-inner {
-    max-width: 900px;
-    border-radius: 6px;
+  max-width: 900px;
 }
 
-.carousel-item {
-    height: clamp(300px, 50vw, 600px); 
-  }
+.gallery-image-caption-1{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+  
 
 /* Centering logic for wide screens */
 @media (min-width: 991px) {
@@ -344,6 +342,15 @@ input.form-control {
 }
 
 @media (max-width: 767px) {
+.gallery-image-caption-1{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.carousel-item img {
+    height: calc(100% - 40px);
+}
+
 
 }
 
