@@ -120,6 +120,7 @@
 /* Setting background colour and font colour for index-section section */
 .index-second,
 .services-features-section,
+.gallery-page,
 .contact-page {
     background-color: var(--light-green);
     color: var(--primary-green)
@@ -282,17 +283,13 @@ input.form-control {
 
 .card-hover:hover {
     transform: translateY(-5px);
-    /* Moves card up */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
-    /* Adds shadow */
     transition: all 0.3s ease;
-    /* Smooth animation */
     cursor: pointer;
 }
 
 .card-hover {
     transition: all 0.3s ease;
-    /* Smooth transition back */
 }
 
 .carousel-indicators button.gallery-thumbnail {
@@ -303,12 +300,10 @@ input.form-control {
     opacity: 0.5;
 }
 
-
-
 .carousel-item img {
     object-fit: contain;
-    height: 100%;
     width: 100%;
+    height: calc(100% - 100px);
 }
 
 .carousel-caption {
@@ -319,22 +314,17 @@ input.form-control {
 .carousel-indicators.gallery-thumbnails {
     position: static;
     overflow-x: scroll;
-
-
-
 }
 
 .carousel-indicators.gallery-thumbnails>button {
     flex: 0 0 auto;
     width: 80px;
-    /* match your thumbnail width */
     height: 80px;
 }
 
 .carousel-indicators.gallery-thumbnails>button img {
     display: block;
     border-radius: 6px;
-
 }
 
 .carousel-inner {
@@ -343,8 +333,7 @@ input.form-control {
 }
 
 .carousel-item {
-    height: clamp(300px, 50vw, 600px); /* responsive height */
-    background: var(--accent-green);
+    height: clamp(300px, 50vw, 600px); 
   }
 
 /* Centering logic for wide screens */
@@ -354,16 +343,9 @@ input.form-control {
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 767px) {
 
 }
-
-@media (max-width: 768px) {
-
-}
-
-
-
 
 
 @media (max-width: 576px) {
