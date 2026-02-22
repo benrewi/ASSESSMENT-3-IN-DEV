@@ -97,15 +97,15 @@
 
             <!-- Adding a fluid container as the cards will be in a carousel -->
             <div class="container-fluid">
-                <div class="item-scroll-wrapper gap-4 pb-3 font--dm">
+                <div class="item-scroll-wrapper d-flex flex-nowrap overflow-auto gap-4 pb-3 font--dm">
                     <!-- Card 1 -->
-                    <!-- Adding the first card - very similar to those on the index page -->
-                    <div class="card card-shadow-sm p-2">
+                     <!-- Adding the first card - very similar to those on the index page -->
+                     <div class="card p-2 w-100">
                         <!-- Icon is used instead of an image -->
                         <img src="images/icons/toothbrush.svg" alt="" aria-hidden="true" width="60" height="60"
                             loading="lazy">
 
-                        <!-- Card body containing the heading and list -->
+                            <!-- Card body containing the heading and list -->
                         <div class="card-body">
                             <h3 class="card-title fw-bold">Teeth brushing
                             </h3>
@@ -117,14 +117,14 @@
                         </div>
 
                         <!-- card footer for pricing information - same as index page-->
-                        <div class="card-footer bg-white pb-0">
-                            <div class="item-footer-content font--dm fs-5">
+                        <div class="card-footer border-top bg-white border-0 pb-0">
+                            <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
                                 <div>
                                     <p class="mb-0">Starting from:</p>
-                                    <p class="fw-bold mb-0">$10 – $15*</p>
+                                    <p class="fw-bold fs-5 mb-0">$10 – $15*</p>
                                 </div>
                                 <a href="booking.html" class="btn btn--card shadow-sm">
-                                    Add
+                                    Book now
                                 </a>
                             </div>
                         </div>
@@ -132,7 +132,7 @@
 
                     <!-- Remaining two cards with the same settings -->
                     <!-- Card 2 -->
-                    <div class="card card-shadow-sm p-2">
+                    <div class="card p-2 w-100">
                         <img src="images/icons/full-groom.svg" alt="" aria-hidden="true" width="60" height="60"
                             loading="lazy">
                         <div class="card-body">
@@ -143,21 +143,21 @@
                                 <li>Teeth brushing nail trim, and ear cleaning</li>
                             </ul>
                         </div>
-                        <div class="card-footer bg-white pb-0">
-                            <div class="item-footer-content font--dm fs-5">
+                        <div class="card-footer border-top bg-white border-0 pb-0">
+                            <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
                                 <div>
                                     <p class="mb-0">Starting from:</p>
-                                    <p class="fw-bold mb-0">$60 – $120*</p>
+                                    <p class="fw-bold mb-0 fs-5">$60 – $120*</p>
                                 </div>
                                 <a href="booking.html" class="btn btn--card shadow-sm">
-                                    Add
+                                    Book now
                                 </a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="card card-shadow-sm p-2">
+                    <div class="card p-2 w-100">
                         <img src="images/icons/deshedding.svg" alt="" aria-hidden="true" width="60" height="60"
                             loading="lazy">
                         <div class="card-body">
@@ -168,14 +168,14 @@
                                 <li>Available with Bath and brush, or Haircut treatments</li>
                             </ul>
                         </div>
-                        <div class="card-footer bg-white pb-0">
-                            <div class="item-footer-content font--dm fs-5">
+                        <div class="card-footer border-top bg-white border-0 pb-0">
+                            <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
                                 <div>
                                     <p class="mb-0">Starting from:</p>
-                                    <p class="fw-bold mb-0">$20 – $40**</p>
+                                    <p class="fw-bold fs-5 mb-0">$20 – $40**</p>
                                 </div>
                                 <a href="booking.html" class="btn btn--card shadow-sm">
-                                    Add
+                                    Book now
                                 </a>
                             </div>
                         </div>
@@ -205,422 +205,427 @@
                 <div class="row g-4 px-2">
                     <!-- Card 1 -->
 
-                    <!-- booking-card-grid used as a custom CSS class to set the minimum height for the cards to ensure they all maintain the same height at all times. col-12 makes the cards display on 1 row at screen sizes below 768px. col-md-6 puts two cards on 1 row at 768px and above, and col-xl-3 puts 3 cards on a row at 1200px and above-->
-                    <div class="booking-card-grid col-12 col-md-6 col-xl-4 col-xxl-3">
+                    <!-- used as a custom CSS class to set the minimum height for the cards to ensure they all maintain the same height at all times. col-12 makes the cards display on 1 row at screen sizes below 768px. col-md-6 puts two cards on 1 row at 768px and above, and col-xl-3 puts 3 cards on a row at 1200px and above-->
 
-                        <div class="card card-hovercard-shadow-sm p-2">
-                            <div class="d-flex align-items-center gap-2 mb-0">
-                                <img src="images/icons/bath-brush.svg" alt="" aria-hidden="true" width="60" height="60"
-                                    loading="lazy">
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
 
-                                <h3 class="card-title fw-bold">Bath and brush
-                                </h3>
-                            </div>
-                            <div class="card-body pb-0">
-                                <ul class="text-start ps-3">
-                                    <li>Shampoo and blowdry</li>
-                                    <li>Brush out</li>
-                                    <li>Nail trim</li>
-                                </ul>
-                            </div>
-                            <div class="card-footer bg-white pb-0">
-                                <div class="item-footer-content font--dm d-block">
-                                    <div>
-                                        <p class="mb-0">Starting from:</p>
-                                        <p class="fw-bold mb-0">$25 – $50*</p>
+                            <div class="card p-2 d-flex flex-column h-100">
+                                <div class="d-flex align-items-center gap-2 mb-0">
+                                    <img src="images/icons/bath-brush.svg" alt="" aria-hidden="true" width="60" height="60"
+                                        loading="lazy">
+    
+                                    <h3 class="card-title fw-bold">Bath and brush
+                                    </h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="text-start ps-3">
+                                        <li>Shampoo and blowdry</li>
+                                        <li>Brush out</li>
+                                        <li>Nail trim</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div class="mb-3 mb-sm-0">
+                                            <p class="mb-0">Starting from:</p>
+                                            <p class="fw-bold fs-5 mb-0">$25 – $50*</p>
+                                        </div>
+                                        <a href="booking.html" class="btn btn--card shadow-sm">
+                                            Book now
+                                        </a>
                                     </div>
-                                    <a href="booking.html" class="btn btn--card shadow-sm w-100 mt-2">
-                                        Add
-                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 d-flex flex-column h-100">
+                                <div class="d-flex align-items-center gap-2 mb-0">
+                                    <img src="images/icons/haircut.svg" alt="" aria-hidden="true" width="60" height="60"
+                                        loading="lazy">
+    
+                                    <h3 class="card-title fw-bold">Haircut
+                                    </h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="text-start ps-3">
+                                        <li>Bath and blowdry</li>
+                                        <li>Haircut (based on breed standard or owner's preference)</li>
+                                        <li>Nail trim</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div>
+                                            <p class="mb-0">Starting from:</p>
+                                            <p class="fw-bold fs-5 mb-0">$45 – $85*</p>
+                                        </div>
+                                        <a href="booking.html" class="btn btn--card shadow-sm">
+                                            Book now
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 d-flex flex-column h-100">
+                                <div class="d-flex align-items-center gap-2 mb-0">
+                                    <img src="images/icons/nail.svg" alt="" aria-hidden="true" width="60" height="60"
+                                        loading="lazy">
+    
+                                    <h3 class="card-title fw-bold">Nail trim
+                                    </h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="text-start ps-3">
+                                        <li>Trim nails</li>
+                                        <li>Filing (if required)</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div>
+                                            <p class="mb-0">Starting from:</p>
+                                            <p class="fw-bold fs-5 mb-0">$10 – $20*</p>
+                                        </div>
+                                        <a href="booking.html" class="btn btn--card shadow-sm">
+                                            Book now
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Card 4 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 d-flex flex-column h-100">
+                                <div class="d-flex align-items-center gap-2 mb-0">
+                                    <img src="images/icons/ear.svg" alt="" aria-hidden="true" width="60" height="60"
+                                        loading="lazy">
+    
+                                    <h3 class="card-title fw-bold">Ear cleaning
+                                    </h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="text-start ps-3">
+                                        <li>Gentle cleaning</li>
+                                        <li>Removes wax and debris</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div>
+                                            <p class="mb-0">Starting from:</p>
+                                            <p class="fw-bold fs-5 mb-0">$10 – $15*</p>
+                                        </div>
+                                        <a href="booking.html" class="btn btn--card shadow-sm">
+                                            Book now
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 d-flex flex-column h-100">
+                                <div class="d-flex align-items-center gap-2 mb-0">
+                                    <img src="images/icons/nail.svg" alt="" aria-hidden="true" width="60" height="60"
+                                        loading="lazy">
+    
+                                    <h3 class="card-title fw-bold">Teeth brushing
+                                    </h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="text-start ps-3">
+                                        <li>Pet safe toothpaste</li>
+                                        <li>Gentle plaque removal</li>
+                                        <li>Improves breath</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div>
+                                            <p class="mb-0">Starting from:</p>
+                                            <p class="fw-bold fs-5 mb-0">$10 – $15*</p>
+                                        </div>
+                                        <a href="booking.html" class="btn btn--card shadow-sm">
+                                            Book now
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 d-flex flex-column h-100">
+                                <div class="d-flex align-items-center gap-2 mb-0">
+                                    <img src="images/icons/deshedding.svg" alt="" aria-hidden="true" width="60" height="60"
+                                        loading="lazy">
+    
+                                    <h3 class="card-title fw-bold">De-shedding add on</h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="text-start ps-3">
+                                        <li>Removes loose fur and undercoat</li>
+                                        <li>Reduces shedding by up to 90%</li>
+                                        <li>Promotes healthier skin and coat</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div>
+                                            <p class="mb-0">Starting from:</p>
+                                            <p class="fw-bold fs-5 mb-0">$20 – $40**</p>
+                                        </div>
+                                        <a href="booking.html" class="btn btn--card shadow-sm">
+                                            Book now
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 d-flex flex-column h-100">
+                                <div class="d-flex align-items-center gap-2 mb-0">
+                                    <img src="images/icons/tick-and-flea.svg" alt="" aria-hidden="true" width="60"
+                                        height="60" loading="lazy">
+    
+                                    <h3 class="card-title fw-bold">Flea and tick treatment
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="text-start ps-3">
+                                        <li>Shampoo</li>
+                                        <li>Preventative treatment</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div>
+                                            <p class="mb-0">Starting from:</p>
+                                            <p class="fw-bold fs-5 mb-0">$15 – $30*</p>
+                                        </div>
+                                        <a href="booking.html" class="btn btn--card shadow-sm">
+                                            Book now
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 d-flex flex-column h-100">
+                                <div class="d-flex align-items-center gap-2 mb-0">
+                                    <img src="images/icons/spa.svg" alt="" aria-hidden="true" width="60" height="60"
+                                        loading="lazy">
+    
+                                    <h3 class="card-title fw-bold">Spa package
+                                    </h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="text-start ps-3">
+                                        <li>Bath and haircut</li>
+                                        <li>Teeth brushing and nail trim</li>
+                                        <li>Special scents and conditioners</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div>
+                                            <p class="mb-0">Starting from:</p>
+                                            <p class="fw-bold fs-5 mb-0">$75 – $150*</p>
+                                        </div>
+                                        <a href="booking.html" class="btn btn--card shadow-sm">
+                                            Book now
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 d-flex flex-column h-100">
+                                <div class="d-flex align-items-center gap-2 mb-0">
+                                    <img src="images/icons/express.svg" alt="" aria-hidden="true" width="60" height="60"
+                                        loading="lazy">
+    
+                                    <h3 class="card-title fw-bold">Express service</h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="text-start ps-3">
+                                        <li>Minimal grooming</li>
+                                        <li>Great for touch ups</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div>
+                                            <p class="mb-0">Starting from:</p>
+                                            <p class="fw-bold fs-5 mb-0">$15 – $25*</p>
+                                        </div>
+                                        <a href="booking.html" class="btn btn--card shadow-sm">
+                                            Book now
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 d-flex flex-column h-100">
+                                <div class="d-flex align-items-center gap-2 mb-0">
+                                    <img src="images/icons/medicated-bath.svg" alt="" aria-hidden="true" width="60"
+                                        height="60" loading="lazy">
+    
+                                    <h3 class="card-title fw-bold">Medicated bath</h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="text-start ps-3">
+                                        <li>Ideal for pets with skin conditions</li>
+                                        <li>Special shampoo</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div>
+                                            <p class="mb-0">Starting from:</p>
+                                            <p class="fw-bold fs-5 mb-0">$20 – $40*</p>
+                                        </div>
+                                        <a href="booking.html" class="btn btn--card shadow-sm">
+                                            Book now
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 d-flex flex-column h-100">
+                                <div class="d-flex align-items-center gap-2 mb-0">
+                                    <img src="images/icons/special-breed.svg" alt="" aria-hidden="true" width="60"
+                                        height="60" loading="lazy">
+    
+                                    <h3 class="card-title fw-bold">Special breed cut</h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="text-start ps-3">
+                                        <li>Breed specific cuts</li>
+                                        <li>Custmon styling based on owner prefernce</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div>
+                                            <p class="mb-0">Pricing subject to quotation</p>
+                                        </div>
+                                        <a href="booking.html" class="btn btn--card shadow-sm">
+                                            Book now
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 d-flex flex-column h-100">
+                                <div class="d-flex align-items-center gap-2 mb-0">
+                                    <img src="images/icons/puppy.svg" alt="" aria-hidden="true" width="60" height="60"
+                                        loading="lazy">
+    
+                                    <h3 class="card-title fw-bold">Puppy package</h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="text-start ps-3">
+                                        <li>Introductory grooming service</li>
+                                        <li>Tailored for puppies</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div>
+                                            <p class="mb-0">Starting from:</p>
+                                            <p class="fw-bold fs-5 mb-0">$30 – $60*</p>
+                                        </div>
+                                        <a href="booking.html" class="btn btn--card shadow-sm">
+                                            Book now
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 d-flex flex-column h-100">
+                                <div class="d-flex align-items-center gap-2 mb-0">
+                                    <img src="images/icons/senior.svg" alt="" aria-hidden="true" width="60" height="60"
+                                        loading="lazy">
+    
+                                    <h3 class="card-title fw-bold">Senior dog package</h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="text-start ps-3">
+                                        <li>Tailored for older dogs</li>
+                                        <li>Special card and handling</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div>
+                                            <p class="mb-0">Starting from:</p>
+                                            <p class="fw-bold fs-5 mb-0">$40 – $80*</p>
+                                        </div>
+                                        <a href="booking.html" class="btn btn--card shadow-sm">
+                                            Book now
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 d-flex flex-column h-100">
+                                <div class="d-flex align-items-center gap-2 mb-0">
+                                    <img src="images/icons/full-groom.svg" alt="" aria-hidden="true" width="60" height="60"
+                                        loading="lazy">
+    
+                                    <h3 class="card-title fw-bold mb-0">Full grooming package</h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="text-start ps-3">
+                                        <li>Bath and haircut</li>
+                                        <li>Teeth brushing, nail trim and ear cleaning</li>
+                                        <li>Full professional groom</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div>
+                                            <p class="mb-0">Starting from:</p>
+                                            <p class="fw-bold fs-5 mb-0">$60 – $120*</p>
+                                        </div>
+                                        <a href="booking.html" class="btn btn--card shadow-sm">
+                                            Book now
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Card 2 -->
-                    <div class="booking-card-grid col-12 col-md-6 col-xl-4 col-xxl-3">
-                        <div class="card card-shadow-sm p-2">
-                            <div class="d-flex align-items-center gap-2 mb-0">
-                                <img src="images/icons/haircut.svg" alt="" aria-hidden="true" width="60" height="60"
-                                    loading="lazy">
+                </div>
+                
 
-                                <h3 class="card-title fw-bold">Haircut
-                                </h3>
-                            </div>
-                            <div class="card-body pb-0">
-                                <ul class="text-start ps-3">
-                                    <li>Bath and blowdry</li>
-                                    <li>Haircut (based on breed standard or owner's preference)</li>
-                                    <li>Nail trim</li>
-                                </ul>
-                            </div>
-                            <div class="card-footer bg-white pb-0">
-                                <div class="item-footer-content font--dm d-block">
-                                    <div>
-                                        <p class="mb-0">Starting from:</p>
-                                        <p class="fw-bold mb-0">$45 – $85*</p>
-                                    </div>
-                                    <a href="booking.html" class="btn btn--card shadow-sm w-100 mt-2">
-                                        Add
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 3 -->
-                    <div class="booking-card-grid col-12 col-md-6 col-xl-4 col-xxl-3">
-                        <div class="card card-shadow-sm p-2">
-                            <div class="d-flex align-items-center gap-2 mb-0">
-                                <img src="images/icons/nail.svg" alt="" aria-hidden="true" width="60" height="60"
-                                    loading="lazy">
-
-                                <h3 class="card-title fw-bold">Nail trim
-                                </h3>
-                            </div>
-                            <div class="card-body pb-0">
-                                <ul class="text-start ps-3">
-                                    <li>Trim nails</li>
-                                    <li>Filing (if required)</li>
-                                </ul>
-                            </div>
-                            <div class="card-footer bg-white pb-0">
-                                <div class="item-footer-content font--dm d-block">
-                                    <div>
-                                        <p class="mb-0">Starting from:</p>
-                                        <p class="fw-bold mb-0">$10 – $20*</p>
-                                    </div>
-                                    <a href="booking.html" class="btn btn--card shadow-sm w-100 mt-2">
-                                        Add
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div class="booking-card-grid col-12 col-md-6 col-xl-4 col-xxl-3">
-                        <div class="card card-shadow-sm p-2">
-                            <div class="d-flex align-items-center gap-2 mb-0">
-                                <img src="images/icons/ear.svg" alt="" aria-hidden="true" width="60" height="60"
-                                    loading="lazy">
-
-                                <h3 class="card-title fw-bold">Ear cleaning
-                                </h3>
-                            </div>
-                            <div class="card-body pb-0">
-                                <ul class="text-start ps-3">
-                                    <li>Gentle cleaning</li>
-                                    <li>Removes wax and debris</li>
-                                </ul>
-                            </div>
-                            <div class="card-footer bg-white pb-0">
-                                <div class="item-footer-content font--dm d-block">
-                                    <div>
-                                        <p class="mb-0">Starting from:</p>
-                                        <p class="fw-bold mb-0">$10 – $15*</p>
-                                    </div>
-                                    <a href="booking.html" class="btn btn--card shadow-sm w-100 mt-2">
-                                        Add
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 1 -->
-                    <div class="booking-card-grid col-12 col-md-6 col-xl-4 col-xxl-3">
-                        <div class="card card-shadow-sm p-2">
-                            <div class="d-flex align-items-center gap-2 mb-0">
-                                <img src="images/icons/toothbrush.svg" alt="" aria-hidden="true" width="60" height="60"
-                                    loading="lazy">
-
-                                <h3 class="card-title fw-bold">Teeth brushing
-                                </h3>
-                            </div>
-                            <div class="card-body pb-0">
-                                <ul class="text-start ps-3">
-                                    <li>Pet safe toothpaste</li>
-                                    <li>Gentle plaque removal</li>
-                                    <li>Improves breath</li>
-                                </ul>
-                            </div>
-                            <div class="card-footer bg-white pb-0">
-                                <div class="item-footer-content font--dm d-block">
-                                    <div>
-                                        <p class="mb-0">Starting from:</p>
-                                        <p class="fw-bold mb-0">$10 – $15*</p>
-                                    </div>
-                                    <a href="booking.html" class="btn btn--card shadow-sm w-100 mt-2">
-                                        Add
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 1 -->
-                    <div class="booking-card-grid col-12 col-md-6 col-xl-4 col-xxl-3">
-                        <div class="card card-shadow-sm p-2">
-                            <div class="d-flex align-items-center gap-2 mb-0">
-                                <img src="images/icons/deshedding.svg" alt="" aria-hidden="true" width="60" height="60"
-                                    loading="lazy">
-
-                                <h3 class="card-title fw-bold">De-shedding add on</h3>
-                            </div>
-                            <div class="card-body pb-0">
-                                <ul class="text-start ps-3">
-                                    <li>Removes loose fur and undercoat</li>
-                                    <li>Reduces shedding by up to 90%</li>
-                                    <li>Promotes healthier skin and coat</li>
-                                </ul>
-                            </div>
-                            <div class="card-footer bg-white pb-0">
-                                <div class="item-footer-content font--dm d-block">
-                                    <div>
-                                        <p class="mb-0">Starting from:</p>
-                                        <p class="fw-bold mb-0">$20 – $40**</p>
-                                    </div>
-                                    <a href="booking.html" class="btn btn--card shadow-sm w-100 mt-2">
-                                        Add
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 1 -->
-                    <div class="booking-card-grid col-12 col-md-6 col-xl-4 col-xxl-3">
-                        <div class="card card-shadow-sm p-2">
-                            <div class="d-flex align-items-center gap-2 mb-0">
-                                <img src="images/icons/tick-and-flea.svg" alt="" aria-hidden="true" width="60"
-                                    height="60" loading="lazy">
-
-                                <h3 class="card-title fw-bold">Flea and tick treatment
-                            </div>
-                            <div class="card-body pb-0">
-                                <ul class="text-start ps-3">
-                                    <li>Shampoo</li>
-                                    <li>Preventative treatment</li>
-                                </ul>
-                            </div>
-                            <div class="card-footer bg-white pb-0">
-                                <div class="item-footer-content font--dm d-block">
-                                    <div>
-                                        <p class="mb-0">Starting from:</p>
-                                        <p class="fw-bold mb-0">$15 – $30*</p>
-                                    </div>
-                                    <a href="booking.html" class="btn btn--card shadow-sm w-100 mt-2">
-                                        Add
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 1 -->
-                    <div class="booking-card-grid col-12 col-md-6 col-xl-4 col-xxl-3">
-                        <div class="card card-shadow-sm p-2">
-                            <div class="d-flex align-items-center gap-2 mb-0">
-                                <img src="images/icons/spa.svg" alt="" aria-hidden="true" width="60" height="60"
-                                    loading="lazy">
-
-                                <h3 class="card-title fw-bold">Spa package
-                                </h3>
-                            </div>
-                            <div class="card-body pb-0">
-                                <ul class="text-start ps-3">
-                                    <li>Bath and haircut</li>
-                                    <li>Teeth brushing and nail trim</li>
-                                    <li>Special scents and conditioners</li>
-                                </ul>
-                            </div>
-                            <div class="card-footer bg-white pb-0">
-                                <div class="item-footer-content font--dm d-block">
-                                    <div>
-                                        <p class="mb-0">Starting from:</p>
-                                        <p class="fw-bold mb-0">$75 – $150*</p>
-                                    </div>
-                                    <a href="booking.html" class="btn btn--card shadow-sm w-100 mt-2">
-                                        Add
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 1 -->
-                    <div class="booking-card-grid col-12 col-md-6 col-xl-4 col-xxl-3">
-                        <div class="card card-shadow-sm p-2">
-                            <div class="d-flex align-items-center gap-2 mb-0">
-                                <img src="images/icons/express.svg" alt="" aria-hidden="true" width="60" height="60"
-                                    loading="lazy">
-
-                                <h3 class="card-title fw-bold">Express service</h3>
-                            </div>
-                            <div class="card-body pb-0">
-                                <ul class="text-start ps-3">
-                                    <li>Minimal grooming</li>
-                                    <li>Great for touch ups</li>
-                                </ul>
-                            </div>
-                            <div class="card-footer bg-white pb-0">
-                                <div class="item-footer-content font--dm d-block">
-                                    <div>
-                                        <p class="mb-0">Starting from:</p>
-                                        <p class="fw-bold mb-0">$15 – $25*</p>
-                                    </div>
-                                    <a href="booking.html" class="btn btn--card shadow-sm w-100 mt-2">
-                                        Add
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 1 -->
-                    <div class="booking-card-grid col-12 col-md-6 col-xl-4 col-xxl-3">
-                        <div class="card card-shadow-sm p-2">
-                            <div class="d-flex align-items-center gap-2 mb-0">
-                                <img src="images/icons/medicated-bath.svg" alt="" aria-hidden="true" width="60"
-                                    height="60" loading="lazy">
-
-                                <h3 class="card-title fw-bold">Medicated bath</h3>
-                            </div>
-                            <div class="card-body pb-0">
-                                <ul class="text-start ps-3">
-                                    <li>Ideal for pets with skin conditions</li>
-                                    <li>Special shampoo</li>
-                                </ul>
-                            </div>
-                            <div class="card-footer bg-white pb-0">
-                                <div class="item-footer-content font--dm d-block">
-                                    <div>
-                                        <p class="mb-0">Starting from:</p>
-                                        <p class="fw-bold mb-0">$20 – $40*</p>
-                                    </div>
-                                    <a href="booking.html" class="btn btn--card shadow-sm w-100 mt-2">
-                                        Add
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 1 -->
-                    <div class="booking-card-grid col-12 col-md-6 col-xl-4 col-xxl-3">
-                        <div class="card card-shadow-sm p-2">
-                            <div class="d-flex align-items-center gap-2 mb-0">
-                                <img src="images/icons/special-breed.svg" alt="" aria-hidden="true" width="60"
-                                    height="60" loading="lazy">
-
-                                <h3 class="card-title fw-bold">Special breed cut</h3>
-                            </div>
-                            <div class="card-body pb-0">
-                                <ul class="text-start ps-3">
-                                    <li>Breed specific cuts</li>
-                                    <li>Custmon styling based on owner prefernce</li>
-                                </ul>
-                            </div>
-                            <div class="card-footer bg-white pb-0">
-                                <div class="item-footer-content font--dm d-block">
-                                    <div>
-                                        <p class="mb-2 p-2">Pricing subject to quotation</p>
-
-                                    </div>
-                                    <a href="booking.html" class="btn btn--card shadow-sm w-100 mt-2">
-                                        Add
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 1 -->
-                    <div class="booking-card-grid col-12 col-md-6 col-xl-4 col-xxl-3">
-                        <div class="card card-shadow-sm p-2">
-                            <div class="d-flex align-items-center gap-2 mb-0">
-                                <img src="images/icons/puppy.svg" alt="" aria-hidden="true" width="60" height="60"
-                                    loading="lazy">
-
-                                <h3 class="card-title fw-bold">Puppy package</h3>
-                            </div>
-                            <div class="card-body pb-0">
-                                <ul class="text-start ps-3">
-                                    <li>Introductory grooming service</li>
-                                    <li>Tailored for puppies</li>
-                                </ul>
-                            </div>
-                            <div class="card-footer bg-white pb-0">
-                                <div class="item-footer-content font--dm d-block">
-                                    <div>
-                                        <p class="mb-0">Starting from:</p>
-                                        <p class="fw-bold mb-0">$30 – $60*</p>
-                                    </div>
-                                    <a href="booking.html" class="btn btn--card shadow-sm w-100 mt-2">
-                                        Add
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 1 -->
-                    <div class="booking-card-grid col-12 col-md-6 col-xl-4 col-xxl-3">
-                        <div class="card card-shadow-sm p-2">
-                            <div class="d-flex align-items-center gap-2 mb-0">
-                                <img src="images/icons/senior.svg" alt="" aria-hidden="true" width="60" height="60"
-                                    loading="lazy">
-
-                                <h3 class="card-title fw-bold">Senior dog package</h3>
-                            </div>
-                            <div class="card-body pb-0">
-                                <ul class="text-start ps-3">
-                                    <li>Tailored for older dogs</li>
-                                    <li>Special card and handling</li>
-                                </ul>
-                            </div>
-                            <div class="card-footer bg-white pb-0">
-                                <div class="item-footer-content font--dm d-block">
-                                    <div>
-                                        <p class="mb-0">Starting from:</p>
-                                        <p class="fw-bold mb-0">$40 – $80*</p>
-                                    </div>
-                                    <a href="booking.html" class="btn btn--card shadow-sm w-100 mt-2">
-                                        Add
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 1 -->
-                    <div class="booking-card-grid col-12 col-md-6 col-xl-4 col-xxl-3">
-                        <div class="card card-shadow-sm p-2">
-                            <div class="d-flex align-items-center gap-2 mb-0">
-                                <img src="images/icons/full-groom.svg" alt="" aria-hidden="true" width="60" height="60"
-                                    loading="lazy">
-
-                                <h3 class="card-title fw-bold mb-0">Full grooming package</h3>
-                            </div>
-                            <div class="card-body pb-0">
-                                <ul class="text-start ps-3">
-                                    <li>Bath and haircut</li>
-                                    <li>Teeth brushing, nail trim and ear cleaning</li>
-                                    <li>Full professional groom</li>
-                                </ul>
-                            </div>
-                            <div class="card-footer bg-white pb-0">
-                                <div class="item-footer-content font--dm d-block">
-                                    <div>
-                                        <p class="mb-0">Starting from:</p>
-                                        <p class="fw-bold mb-0">$60 – $120*</p>
-                                    </div>
-                                    <a href="booking.html" class="btn btn--card shadow-sm w-100 mt-2">
-                                        Add
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                
                 </div>
             </div>
 
@@ -637,15 +642,16 @@
                         <!-- Adding the heading to be on the same line as the icon-->
                         <h2 class="fw-bold font--cabin fs-1 mb-0">Select a date and time</h2>
                     </div>
+                    
 
                 </div>
-
+                <hr class="section-divider">
 
                     <div class="mb-5 font--dm w-100">
                         <div class="row justify-content-between">
                             <div class="col-12 col-lg-6 col-xl-5">
 
-                                <div class="d-flex align-items-baseline mb-2">
+                                <div class="d-flex align-items-baseline mb-2 mt-4">
                                     <h3 class="fs-3 fw-bold">February 2026</h3>
 
                                 </div>
@@ -1029,7 +1035,7 @@
 
 
                             <div class="col-12 col-lg-6 col-xl-5">
-                                <div class="d-flex align-items-baseline mb-2">
+                                <div class="d-flex align-items-baseline mt-4 mb-2">
                                     <h3 class="fs-3 fw-bold">March 2026</h3>
                                 </div>
 

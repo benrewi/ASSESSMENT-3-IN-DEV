@@ -167,12 +167,12 @@
             <div class="container-fluid">
 
                 <!-- Adding a custom class for the feature cards. Container will allow the contents to slide across the screen when the user resizes the window, or accesses the website on a device with a smaller screen width -->
-                <div class="item-scroll-wrapper gap-4 pb-3">
+                <div class="item-scroll-wrapper d-flex flex-nowrap overflow-auto gap-4 pb-3 font--dm">
 
                     <!-- Card 1 -->
 
                     <!-- Add a bootstrap card container with a shadow -->
-                    <div class="card shadow-sm">
+                    <div class="card w-100">
 
                         <!-- Adding the image for the card. Alt text provided for accessibility and in case of image load failure. Width and height provided to prevent layout shifts as the image loads -->
                         <img src="images/index/teeth.webp" class="card-img-top" alt="Dog with toothbrush" width="390"
@@ -202,13 +202,13 @@
                         <!-- Card footer for the pricing and book now button. bg-white to override bootstrap default, and border-top to add a border at the top to separate from the body section -->
                         <div class="card-footer bg-white border-top">
 
-                            <!-- Adding a div for the footer content. font--dm to apply font, and fs-5 to set font size to 20px  -->
-                            <div class="item-footer-content font--dm fs-5">
+                            <!-- Adding a div for the footer contentand fs-5 to set font size to 20px  -->
+                            <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
                                 <div>
 
                                     <!-- Text for the pricing. mb-0 to remove margin bottom, and fw-bold to make the price stand out -->
                                     <p class="mb-0">Starting from:</p>
-                                    <p class="fw-bold mb-0">$10 – $15*</p>
+                                    <p class="fw-bold fs-5 mb-0">$10 – $15*</p>
                                 </div>
 
                                 <!-- Adding book now button. btn for button styling, shadow to add a shadow effect, and linking to the booking page. btn--card added to improve animation on hover -->
@@ -223,7 +223,7 @@
                     <!-- Card 2 -->
 
                     <!-- Explanation the same as card 1 -->
-                    <div class="card shadow-sm">
+                    <div class="card w-100">
                         <img src="images/index/full-package.webp" class="card-img-top" alt="Dog during full groom"
                             width="390" height="250">
                         <div class="text-center border-bottom py-3 px-2">
@@ -239,10 +239,10 @@
                             </ul>
                         </div>
                         <div class="card-footer bg-white border-top">
-                            <div class="item-footer-content font--dm fs-5">
+                            <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
                                 <div>
                                     <p class="mb-0">Starting from:</p>
-                                    <p class="fw-bold mb-0">$60 – $120*</p>
+                                    <p class="fw-bold fs-5 mb-0">$60 – $120*</p>
                                 </div>
                                 <a href="booking.html" class="btn btn--card shadow-sm">
                                     Book now
@@ -255,7 +255,7 @@
                     <!-- Card 3 -->
 
                     <!-- Explanation the same as card 1 -->
-                    <div class="card shadow-sm">
+                    <div class="card w-100">
                         <img src="images/index/deshed.webp" class="card-img-top" alt="Dog during deshedding" width="390"
                             height="250">
                         <div class="text-center border-bottom py-3 px-2">
@@ -271,7 +271,7 @@
                             </ul>
                         </div>
                         <div class="card-footer bg-white border-top">
-                            <div class="item-footer-content font--dm fs-5">
+                            <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
                                 <div>
                                     <p class="mb-0">Starting from:</p>
                                     <p class="fw-bold mb-0">$20 – $40**</p>
@@ -312,7 +312,7 @@
                 <div class="text-center mb-5">
 
                     <h2 class="fw-bold font--cabin fs-1">What our clients say</h2>
-                    <span class="font--dm fs-4 fst-italic">Real results from happy dogs and their owners</span>
+                    <span class="fs-4 fst-italic">Real results from happy dogs and their owners</span>
                 </div>
             </div>
 
@@ -320,11 +320,11 @@
             <div class="container-fluid">
 
                 <!-- Adding a custom class for the testimonial cards. This is a container that will allow the contents to slide across the screen when the user resizes the window, or accesses the website on a device with a smaller screen width. gap-4 to add 24px gap between cards within item-scroll, and pb3 to add 16px padding below the continer. -->
-                <div class="item-scroll-wrapper gap-4 pb-3">
+                <div class="item-scroll-wrapper d-flex flex-nowrap overflow-auto gap-4 pb-3 font--dm">
 
                     <!-- Card 1 -->
                     <!-- Add a bootstrap card container with a shadow -->
-                    <div class="card shadow-sm">
+                    <div class="card w-100 text-center">
 
                         <!-- div for before and after images and button functionality. id=t1 to align button behaviours. Slide provides animation when selecting the button. data-bs-ride=false prevents images from cycling automatically. -->
                         <div id="t1" class="carousel slide media-carousel" data-bs-ride="false"
@@ -369,7 +369,7 @@
                         <div class="card-body">
 
                             <!-- h3 header for pet name/testimonial title. mb-0 to remove any margins as the spacing is being provided by the card body container and the line below. Increasing font size using fs-4, making the text bold, and aligning center -->
-                            <h3 class="card-title fs-4 fw-bold text-center mb-0">Beryl</h3>
+                            <h3 class="card-title fs-4 fw-bold mb-0">Beryl</h3>
 
                             <!-- Adding a line to separate the card title from the testimonial-->
                             <hr>
@@ -378,7 +378,7 @@
                             <blockquote>
 
                                 <!-- Adding the quote using p. Setting margin to 0 as blockquote is adding spacing for the bottom. Font style to italic and text aligned center -->
-                                <p class="m-0 fst-italic text-center">“Beryl came home looking absolutely gorgeous. Her coat was soft, and she smelled amazing. You could tell she was comfortable the whole time. Best groom she’s ever had.”</p>
+                                <p class="m-0 fst-italic">“Beryl came home looking absolutely gorgeous. Her coat was soft, and she smelled amazing. You could tell she was comfortable the whole time. Best groom she’s ever had.”</p>
                             </blockquote>
 
                             <!-- adding text for the package. Setting m-0 to remove any padding, as the card-body container is already doing this-->
@@ -395,7 +395,7 @@
 
                     <!-- Card 2 - same implementation as card 1 -->
 
-                    <div class="card shadow-sm text-center">
+                    <div class="card w-100 text-center">
                         <div id="t2" class="carousel slide media-carousel" data-bs-ride="false" data-bs-touch="true"
                             aria-label="Testimonial photos for Full package treatment">
                             <div class="carousel-inner">
@@ -439,7 +439,7 @@
 
                     <!-- Card 3 - same implementation as card 1-->
 
-                    <div class="card shadow-sm text-center">
+                    <div class="card w-100 text-center">
                         <div id="t3" class="carousel slide media-carousel" data-bs-ride="false" data-bs-touch="true"
                             aria-label="Testimonial photos for Full package treatment">
                             <div class="carousel-inner">
