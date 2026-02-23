@@ -25,7 +25,8 @@
 
 
 .contact-form,
-.contact-card {
+.contact-card,
+.booking-summary .card {
     background-color: var(--accent-green);
 }
 
@@ -94,6 +95,16 @@
     transition: all 0.3s ease;
 }
 
+.btn--calendar:hover {
+    background: var(--accent-green);
+    color: var(--primary-green);
+    border-color: var(--primary-green);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
 .btn--card:hover {
     background: var(--primary-green);
     color: var(--white);
@@ -104,6 +115,23 @@
     cursor: pointer;
 }
 
+.btn-check:checked+.btn--select {
+    background-color: var(--primary-green);
+    border-color: var(--primary-green);
+    color: var(--white);
+}
+
+.btn--select:hover {
+    background-color: var(--accent-green) !important;
+    border-color: var(--primary-green) !important;
+    color: var(--primary-green) !important;
+}
+
+.btn-check:checked+.btn--select:hover {
+    background-color: var(--primary-green) !important;
+    border-color: var(--primary-green) !important;
+    color: var(--white) !important;
+}
 
 /******************************************/
 /************ SECTION SETTINGS ************/
@@ -124,7 +152,8 @@
 .index-second,
 .services-features-section,
 .gallery-page,
-.contact-page {
+.contact-page,
+.booking-summary {
     background-color: var(--light-green);
     color: var(--primary-green)
 }
@@ -199,7 +228,7 @@ input.form-control,
     height: 50px;
 }
 
-textarea{
+textarea {
     resize: none;
 }
 
@@ -267,8 +296,8 @@ textarea{
 .carousel-item img {
     width: 100%;
     height: calc(100% - 90px);
-  object-fit: contain;
-    
+    object-fit: contain;
+
 }
 
 .carousel-caption {
@@ -292,13 +321,25 @@ textarea{
     border-radius: 6px;
 }
 
-.carousel-inner, .gallery-filter {
-  max-width: 900px;
+.carousel-inner,
+.gallery-filter {
+    max-width: 900px;
 }
 
-.gallery-image-caption-1{
+.gallery-image-caption-1 {
     font-size: 20px;
     font-weight: bold;
+}
+
+.table-responsive-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 40px 0;
+}
+
+.table-responsive-table td {
+    vertical-align: top;
 }
 
 
@@ -310,30 +351,66 @@ textarea{
     .item-scroll-wrapper {
         justify-content: center;
     }
+
+
+
 }
+
+@media (max-width: 992px) {
+
+
+    .table-responsive-table tbody,
+    .table-responsive-table {
+        display: block;
+        width: 100%;
+    }
+
+    .table-responsive-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 28px 40px;
+    }
+
+    .table-responsive-table td {
+        display: block;
+    }
+
+    .table-responsive-table td::before {
+        content: attr(data-label);
+        display: block;
+        font-size: 28px;
+        font-weight: 800;
+        margin-bottom: 16px;
+    }
+}
+
 
 @media (max-width: 767px) {
-.gallery-image-caption-1{
-    font-size: 16px;
-    font-weight: normal;
+    .gallery-image-caption-1 {
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    .carousel-item img {
+        height: calc(100% - 40px);
+    }
+
+    .table-responsive-row {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+
 }
 
-.carousel-item img {
-    height: calc(100% - 40px);
-}/*
-
-
-
-*/
-}
 @media (max-width: 576px) {
+
+
 
     /* Make the item footer content stack on top of eachother, instead of on the same line */
 
 
     /* Make the button fill 100% of the width of the container when stacked */
 
-    .navbar-brand {
-        font-size: 17px;
-    }
+
 }
