@@ -26,6 +26,7 @@
 
 .contact-form,
 .contact-card,
+.booking-date-time .card,
 .booking-summary .card {
     background-color: var(--accent-green);
 }
@@ -150,9 +151,15 @@
 
 /* Setting background colour and font colour for index-section section */
 .index-second,
+.index-mobile-contact,
 .services-features-section,
 .gallery-page,
 .contact-page,
+.booking-featured-services,
+.booking-all-services,
+.booking-date-time,
+.booking-customer-information,
+.booking-pet-information,
 .booking-summary {
     background-color: var(--light-green);
     color: var(--primary-green)
@@ -171,10 +178,7 @@
 }
 
 /* Setting up the background colour and default font colour for the contact section that shows on mobile */
-.index-mobile-contact {
-    background-color: var(--light-green);
-    color: var(--primary-green);
-}
+
 
 
 /******************************************/
@@ -185,7 +189,7 @@
 
 /* Defining font colour to be used on all cards */
 .card {
-    color: var(--medium-green);
+    color: var(--primary-green);
 }
 
 
