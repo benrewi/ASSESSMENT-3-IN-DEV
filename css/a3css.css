@@ -23,11 +23,14 @@
     font-family: 'DM Sans', sans-serif;
 }
 
+.roster-summary .card {
+    background-color: var(--accent-green)
+}
 
 .contact-form,
 .contact-card,
 .booking-date-time .card,
-.booking-summary .card {
+.booking-summary .card{
     background-color: var(--accent-green);
 }
 
@@ -56,11 +59,7 @@
     font-weight: 700;
 }
 
-/******************************************/
-/***************** BUTTON *****************/
-/******************************************/
-
-/* Overriding bootstrap default btn properties to ensure consistent use of buttons across the site */
+/* Base button look across site */
 .btn {
     background: var(--white);
     color: var(--primary-green);
@@ -70,69 +69,57 @@
     border: 2px solid var(--medium-green);
     font-size: 18px;
     line-height: 1;
-    text-wrap: nowrap;
-}
-
-/* Setting a large width for buttons that have a fixed width */
-.btn--wide {
-    width: 260px;
-}
-
-/* Setting border to white for buttons that go on a greenbackground */
-.btn--white {
-    border-color: var(--white);
-}
-
-/* Adding the hover propertied for the btn, changing border, text and background colours */
-.btn:hover,
-.btn:focus {
-    background: var(--medium-green);
-    color: var(--white);
-    border-color: var(--white);
-}
-
-.btn--card {
+    white-space: nowrap;
+  }
+  
+  /* Size helpers */
+  .btn--wide { width: 260px; }
+  
+  /* Variant for buttons on dark backgrounds */
+  .btn--white { border-color: var(--white); }
+  
+  /* Card style buttons  
+  Use this on anything that should behave the same: cards, calendar days, time slots, add buttons */
+  .btn--card,
+  .btn--select,
+  .btn--calendar {
     border-color: var(--primary-green);
-    transition: all 0.3s ease;
-}
-
-.btn--calendar:hover {
-    background: var(--accent-green);
-    color: var(--primary-green);
-    border-color: var(--primary-green);
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.btn--card:hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  /* Shared hover for all card style buttons */
+  .btn--card:hover,
+  .btn--select:hover,
+  .btn--calendar:hover {
     background: var(--primary-green);
     color: var(--white);
     border-color: var(--primary-green);
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
-    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
     cursor: pointer;
-}
-
-.btn-check:checked+.btn--select {
-    background-color: var(--primary-green);
-    border-color: var(--primary-green);
+  }
+  
+  /* Shared keyboard focus for all card style buttons  
+  Use focus visible so mouse clicks do not show the ring */
+  .btn--card:focus-visible,
+  .btn--select:focus-visible,
+  .btn--calendar:focus-visible {
+    background: var(--primary-green);
     color: var(--white);
-}
-
-.btn--select:hover {
-    background-color: var(--accent-green) !important;
-    border-color: var(--primary-green) !important;
-    color: var(--primary-green) !important;
-}
-
-.btn-check:checked+.btn--select:hover {
-    background-color: var(--primary-green) !important;
-    border-color: var(--primary-green) !important;
-    color: var(--white) !important;
-}
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 0.25rem rgba(0,0,0,0.15);
+    outline: none;
+  }
+  
+  /* Checked state for checkbox radio button labels */
+  .btn-check:checked + .btn--select,
+  .btn-check:checked + .btn--calendar,
+  .btn-check:checked + .btn--card {
+    background: var(--primary-green);
+    color: var(--white);
+    border-color: var(--primary-green);
+  }
+  
 
 /******************************************/
 /************ SECTION SETTINGS ************/
@@ -164,6 +151,14 @@
     background-color: var(--light-green);
     color: var(--primary-green)
 }
+
+.roster-summary,
+.roster-schedule{
+    background-color: var(--light-green);
+    color: var(--primary-green);
+}
+
+
 
 /* Setting background colour and font colour for index-third section */
 .index-third {
@@ -218,18 +213,18 @@
 .search-field {
     max-width: 1000px;
 }
-
-
-/*  */
-.form-control,
-.form-select,
-.form-control::placeholder {
-    font-size: 17px;
+.roster-table td,
+.roster-table th{
+    background-color: var(--text-input);
+    
+color: var(--primary-green);
 }
 
-input.form-control,
-.form-select {
-    height: 50px;
+
+.leave-table td,
+.leave-table th{
+    background-color: var(--accent);
+    color: var(--primary-green);
 }
 
 textarea {
@@ -412,7 +407,9 @@ textarea {
 
 @media (max-width: 576px) {
 
-
+    .navbar-brand {
+        font-size: 18px;
+    }
 
     /* Make the item footer content stack on top of eachother, instead of on the same line */
 
