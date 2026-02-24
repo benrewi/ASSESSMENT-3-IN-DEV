@@ -211,8 +211,8 @@
                                     <p class="fw-bold fs-5 mb-0">$10 – $15*</p>
                                 </div>
 
-                                <!-- Adding book now button. btn for button styling, shadow to add a shadow effect, and linking to the booking page. btn--card added to improve animation on hover -->
-                                <a href="booking.html" class="btn btn--card shadow-sm">
+                                <!-- Adding book now button. btn for button styling, shadow to add a shadow effect, and linking to the booking page. btn--select added to improve animation on hover -->
+                                <a href="booking.html" class="btn btn--select shadow-sm">
                                     Book now
                                 </a>
                             </div>
@@ -244,7 +244,7 @@
                                     <p class="mb-0">Starting from:</p>
                                     <p class="fw-bold fs-5 mb-0">$60 – $120*</p>
                                 </div>
-                                <a href="booking.html" class="btn btn--card shadow-sm">
+                                <a href="booking.html" class="btn btn--select shadow-sm">
                                     Book now
                                 </a>
                             </div>
@@ -276,7 +276,7 @@
                                     <p class="mb-0">Starting from:</p>
                                     <p class="fw-bold mb-0">$20 – $40**</p>
                                 </div>
-                                <a href="booking.html" class="btn btn--card shadow-sm">
+                                <a href="booking.html" class="btn btn--select shadow-sm">
                                     Book now
                                 </a>
                             </div>
@@ -513,13 +513,12 @@
                         <!-- Adding contact information. Icon and text in a box for each item. d-inline-flex to make it a flex container, align-items-center to vertically align the icon and text, gap to add space between the icon and text, and py-4 to add 24px padding top and bottom -->
                         <div class="contact-box d-inline-flex align-items-center gap-4 py-4">
 
-                            <!-- Adding a div for the icon. setting sizing for page loading. Aria hidden as icon is decorative and no value added. -->
-                            <div class="icon-col">
+                            <!-- Adding the phone icon. Alt text left empty as the image is decorative and does not add content, aria-hidden set to true to hide from screen readers, width and height provided to prevent layout shifts as the image loads, and loading lazy to improve performance by not prioritising this image on initial page load -->
                                 <img src="images/icons/phone.svg" alt="" aria-hidden="true" width="44" height="44"
                                     loading="lazy">
-                            </div>
+
                             <!-- text-start to align text to the left. mb-1 to add 4px margin bottom to the first line, and mb-0 to remove margin bottom from the second line. fw-bold to make the phone number stand out -->
-                            <div class="contact-text test-wrap text-start">
+                            <div class="contact-text text-wrap text-start">
                                 <p class="mb-1">Call us</p>
                                 <p class="mb-0 fw-bold">(000) 123 123345</p>
                             </div>
@@ -527,10 +526,10 @@
 
                         <!-- Contact 2 - ad above -->
                         <div class="contact-box d-inline-flex align-items-center gap-4 py-4">
-                            <div class="icon-col">
+
                                 <img src="images/icons/email.svg" alt="" aria-hidden="true" width="44" height="44"
                                     loading="lazy">
-                            </div>
+
                             <div class="contact-text text-start">
                                 <p class="mb-1">E-mail us</p>
 
@@ -543,10 +542,10 @@
                         </div>
 
                         <div class="contact-box d-inline-flex align-items-center gap-4 py-4">
-                            <div class="icon-col">
+
                                 <img src="images/icons/location.svg" alt="" aria-hidden="true" width="44" height="59"
                                     loading="lazy">
-                            </div>
+
                             <div class="contact-text text-start">
                                 <p class="mb-1">Visit us</p>
                                 <p class="mb-0 fw-bold">Shop 3 - 501 Center Place</p>

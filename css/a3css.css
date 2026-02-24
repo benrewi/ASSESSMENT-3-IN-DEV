@@ -6,7 +6,6 @@
 :root {
     --primary-green: #3D483D;
     --medium-green: #4D5B4D;
-    --muted-green: #6F7F6F;
     --accent-green: #DEE3DE;
     --light-green: #EBEFEB;
     --text-input: #F1F4F1;
@@ -59,68 +58,73 @@
     font-weight: 700;
 }
 
-/* Base button look across site */
+/******************************************/
+/***************** BUTTON *****************/
+/******************************************/
+
+
 .btn {
-    background: var(--white);
+    background-color: var(--white);
     color: var(--primary-green);
+    border: 2px solid var(--primary-green);
     border-radius: 6px;
     font-weight: 800;
     padding: 14px;
-    border: 2px solid var(--medium-green);
     font-size: 18px;
     line-height: 1;
-    white-space: nowrap;
-  }
-  
-  /* Size helpers */
-  .btn--wide { width: 260px; }
-  
-  /* Variant for buttons on dark backgrounds */
-  .btn--white { border-color: var(--white); }
-  
-  /* Card style buttons  
-  Use this on anything that should behave the same: cards, calendar days, time slots, add buttons */
-  .btn--card,
-  .btn--select,
-  .btn--calendar {
-    border-color: var(--primary-green);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-  }
-  
-  /* Shared hover for all card style buttons */
-  .btn--card:hover,
-  .btn--select:hover,
-  .btn--calendar:hover {
-    background: var(--primary-green);
-    color: var(--white);
-    border-color: var(--primary-green);
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
-    cursor: pointer;
-  }
-  
-  /* Shared keyboard focus for all card style buttons  
-  Use focus visible so mouse clicks do not show the ring */
-  .btn--card:focus-visible,
-  .btn--select:focus-visible,
-  .btn--calendar:focus-visible {
-    background: var(--primary-green);
-    color: var(--white);
-    border-color: var(--primary-green);
-    box-shadow: 0 0 0 0.25rem rgba(0,0,0,0.15);
-    outline: none;
-  }
-  
-  /* Checked state for checkbox radio button labels */
-  .btn-check:checked + .btn--select,
-  .btn-check:checked + .btn--calendar,
-  .btn-check:checked + .btn--card {
-    background: var(--primary-green);
-    color: var(--white);
-    border-color: var(--primary-green);
-  }
-  
+    text-wrap: nowrap;
+    transition: all 0.3s ease; 
+}
 
+.btn--wide {
+    width: 260px;
+}
+
+.btn:hover {
+    background-color: var(--medium-green);
+    color: var(--white);
+    border-color: var(--white);
+    transform: translateY(-3px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+.input-group .btn:hover,
+.input-group .btn:focus-visible {
+    transform: none;
+    box-shadow: none;
+}
+
+.btn:focus-visible,
+.btn-check:focus-visible + .btn {
+    background-color: var(--accent-green);
+    color: var(--primary-green);
+    border-color: var(--primary-green); 
+
+}
+
+.btn.btn--white {
+    border-color: var(--white);
+}
+
+.btn.btn--select:hover {
+    background-color: var(--accent-green);
+    border-color: var(--primary-green);
+    color: var(--primary-green);
+}
+
+
+.btn-check:checked + .btn.btn--select {
+    background-color: var(--primary-green);
+    border-color: var(--primary-green);
+    color: var(--white);
+}
+
+
+.btn-check:checked + .btn.btn--select:hover {
+    background-color: var(--primary-green);
+    border-color: var(--primary-green);
+    color: var(--white);
+    cursor: default;
+}
 /******************************************/
 /************ SECTION SETTINGS ************/
 /******************************************/
