@@ -227,7 +227,7 @@ color: var(--primary-green);
 
 .leave-table td,
 .leave-table th{
-    background-color: var(--accent);
+    background-color: var(--accent-green);
     color: var(--primary-green);
 }
 

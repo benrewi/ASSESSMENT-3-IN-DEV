@@ -69,101 +69,115 @@
     <main id="main">
 
 
-        <section class="roster-schedule py-5">
+        <section class="roster-schedule">
 
+
+
+
+            <div class="container py-5">
                 <h1 class="fw-bold font--cabin fs-1 text-center">Welcome [name]</h1>
-
-
-            <div class="container pt-4">
-                <div class="pb-4 d-flex flex-column align-items-end">
-                    <label for="roster-week" class="form-label fw-bold font--dm">Week ending:</label>
-                    <select id="roster-week" class="form-select form-select-sm w-auto" aria-label="Select week to view roster">
-                        <option value="2026-02-23" selected>23 - 29 February 2026</option>
-                        <option value="2026-03-02">2 - 8 March 2026</option>
-                        <option value="2026-03-09">9 - 15 March 2026</option>
-                        <option value="2026-03-16">16 - 22 March 2026</option>
-                    </select>
+                
+                <div class="pb-4">
+                    <form class="col-12 col-md-6 col-xl-3 ">
+                        
+                        <label for="roster-week" class="form-label fw-bold font--dm">Week ending:</label>
+                        
+                        <select id="roster-week" class="form-select">
+                                aria-label="Select week to view roster">
+                            <option value="2026-02-23" selected>23 Feb - 1 March 2026</option>
+                            <option value="2026-03-02">2 - 8 March 2026</option>
+                            <option value="2026-03-09">9 - 15 March 2026</option>
+                            <option value="2026-03-16">16 - 22 March 2026</option>
+                        </select>
+                        
+                    </form>
                 </div>
 
+                <div class="table-responsive">
+                    <table class="table roster-table font--dm">
+                        <caption class="visually-hidden">Roster for 23 - 1 March 2026</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Day</th>
+                                <th scope="col" class="d-none d-md-table-cell">Date</th>
+                                <th scope="col">Start time</th>
+                                <th scope="col">End time</th>
+                                <th scope="col" class="d-none d-md-table-cell">Hours</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td class="d-none d-md-table-cell">23 Feb 2026</td>
+                                <td>9:00am</td>
+                                <td>3:00pm</td>
+                                <td class="d-none d-md-table-cell">5.5 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td class="d-none d-md-table-cell">24 Feb 2026</td>
+                                <td>9:00am</td>
+                                <td>4:30pm</td>
+                                <td class="d-none d-md-table-cell">7 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td class="d-none d-md-table-cell">25 Feb 2026</td>
+                                <td>10:00am</td>
+                                <td>5:00pm</td>
+                                <td class="d-none d-md-table-cell">6.5 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td class="d-none d-md-table-cell">26 Feb 2026</td>
+                                <td>9:00am</td>
+                                <td>12:00pm</td>
+                                <td class="d-none d-md-table-cell">3 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td class="d-none d-md-table-cell">27 Feb 2026</td>
+                                <td>9:00am</td>
+                                <td>3:00pm</td>
+                                <td class="d-none d-md-table-cell">5.5 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td class="d-none d-md-table-cell">28 Feb 2026</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td class="d-none d-md-table-cell">1 Mar 2026</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                            </tr>
+                        </tbody>
 
-                <table class="table roster-table font--dm">
-                    <caption class="visually-hidden">Roster for 23 - 29 February 2026</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Day</th>
-                            <th scope="col" class="d-none d-md-table-cell">Date</th>
-                            <th scope="col">Start time</th>
-                            <th scope="col">End time</th>
-                            <th scope="col" class="d-none d-md-table-cell">Hours</th>
-                        </tr>`
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Monday</td>
-                            <td class="d-none d-md-table-cell">23 Feb 2026</td>
-                            <td>9:00am</td>
-                            <td>3:00pm</td>
-                            <td class="d-none d-md-table-cell">5.5 hours</td>
-                        </tr>
-                        <tr>
-                            <td>Tuesday</td>
-                            <td class="d-none d-md-table-cell">24 Feb 2026</td>
-                            <td>9:00am</td>
-                            <td>4:30pm</td>
-                            <td class="d-none d-md-table-cell">7 hours</td>
-                        </tr>
-                        <tr>
-                            <td>Wednesday</td>
-                            <td class="d-none d-md-table-cell">25 Feb 2026</td>
-                            <td>10:00am</td>
-                            <td>5:00pm</td>
-                            <td class="d-none d-md-table-cell">6.5 hours</td>
-                        </tr>
-                        <tr>
-                            <td>Thursday</td>
-                            <td class="d-none d-md-table-cell">26 Feb 2026</td>
-                            <td>9:00am</td>
-                            <td>12:00pm</td>
-                            <td class="d-none d-md-table-cell">3 hours</td>
-                        </tr>
-                        <tr>
-                            <td>Friday</td>
-                            <td class="d-none d-md-table-cell">27 Feb 2026</td>
-                            <td>9:00am</td>
-                            <td>3:00pm</td>
-                            <td class="d-none d-md-table-cell">5.5 hours</td>
-                        </tr>
-                        <tr>
-                            <td>Saturday</td>
-                            <td class="d-none d-md-table-cell">28 Feb 2026</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td class="d-none d-md-table-cell">-</td>
-                        </tr>
-                        <tr>
-                            <td>Sunday</td>
-                            <td class="d-none d-md-table-cell">29 Feb 2026</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td class="d-none d-md-table-cell">-</td>
-                    </tbody>
-
-                </table>
+                    </table>
+                </div>
             </div>
         </section>
 
         <section class="roster-summary pb-5">
 
-                <h2 class="fw-bold font--cabin fs-1 text-center">Summary</h2>
+            <div class="container">
+                <div class="py-4">
+                    <h2 class="fw-bold font--cabin fs-1 text-center">Summary</h2>
+                </div>
 
-            <div class="container my-5">
-                <div class="row row g-4 px-2">
+                <div class="row g-4 px-2">
 
                     <div class="col-12 col-lg-4">
                         <div class="card border-0 p-2 h-100">
                             <div class="card-body d-flex flex-column text-center font--dm">
                                 <h3>Days scheduled</h3>
-                                <p class="display-4 fw-semibold flex-grow-1 d-flex align-items-center justify-content-center">5 days</p>
+                                <p
+                                    class="display-4 fw-semibold flex-grow-1 d-flex align-items-center justify-content-center">
+                                    5 days</p>
                             </div>
 
                         </div>
@@ -173,7 +187,9 @@
                         <div class="card border-0 p-2 h-100">
                             <div class="card-body d-flex flex-column text-center font--dm">
                                 <h3>Total hours</h3>
-                                <p class="display-4 fw-semibold flex-grow-1 d-flex align-items-center justify-content-center">27.5 hours</p>
+                                <p
+                                    class="display-4 fw-semibold flex-grow-1 d-flex align-items-center justify-content-center">
+                                    27.5 hours</p>
                             </div>
                         </div>
                     </div>
