@@ -42,15 +42,15 @@
         <!-- Using container fluid to make the navbar wider -->
         <div class="container-fluid">
 
-            <!-- Adding the logo and business name. d-flex to make the logo and text sit on the same line, align-items-center to vertically align, and gap to add space between the logo and text. Loading eager to prioritise loading of the logo as it is important for the initial page load -->
+            <!-- Adding the logo and business name. d-flex to make the logo and text sit on the same line, align-items-center to vertically align, and gap to add space between the logo and text. -->
             <a class="navbar-brand d-flex align-items-center gap-1 gap-sm-3" href="index.html">
 
-                <!-- Adding the logo image. Alt text provided for accessibility and in case of image load failure. Width and height provided to prevent layout shifts as the image loads -->
+                <!-- Adding the logo image. Alt text provided for accessibility and in case of image load failure. Width and height provided to prevent layout shifts as the image loads. Loading eager to prioritise loading of the logo as it is important for the initial page load -->
                 <img src="images/icons/logo-white.svg" alt="Snazzy Paws Grooming Logo" width="42" height="40"
                     loading="eager">
 
-                <!-- Adding the brand name text. Setting the font, and adding italics and font size to fs-5 for 20px, and fs-3 for 28px above screen sizes of 576px -->
-                <span class="navbar-brand-name font--cabin fst-italic">Snazzy Paws Grooming</span></a>
+                <!-- Adding the brand name text. Setting the font, and adding italics  -->
+                <span class="font--cabin fst-italic">Snazzy Paws Grooming</span></a>
 
             <!-- Adding the navbar toggler. navbar toggler applies bootstrap styling when the navigation bar collapses, and button ensures it's clickable. data-bs-toggler applies the javascript behaviour. data-bs-target applies the id so the menu will open when selected. Aria items added for accessibility -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
@@ -63,14 +63,16 @@
             <div class="collapse navbar-collapse" id="mainNav">
 
                 <!-- Unordered list for the menu items. ms-auto to push the menu items to the right, mb-2 to add 8px margin bottom when collapsed, mb-lg-0 to remove margin bottom at 992px and above. align-items-lg-center to vertically align items at 992px and above, gap to add space between menu items, and text-center to center text when the menu is collapsed -->
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-2 font--dm text-center">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-4 gap-lg-2 font--dm text-center">
 
-                    <!-- list item for the navigation. p-2 to apply 8px padding to the button, and p-lg-3 to increase padding of menu items to 16px when navbar is collapsed-->
+                    <!-- list item for the navigation. p-2 to apply 8px padding to the button, and p-xl-3 to increase padding of menu items to 16px when the screen is 1200px or wider-->
                     <li class="nav-item">
+
+                        <!-- active added to make it easier for users to identify which page they're on -->
                         <a class="nav-link active p-2 p-xl-3" aria-current="page" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-2 p-xl-3" href="services.html">SERVICES</a>
+                        <a class="nav-link p-2 p-xl-3 w-lg-75" href="services.html">SERVICES</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link p-2 p-xl-3" href="gallery.html">GALLERY</a>
@@ -78,9 +80,9 @@
                     <li class="nav-item">
                         <a class="nav-link p-2 p-xl-3" href="contact.html">CONTACT US</a>
                     </li>
-                    <li class="nav-item">
-                        <!-- Adding the Book Now button. btn class to apply button styling, and btn--white to apply custom styling. Shadow to add a shadow effect to make it stand out as a cta -->
-                        <a class="btn btn--white shadow" href="booking.html">BOOK NOW</a>
+                    <li class="nav-item w-lg-75">
+                        <!-- Adding the Book Now button. btn class to apply button styling with some css customisations to the bootstrap styling, and btn--white to apply custom styling. Shadow to add a shadow effect to make it stand out as a cta -->
+                        <a class="btn btn--white shadow w-lg-75" href="booking.html">BOOK NOW</a>
                     </li>
                 </ul>
             </div>
@@ -170,7 +172,7 @@
                     <!-- Card 1 -->
 
                     <!-- Add a bootstrap card container with a shadow -->
-                    <div class="card w-100">
+                    <div class="card w-100 shadow-sm">
 
                         <!-- Adding the image for the card. Alt text provided for accessibility and in case of image load failure. Width and height provided to prevent layout shifts as the image loads -->
                         <img src="images/index/teeth.webp" class="card-img-top" alt="Dog with toothbrush" width="390"
@@ -179,13 +181,12 @@
                         <!-- Card body for the contents of the card -->
                         <div class="card-body">
 
-
-
+                            <!-- Adding the title for the card. Text center to align text center, border bottom to add a border below the heading, pb-1 for padding below the heading, and mb-3 to put space between the border and the next section-->
                             <div class="text-center border-bottom pb-1 mb-3">
+
+                                <!-- Using bootstrap card-title for styling, and fw-bold to make text bold-->
                                 <h3 class="card-title fw-bold">Teeth brushing</h3>
-
                             </div>
-
 
                             <!-- Adding a line of text to summarise the treatment. fw-semibold to make the text semi bold, and text-center to align center -->
                             <p class="card-text fw-semibold text-center">Fresh breath, better oral health</p>
@@ -199,14 +200,21 @@
                             </ul>
                         </div>
 
+                        <!-- Adding the card footer using the bootstrap class. bg-white to replace the grey background bootstrap adds with a white one. d-grid to use a grid layout and have the price information stack on smaller screens. At md and above, this will be a flex container, allowing the price and button to sit on the same row. justify content md between makes the items sit on opposite sides at md and above, and align items center makes the items cenetred vertically in md and above.-->
                         <div
                             class="card-footer bg-white border-top d-grid d-md-flex justify-content-md-between align-items-md-center">
+
+                            <!-- adding the price information. pb-2 for when stacked on mobile, and pb-md-0 to remove that padding when on screens md and above.-->
                             <div class="pb-2 pb-md-0">
 
+                                <!-- span for the text. using d-block so that this item can be on its own line-->
                                 <span class="d-block">Starting from:</span>
+
+                                <!-- second span using fw-bold to make the font bol, and fs-5 for 20px font size.-->
                                 <span class="fw-bold fs-5">$10 – $15*</span>
                             </div>
 
+                            <!-- Adding the book now button using the bootstrap button with additional css customisations. Also adding a custom btn class for additional customisations. shadow-sm to add a slight shadow effect to the button-->
                             <a href="booking.html" class="btn btn--select shadow-sm">
                                 Book now
                             </a>
@@ -217,7 +225,7 @@
                     <!-- Card 2 -->
 
                     <!-- Explanation the same as card 1 -->
-                    <div class="card w-100">
+                    <div class="card w-100 shadow-sm">
                         <img src="images/index/full-package.webp" class="card-img-top" alt="Dog during full groom"
                             width="390" height="250">
 
@@ -248,7 +256,7 @@
                     <!-- Card 3 -->
 
                     <!-- Explanation the same as card 1 -->
-                    <div class="card w-100">
+                    <div class="card w-100 shadow-sm">
                         <img src="images/index/deshed.webp" class="card-img-top" alt="Dog during deshedding" width="390"
                             height="250">
                         <div class="card-body">
@@ -290,7 +298,6 @@
                 <small>*De-shedding treatment is only available as an add on to the Bath and
                     brush, or Haircut treatments.</small>
             </div>
-            </div>
         </section>
 
         <!-- Adding the third section for the testimonial cards with padding of 20px top and bottom of the section using bottstrap property py-5-->
@@ -300,7 +307,7 @@
 
 
             <!-- class for the heading, to make the header and the text below is centered. mb-5 adds a margin of 48px at the bottom of the heading section-->
-            <div class="text-center mb-5">
+            <div class="container text-center mb-5">
 
                 <h2 class="fw-bold font--cabin fs-1">What our clients say</h2>
                 <span class="fs-4 fst-italic">Real results from happy dogs and their owners</span>
@@ -315,7 +322,7 @@
 
                     <!-- Card 1 -->
                     <!-- Add a bootstrap card container with a shadow -->
-                    <div class="card w-100 text-center">
+                    <div class="card w-100 text-center shadow-sm">
 
                         <!-- div for before and after images and button functionality. id=t1 to align button behaviours. Slide provides animation when selecting the button. data-bs-ride=false prevents images from cycling automatically. -->
                         <div id="t1" class="carousel slide media-carousel" data-bs-ride="false"
@@ -368,27 +375,27 @@
                             <!-- Using blockquote to define that this is a quote from a customer -->
                             <blockquote>
 
-                                <!-- Adding the quote using p. Setting margin to 0 as blockquote is adding spacing for the bottom. Font style to italic and text aligned center -->
-                                <p class="m-0 fst-italic">“Beryl came home looking absolutely gorgeous. Her coat was
+                                <!-- Using card-text bootstrap class, and style to italic and text aligned center -->
+                                <p class="card-text fst-italic">“Beryl came home looking absolutely gorgeous. Her coat was
                                     soft, and she smelled amazing. You could tell she was comfortable the whole time.
                                     Best groom she’s ever had.”</p>
                             </blockquote>
 
                             <!-- adding text for the package. Setting m-0 to remove any padding, as the card-body container is already doing this-->
-                            <p class="fw-semibold m-0">Full grooming package</p>
+                            <span class="fw-semibold m-0">Full grooming package</span>
                         </div>
 
-                        <!-- Closing card body and adding footer. Adding bg-white to override bootstrap default, and adding a border top to separate from the body section-->
-                        <div class="card-footer bg-white border-top">
+                        <!-- Closing card body and adding footer. Adding bg-white to override bootstrap default, and adding a border top to separate from the body section. Adding additional padding to the card footer -->
+                        <div class="card-footer bg-white border-top p-3">
 
-                            <!-- Adding footer text. m-1 used to add 4px padding, to ensure padding is consistent in the card-->
-                            <p class="m-1">From Dave - Morrinsville</p>
+                            <!-- Adding footer text -->
+                            <span>From Dave - Morrinsville</span>
                         </div>
                     </div>
 
                     <!-- Card 2 - same implementation as card 1 -->
 
-                    <div class="card w-100 text-center">
+                    <div class="card w-100 text-center shadow-sm">
                         <div id="t2" class="carousel slide media-carousel" data-bs-ride="false" data-bs-touch="true"
                             aria-label="Testimonial photos for deshedding treatment">
                             <div class="carousel-inner">
@@ -417,20 +424,20 @@
                             <hr>
 
                             <blockquote>
-                                <p class="mb-0 fst-italic">“Henry sheds a lot, but the difference after this was
+                                <p class="card-text mb-0 fst-italic">“Henry sheds a lot, but the difference after this was
                                     huge. His coat felt lighter and there was way less hair around the house. He
                                     was calm, happy, and looked great.”</p>
                             </blockquote>
-                            <p class="fw-semibold mb-1">Bath and brush with de-shedding add-on</p>
+                            <span class="fw-semibold mb-1">Bath and brush with de-shedding add-on</span>
                         </div>
-                        <div class="card-footer bg-white border-top">
-                            <p class="m-1">From Jessica - Hamilton</p>
+                        <div class="card-footer bg-white border-top p-3">
+                            <span>From Jessica - Hamilton</span>
                         </div>
                     </div>
 
                     <!-- Card 3 - same implementation as card 1-->
 
-                    <div class="card w-100 text-center">
+                    <div class="card w-100 text-center shadow-sm">
                         <div id="t3" class="carousel slide media-carousel" data-bs-ride="false" data-bs-touch="true"
                             aria-label="Testimonial photos for haicut treatment">
                             <div class="carousel-inner">
@@ -458,15 +465,15 @@
                             <h3 class="card-title fs-4 fw-bold mb-0">Jan</h3>
                             <hr>
                             <blockquote>
-                                <p class="mb-0 fst-italic">“Jan’s haircut was perfect. Clean, tidy, and exactly
+                                <p class="card-text mb-0 fst-italic">“Jan’s haircut was perfect. Clean, tidy, and exactly
                                     what
                                     we asked for. Her face especially looked so
                                     neat and she seemed really relaxed when we picked her up.”</p>
                             </blockquote>
-                            <p class="fw-semibold mb-1">Haircut package</p>
+                            <span class="fw-semibold mb-1">Haircut package</span>
                         </div>
-                        <div class="card-footer bg-white border-top">
-                            <p class="m-1">From Mayvis - Cambridge</p>
+                        <div class="card-footer bg-white border-top p-3">
+                            <span>From Mayvis - Cambridge</span>
                         </div>
                     </div>
                 </div>
@@ -492,38 +499,47 @@
                 </div>
             </div>
 
+            <!-- adding the container for the card -->
             <div class="container py-5">
 
-                <div class="col-12">
-                    <div class="card border-0 py-4">
+                <!-- adding the bootstrap card and removing the border-->
+                    <div class="card border-0">
+
+                        <!-- adding the card body contents. Flexbox container using d-flex along with align items center and justify content center to make the contents stay within the center of the card-->
                         <div class="card-body d-flex align-items-center justify-content-center">
+
+                            <!-- an additional flexbox container to help structure the items within the card. gap-5 to add a gap between each of the children within the container, and flex-column to make the children stack, rather than on the same line -->
                             <div class="d-flex gap-5 flex-column font--dm">
 
-
-
+                                <!-- adding the phone information. d-flex for another flexbox container. justify content start to make the items left aligned, and align-items-center to make sure they're vertically ceneterd. Gap 4 to add a gap between the icon and text-->
                                 <div class="d-flex justify-content-start align-items-center gap-4">
+
+                                    <!-- Adding the icon. alt text doesn't exist and aria is hidden as icon is decorative purposes only and doesn't need to be known by screen readers. setting the height and width to ensure the space is reserved when the page loads, and loading lazy as this is not a priority item to be loaded-->
                                     <img src="images/icons/phone.svg" alt="" aria-hidden="true" width="44" height="44"
                                         loading="lazy">
+
+                                        <!-- adding the card-text using bootstrap class -->
                                     <div class="card-text">
 
+                                        <!-- Adding text and phone number. mb-1 to add spacing between the text items, and d-block for the first span so that the two will stack, rather than appear on the same line.-->
                                         <span class="mb-1 d-block">Call us</span>
                                         <span class="mb-0 fw-bold">(000) 123 123345</span>
                                     </div>
-
                                 </div>
 
+                                <!-- as above -->
                                 <div class="d-flex justify-content-start align-items-center gap-4">
                                     <img src="images/icons/email.svg" alt="" aria-hidden="true" width="44" height="44"
                                         loading="lazy">
                                     <div class="card-text">
 
                                         <span class="mb-1 d-block">Email us</span>
-                                        <a
-                                            class="mb-0 fw-bold external-link--green text-break">hello@snazzypawsgrooming.co.nz</a>
 
+                                        <!-- Adding email. Linking this to create an email if the user selects it -->
+                                        <a
+                                            class="mb-0 fw-bold external-link--green text-break" href="mailto:hello@snazzypawsgrooming.co.nz?subject=General%20enquiry">hello@snazzypawsgrooming.co.nz</a>
                                     </div>
                                 </div>
-
                                 <div class="d-flex justify-content-start align-items-center gap-4">
                                     <img src="images/icons/location.svg" alt="" aria-hidden="true" width="44"
                                         height="59" loading="lazy">
@@ -533,11 +549,9 @@
                                         <span class="mb-0 d-block fw-bold">Shop 3 - 501 Center Place</span>
                                         <span class="mb-0 d-block fw-bold">Central CBD District</span>
                                         <span class="mb-0 fw-bold">Hamilton 2879</span>
-
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -575,7 +589,7 @@
                     <!-- same as aboe -->
                     <div class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3">
 
-                        <!-- fw-bold to make the text bold, and fs-5 to set font size to 48px -->
+                        <!-- fw-bold to make the text bold, and fs-5 to set font size to 20px -->
                         <span class="fw-bold fs-5 font--dm">Check out our socials!</span>
                     </div>
 
@@ -635,7 +649,7 @@
                             <p class="mb-0">Shop 3 - 501 Center Place</p>
                             <p class="mb-0">Central CBD District</p>
                             <p class="mb-0">Hamilton 2879</p>
-                            <p class="mt-4 mb-0">Phone: (000) 123 12335</p>
+                            <p class="mt-4 mb-0">Phone: (000) 123 12345</p>
 
                             <!-- Adding email with mailto link to allow users to click and email directly. external-link class for custom styling -->
                             <p class="mb-0">Email: <a

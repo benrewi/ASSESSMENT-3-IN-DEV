@@ -80,6 +80,13 @@
     transition: all 0.3s ease; 
 }
 
+.navbar .navbar-nav .nav-link:hover {
+    background-color: var(--medium-green);
+    border-radius: 6px;
+}
+
+
+
 .btn--wide {
     width: 260px;
 }
@@ -392,6 +399,14 @@ textarea {
    .booking-summary thead{
     display: none;
    }
+
+   .navbar-nav .nav-link, 
+.navbar-nav .btn {
+    display: inline-block;
+    max-width: 400px;
+    width: 100%;
+
+}
 }
 
 
