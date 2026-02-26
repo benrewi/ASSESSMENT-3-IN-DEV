@@ -54,7 +54,7 @@
     <main id="main">
         <form action="#" method="post">
 
-            <!-- Adding the services section feature cards. -->
+            <!-- Adding the services section feature cards. Refer to notes in services.html for formatting. Exception is for the cta button which is slightly different here  -->
             <section class="services-features-section py-5">
 
                 <div class="container">
@@ -103,7 +103,6 @@
                                     <!-- Adding the  ability to select a service using a checkbox. This will use the btn-check class for formatting, to ensure consistent behaviour is used across all cards. ID set as ft-service-teeth as a unique ID, name set to services to group like information together when the form is submitted, value of teeth to identify the item that has been selected,  -->
                                     <input type="checkbox" class="btn-check" id="ft-service-teeth" name="services"
                                         value="teeth">
-
                                     <label class="btn btn--select shadow-sm" for="ft-service-teeth">
                                         Add
                                     </label>
@@ -116,13 +115,11 @@
                         <div class="card p-2 w-100">
                             <div
                                 class="card-header bg-transparent border-0 d-flex flex-column align-items-start gap-2 p-0">
-
                                 <img src="images/icons/full-groom.svg" alt="" aria-hidden="true" width="60" height="60"
                                     loading="lazy">
                                 <h3 class="card-title fw-bold p-2 m-0"> Full Grooming Package</h3>
                             </div>
                             <div class="card-body pt-0">
-
                                 <ul class="ps-3">
                                     <li>Full professional groom</li>
                                     <li>Bath and haircut</li>
@@ -144,8 +141,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Card 3 -->
                         <div class="card p-2 w-100">
                             <div
                                 class="card-header bg-transparent border-0 d-flex flex-column align-items-start gap-2 p-0">
@@ -180,34 +175,22 @@
 
             <section class="booking-all-services pb-5">
                 <div class="container">
-
                     <div class="d-flex align-items-center gap-3 mb-0">
                         <img src="images/icons/all-services.svg" alt="" aria-hidden="true" class="services-logo-header"
                             width="48" height="48" loading="lazy">
-
                         <div class="pb-2 pb-md-0">
                             <h2 class="fw-bold font--cabin fs-1 mb-0">All services</h2>
                         </div>
-
                     </div>
                     <hr class="section-divider">
 
-                    <!-- This section doesn't have a carousel and is using the bootstrap grid system to order the cards instead -->
-
-                    <!-- Specifying that the cards should be in a row. g-4 sets the gutter between columns to 25px, keeping consistent space top and bottom-->
-
+                    <!-- Refer to services.html for notes on cards in the all services section. The difference is the CTA button, which is the same behaviour as mentioned for the CTA in the above features services section.-->
                     <div class="row g-4 px-2">
-                        <!-- Card 1 -->
-
-                        <!-- used as a custom CSS class to set the minimum height for the cards to ensure they all maintain the same height at all times. col-12 makes the cards display on 1 row at screen sizes below 768px. col-md-6 puts two cards on 1 row at 768px and above, and col-xl-3 puts 3 cards on a row at 1200px and above-->
-
                         <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
-
                             <div class="card p-2 h-100">
                                 <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
                                     <img src="images/icons/bath-brush.svg" alt="" aria-hidden="true" width="60"
                                         height="60" loading="lazy">
-
                                     <h3 class="card-title fw-bold mb-0">Bath and brush
                                     </h3>
                                 </div>
@@ -224,25 +207,20 @@
                                             <span class="d-block">Starting from:</span>
                                             <span class="d-block fw-bold fs-5 mb-0">$25 – $50*</span>
                                         </div>
-
                                         <input type="checkbox" class="btn-check" id="service-bathbrush" name="services"
                                             value="bathbrush">
-
                                         <label class="btn btn--select shadow-sm" for="service-bathbrush">
                                             Add
                                         </label>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Card 2 -->
                         <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
                             <div class="card p-2 h-100">
                                 <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
                                     <img src="images/icons/haircut.svg" alt="" aria-hidden="true" width="60" height="60"
                                         loading="lazy">
-
                                     <h3 class="card-title fw-bold mb-0">Haircut
                                     </h3>
                                 </div>
@@ -259,25 +237,20 @@
                                             <span class="d-block">Starting from:</span>
                                             <span class="d-block fw-bold fs-5 mb-0">$45 – $85*</span>
                                         </div>
-
                                         <input type="checkbox" class="btn-check" id="service-haircut" name="services"
                                             value="haircut">
-
                                         <label class="btn btn--select shadow-sm" for="service-haircut">
                                             Add
                                         </label>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Card 3 -->
                         <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
                             <div class="card p-2 h-100">
                                 <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
                                     <img src="images/icons/nail.svg" alt="" aria-hidden="true" width="60" height="60"
                                         loading="lazy">
-
                                     <h3 class="card-title fw-bold mb-0">Nail trim
                                     </h3>
                                 </div>
@@ -293,26 +266,20 @@
                                             <span class="d-block">Starting from:</span>
                                             <span class="d-block fw-bold fs-5 mb-0">$10 – $20*</span>
                                         </div>
-
                                         <input type="checkbox" class="btn-check" id="service-nailtrim" name="services"
                                             value="nailtrim">
-
                                         <label class="btn btn--select shadow-sm" for="service-nailtrim">
                                             Add
                                         </label>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Card 4 -->
                         <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
                             <div class="card p-2 h-100">
                                 <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
                                     <img src="images/icons/ear.svg" alt="" aria-hidden="true" width="60" height="60"
                                         loading="lazy">
-
                                     <h3 class="card-title fw-bold mb-0">Ear cleaning
                                     </h3>
                                 </div>
@@ -328,20 +295,16 @@
                                             <span class="d-block">Starting from:</span>
                                             <span class="d-block fw-bold fs-5 mb-0">$10 – $15*</span>
                                         </div>
-
                                         <input type="checkbox" class="btn-check" id="service-earcleaning"
                                             name="services" value="earcleaning">
 
                                         <label class="btn btn--select shadow-sm" for="service-earcleaning">
                                             Add
                                         </label>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Card 1 -->
                         <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
                             <div class="card p-2 h-100">
                                 <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
@@ -364,20 +327,15 @@
                                             <span class="d-block">Starting from:</span>
                                             <span class="d-block fw-bold fs-5 mb-0">$10 – $15*</span>
                                         </div>
-
                                         <input type="checkbox" class="btn-check" id="service-teeth" name="services"
                                             value="teeth">
-
                                         <label class="btn btn--select shadow-sm" for="service-teeth">
                                             Add
                                         </label>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Card 1 -->
                         <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
                             <div class="card p-2 h-100">
                                 <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
@@ -399,20 +357,15 @@
                                             <span class="d-block">Starting from:</span>
                                             <span class="d-block fw-bold fs-5 mb-0">$20 – $40**</span>
                                         </div>
-
                                         <input type="checkbox" class="btn-check" id="service-deshedding" name="services"
                                             value="deshedding2">
-
                                         <label class="btn btn--select shadow-sm" for="service-deshedding">
                                             Add
                                         </label>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Card 1 -->
                         <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
                             <div class="card p-2 h-100">
                                 <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
@@ -433,26 +386,20 @@
                                             <span class="d-block">Starting from:</span>
                                             <span class="d-block fw-bold fs-5 mb-0">$15 – $30*</span>
                                         </div>
-
                                         <input type="checkbox" class="btn-check" id="service-flea" name="services"
                                             value="flea">
-
                                         <label class="btn btn--select shadow-sm" for="service-flea">
                                             Add
                                         </label>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Card 1 -->
                         <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
                             <div class="card p-2 h-100">
                                 <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
                                     <img src="images/icons/spa.svg" alt="" aria-hidden="true" width="60" height="60"
                                         loading="lazy">
-
                                     <h3 class="card-title fw-bold mb-0">Spa package
                                     </h3>
                                 </div>
@@ -469,26 +416,20 @@
                                             <span class="d-block">Starting from:</span>
                                             <span class="d-block fw-bold fs-5 mb-0">$75 – $150*</span>
                                         </div>
-
                                         <input type="checkbox" class="btn-check" id="service-spa" name="services"
                                             value="spa">
-
                                         <label class="btn btn--select shadow-sm" for="service-spa">
                                             Add
                                         </label>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Card 1 -->
                         <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
                             <div class="card p-2 h-100">
                                 <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
                                     <img src="images/icons/express.svg" alt="" aria-hidden="true" width="60" height="60"
                                         loading="lazy">
-
                                     <h3 class="card-title fw-bold mb-0">Express service</h3>
                                 </div>
                                 <div class="card-body pb-0">
@@ -503,26 +444,20 @@
                                             <span class="d-block">Starting from:</span>
                                             <span class="d-block fw-bold fs-5 mb-0">$15 – $25*</span>
                                         </div>
-
                                         <input type="checkbox" class="btn-check" id="service-express" name="services"
                                             value="express">
-
                                         <label class="btn btn--select shadow-sm" for="service-express">
                                             Add
                                         </label>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Card 1 -->
                         <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
                             <div class="card p-2 h-100">
                                 <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
                                     <img src="images/icons/medicated-bath.svg" alt="" aria-hidden="true" width="60"
                                         height="60" loading="lazy">
-
                                     <h3 class="card-title fw-bold mb-0">Medicated bath</h3>
                                 </div>
                                 <div class="card-body pb-0">
@@ -537,20 +472,15 @@
                                             <span class="d-block">Starting from:</span>
                                             <span class="d-block fw-bold fs-5 mb-0">$20 – $40*</span>
                                         </div>
-
                                         <input type="checkbox" class="btn-check" id="service-medicated" name="services"
                                             value="medicated">
-
                                         <label class="btn btn--select shadow-sm" for="service-medicated">
                                             Add
                                         </label>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Card 1 -->
                         <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
                             <div class="card p-2 h-100">
                                 <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
@@ -576,20 +506,15 @@
                                         <label class="btn btn--select shadow-sm" for="service-specialbreed">
                                             Add
                                         </label>
-
-
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Card 1 -->
                         <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
                             <div class="card p-2 h-100">
                                 <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
                                     <img src="images/icons/puppy.svg" alt="" aria-hidden="true" width="60" height="60"
                                         loading="lazy">
-
                                     <h3 class="card-title fw-bold mb-0">Puppy package</h3>
                                 </div>
                                 <div class="card-body pb-0">
@@ -606,24 +531,20 @@
                                         </div>
                                         <input type="checkbox" class="btn-check" id="service-puppy" name="services"
                                             value="puppy">
-
                                         <label class="btn btn--select shadow-sm" for="service-puppy">
                                             Add
                                         </label>
-
-
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Card 1 -->
+
                         <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
                             <div class="card p-2 h-100">
                                 <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
                                     <img src="images/icons/senior.svg" alt="" aria-hidden="true" width="60" height="60"
                                         loading="lazy">
-
                                     <h3 class="card-title fw-bold mb-0">Senior dog package</h3>
                                 </div>
                                 <div class="card-body pb-0">
@@ -638,26 +559,21 @@
                                             <span class="d-block">Starting from:</span>
                                             <span class="d-block fw-bold fs-5 mb-0">$40 – $80*</span>
                                         </div>
-
                                         <input type="checkbox" class="btn-check" id="service-senior" name="services"
                                             value="senior">
 
                                         <label class="btn btn--select shadow-sm" for="service-senior">
                                             Add
                                         </label>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Card 1 -->
                         <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
                             <div class="card p-2 h-100">
                                 <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
                                     <img src="images/icons/full-groom.svg" alt="" aria-hidden="true" width="60"
                                         height="60" loading="lazy">
-
                                     <h3 class="card-title fw-bold mb-0">Full grooming package</h3>
                                 </div>
                                 <div class="card-body pb-0">
@@ -675,12 +591,9 @@
                                         </div>
                                         <input type="checkbox" class="btn-check" id="service-fullgroom" name="services"
                                             value="fullgroom">
-
                                         <label class="btn btn--select shadow-sm" for="service-fullgroom">
                                             Add
                                         </label>
-
-
                                     </div>
                                 </div>
                             </div>
@@ -689,33 +602,38 @@
                 </div>
             </section>
 
+            <!-- Adding the date and time section -->
             <section class="booking-date-time">
+
+                <!-- Adding the container -->
                 <div class="container">
 
+                    <!-- heading section layout is the same as for the service selection sections-->
                     <div class="d-flex align-items-center gap-3 mb-0">
                         <img src="images/icons/calendar.svg" alt="" aria-hidden="true" class="services-logo-header"
                             width="48" height="48" loading="lazy">
-
-
-                        <!-- Adding the heading to be on the same line as the icon-->
                         <h2 class="fw-bold font--cabin fs-1 mb-0">Select a date and time</h2>
-
-
-
                     </div>
+
+
                     <hr class="section-divider">
 
-                    <div class="mb-5 font--dm w-100">
+                    <!-- Adding spacing between the divider. Setting the font to dm sans-->
+                    <div class="mb-5 font--dm">
+
+                        <!-- Using a row layout for the calendars. justifying content between so they stick to the left and right side of the screen  -->
                         <div class="row justify-content-between">
+
+                            <!-- Adding the rules for the first calendar. This should be full screen at screen sizes below 992px, use 6 columns between 992px and 1199px, and 5 columns for 1200px and above-->
                             <div class="col-12 col-lg-6 col-xl-5">
 
-                                <div class="d-flex align-items-baseline mb-2 mt-4">
-                                    <h3 class="fs-3 fw-bold">February 2026</h3>
+                                <!-- Adding the heading for the calendar. Addin margin for spacing to top and bottom, and setting font weight to bold -->
+                                <h3 class="my-4 fs-3 fw-bold">February 2026</h3>
 
-                                </div>
-
+                                <!-- Adding a row inside the container for the days of the week. mc-3 to add spacing between the days and the tiles below -->
                                 <div class="row mb-3">
 
+                                    <!-- Adding the days using col bootstrap property. Text center to make them centered within the column-->
                                     <div class="col text-center">Mon</div>
                                     <div class="col text-center">Tue</div>
                                     <div class="col text-center">Wed</div>
@@ -725,8 +643,10 @@
                                     <div class="col text-center">Sun</div>
                                 </div>
 
+                                <!-- Adding the next row for the tiles gap-2 to esure even spacing between the times, and mb-2 for spacing when the calendars are stacked on smaller screens -->
                                 <div class="row row-cols-7 g-2 mb-2">
 
+                                    <!-- using the col bootstrap property for even spacing. ratio sets the size of the tiles. width and height 100 ensures it takes up the entire space. No text or visuals here as the first day in february is on a sunday -->
                                     <div class="col">
                                         <div class="ratio ratio-4x3">
                                             <div class="w-100 h-100"></div>
@@ -758,12 +678,15 @@
                                         </div>
                                     </div>
 
+                                    <!-- Adding the tile for 1 february-->
                                     <div class="col">
                                         <div class="ratio ratio-4x3">
 
+                                            <!-- using input as a selector for the dates, using radio buttons so only 1 date can be selected. custom button styling used, with name for input set. id aligns with the date ebing selected, along with the value. btn added to replace the usual input radio selector-->
                                             <input type="radio" class="btn-check" name="date" id="date20260201"
                                                 value="2026-02-01">
 
+                                                <!-- adding the text within the tile. btn added to display the correct button styling, width and height 100 to take up all the space, aligned and justified center and shadow none to remove the shadows from these buttons. referencing the ID set in the label also, and an aria label set for screen readers-->
                                             <label
                                                 class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
                                                 for="date20260201" aria-label="Select February 1, 2026">
@@ -772,6 +695,8 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <!-- All remaining inputs follow the structure mentioned above. -->
                                 <div class="row row-cols-7 g-2 mb-2">
                                     <div class="col">
                                         <div class="ratio ratio-4x3">
@@ -1083,7 +1008,7 @@
                                         </div>
                                     </div>
 
-
+                                    <!-- last tile for the 1 March. blank as this is the ferburary calendar -->
                                     <div class="col">
                                         <div class="ratio ratio-4x3">
                                             <div class="w-100 h-100"></div>
@@ -1093,10 +1018,11 @@
                             </div>
 
 
+                            <!-- Adding the second calendar. This formatting is the same as mentioned above.-->
                             <div class="col-12 col-lg-6 col-xl-5">
-                                <div class="d-flex align-items-baseline mt-4 mb-2">
-                                    <h3 class="fs-3 fw-bold">March 2026</h3>
-                                </div>
+
+                                <h3 class="my-4 fs-3 fw-bold">March 2026</h3>
+
 
                                 <div class="row row-cols-7 g-2 mb-2">
                                     <div class="col text-center">Mon</div>
@@ -1527,57 +1453,59 @@
 
 
 
-                <!-- Heading for the contact section. text-center to align center, fw-bold to make the text bold, font--cabin to apply the font, and fs-1 to set the font size to 40px -->
+                <!-- Adding a container and padding added to separate the calendars as well as heading from the time selection card-->
+                <div class="container py-3">
 
-                
-
-
-
-
-                <!-- Adding a card to hold the contact information. text-center to align center, text-break to ensure the text wraps as the screen size reduces, and contact-card for custom styling. py-3 to add 16px padding top and bottom -->
-                <div class="py-3">
-
+                    <!-- Adding the heading. bold font with cabin font. text aligned center and font size 40px -->
                     <h2 class="fw-bold font--cabin text-center fs-1 mb-4">Available times: </h2>
 
+                    <!-- Adding the card and removing the border. setting the font to dm sans for all text within the card-->
                     <div class="card p-4 border-0 font--dm">
+
+                        <!-- Adding the first row within the cards. Alignment centered -->
                         <div class="row align-items-center">
-                            <div class="col-12 col-lg-4 text-center">
+
+                            <!-- setting the rules of how this row should behave. take up full width on screens below 992px, otherwise, only use 4 columns, or 1/3 of the space. aligning text center-->
+                            <div class="col-12 col-lg-4 text-center mb-3">
                                 <h3>Morning</h3>
 
+                                <!-- using a grid for the items within the row to make them stack. gap-2 for consistent spacing, and making the items ceneterd -->
                                 <div class="d-grid gap-2 justify-content-center">
 
+                                    <!-- similar to the calendar input - using radio input for the time selection. if and value set, and using the btn-check custom class to prevent the default radio selection icon from showing. -->
                                     <input type="radio" name="time" id="timeslot0900" value="0900" class="btn-check">
 
+                                    <!-- Adding the label. using the custom button classes for styling to make them wider, and also for the behaviour. -->
                                     <label
-                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        class="btn btn--wide btn--select shadow-none"
                                         for="timeslot0900" aria-label="Select 9:00am time slot">9:00am</label>
 
 
                                     <input type="radio" name="time" id="timeslot0930" value="0930" class="btn-check">
 
                                     <label
-                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        class="btn btn--wide btn--select shadow-none"
                                         for="timeslot0930" aria-label="Select 9:30am time slot">9:30am</label>
 
 
                                     <input type="radio" name="time" id="timeslot1000" value="1000" class="btn-check">
 
                                     <label
-                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        class="btn btn--wide btn--select shadow-none"
                                         for="timeslot1000" aria-label="Select 10:00am time slot">10:00am</label>
 
 
                                     <input type="radio" name="time" id="timeslot1030" value="1030" class="btn-check">
 
                                     <label
-                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        class="btn btn--wide btn--select shadow-none"
                                         for="timeslot1030" aria-label="Select 10:30am time slot">10:30am</label>
 
 
                                     <input type="radio" name="time" id="timeslot1100" value="1100" class="btn-check">
 
                                     <label
-                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        class="btn btn--wide btn--select shadow-none"
                                         for="timeslot1100" aria-label="Select 11:00am time slot">11:00am</label>
 
                                 </div>
@@ -1591,33 +1519,33 @@
                                     <input type="radio" name="time" id="timeslot1130" value="1130" class="btn-check">
 
                                     <label
-                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        class="btn btn--wide btn--select shadow-none"
                                         for="timeslot1130" aria-label="Select 11:30am time slot">11:30am</label>
 
 
                                     <input type="radio" name="time" id="timeslot1200" value="1200" class="btn-check">
 
                                     <label
-                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        class="btn btn--wide btn--select shadow-none"
                                         for="timeslot1200" aria-label="Select 12:00pm time slot">12:00pm</label>
 
 
                                     <input type="radio" name="time" id="timeslot1230" value="1230" class="btn-check">
 
                                     <label
-                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        class="btn btn--wide btn--select shadow-none"
                                         for="timeslot1230" aria-label="Select 12:30pm time slot">12:30pm</label>
 
                                     <input type="radio" name="time" id="timeslot1300" value="1300" class="btn-check">
 
                                     <label
-                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        class="btn btn--wide btn--select shadow-none"
                                         for="timeslot1300" aria-label="Select 1:00pm time slot">1:00pm</label>
 
                                     <input type="radio" name="time" id="timeslot1330" value="1330" class="btn-check">
 
                                     <label
-                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        class="btn btn--wide btn--select shadow-none"
                                         for="timeslot1330" aria-label="Select 1:30pm time slot">1:30pm</label>
                                 </div>
                             </div>
@@ -1629,28 +1557,28 @@
                                     <input type="radio" name="time" id="timeslot1400" value="1400" class="btn-check">
 
                                     <label
-                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        class="btn btn--wide btn--select shadow-none"
                                         for="timeslot1400" aria-label="Select 2:00pm time slot">2:00pm</label>
 
 
                                     <input type="radio" name="time" id="timeslot1430" value="1430" class="btn-check">
 
                                     <label
-                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        class="btn btn--wide btn--select shadow-none"
                                         for="timeslot1430" aria-label="Select 2:30pm time slot">2:30pm</label>
 
 
                                     <input type="radio" name="time" id="timeslot1500" value="1500" class="btn-check">
 
                                     <label
-                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        class="btn btn--wide btn--select shadow-none"
                                         for="timeslot1500" aria-label="Select 3:00pm time slot">3:00pm</label>
 
 
                                     <input type="radio" name="time" id="timeslot1530" value="1530" class="btn-check">
 
                                     <label
-                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        class="btn btn--wide btn--select shadow-none"
                                         for="timeslot1530" aria-label="Select 3:30pm time slot">3:30pm</label>
 
 
@@ -1658,7 +1586,7 @@
                                     <input type="radio" name="time" id="timeslot1600" value="1600" class="btn-check">
 
                                     <label
-                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        class="btn btn--wide btn--select shadow-none"
                                         for="timeslot1600" aria-label="Select 4:00pm time slot">4:00pm</label>
                                 </div>
                             </div>
@@ -1699,7 +1627,8 @@
                             <div class="col-12 col-md-6 mb-3">
                                 <label class="mb-1 ps-1" for="phone">Contact phone number:</label>
                                 <input id="phone" class="form-control" type="tel" name="phone" placeholder="Name...">
-                                <input id="phone" class="form-control" type="tel" name="phone" placeholder="Phone number...">
+                                <input id="phone" class="form-control" type="tel" name="phone"
+                                    placeholder="Phone number...">
                             </div>
                         </div>
                         <div class="row">
@@ -1728,68 +1657,68 @@
                     <hr class="section-divider">
 
                     <div class="container py-3">
-                    <div class="py-3">
-                        <div class="row">
-                            <div class="col-12 col-md-6 mb-3">
-                                <label class="mb-1 ps-1" for="petname">Pet's name:</label>
-                                <input id="petname" class="form-control" type="text" name="petname"
-                                    placeholder="Name...">
-                            </div>
-                            <div class="col-12 col-md-6 mb-3">
-                                <span class="d-block mb-1 ps-1">Age:</span>
+                        <div class="py-3">
+                            <div class="row">
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label class="mb-1 ps-1" for="petname">Pet's name:</label>
+                                    <input id="petname" class="form-control" type="text" name="petname"
+                                        placeholder="Name...">
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <span class="d-block mb-1 ps-1">Age:</span>
 
-                                <div class="row g-2">
-                                    <div class="col-6">
-                                        <label class="visually-hidden" for="petageyears">Pet age in years</label>
-                                        <input id="petageyears" class="form-control" type="number"
-                                            placeholder="Years..." name="petageyears" min="0">
-                                    </div>
+                                    <div class="row g-2">
+                                        <div class="col-6">
+                                            <label class="visually-hidden" for="petageyears">Pet age in years</label>
+                                            <input id="petageyears" class="form-control" type="number"
+                                                placeholder="Years..." name="petageyears" min="0">
+                                        </div>
 
-                                    <div class="col-6">
-                                        <label class="visually-hidden" for="petagemonths">Pet age in months</label>
-                                        <input id="petagemonths" class="form-control" type="number"
-                                            placeholder="Months..." name="petagemonths" min="0" max="11">
+                                        <div class="col-6">
+                                            <label class="visually-hidden" for="petagemonths">Pet age in months</label>
+                                            <input id="petagemonths" class="form-control" type="number"
+                                                placeholder="Months..." name="petagemonths" min="0" max="11">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-12 col-md-6 mb-3">
-                                <label for="petbreed" class="mb-1 ps-1">
-                                    Breed:
-                                </label>
-                                <select id="petbreed" name="breeds" class="form-select mb-3">
-                                    <option value="" selected="selected">Select a breed...</option>
-                                    <option value="lab">Labrador</option>
-                                    <option value="poodle">Poodle</option>
-                                    <option value="jack-russel">Jack Russel</option>
-                                    <option value="miniature-schnauzer">Miniature Schnauzer</option>
-                                    <option value="cocker-spaniel">Cocker Spaniel</option>
-                                    <option value="great-dane">Great Dane</option>
-                                    <option value="great-dane">Other</option>
-                                </select>
+                            <div class="row">
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="petbreed" class="mb-1 ps-1">
+                                        Breed:
+                                    </label>
+                                    <select id="petbreed" name="breeds" class="form-select mb-3">
+                                        <option value="" selected="selected">Select a breed...</option>
+                                        <option value="lab">Labrador</option>
+                                        <option value="poodle">Poodle</option>
+                                        <option value="jack-russel">Jack Russel</option>
+                                        <option value="miniature-schnauzer">Miniature Schnauzer</option>
+                                        <option value="cocker-spaniel">Cocker Spaniel</option>
+                                        <option value="great-dane">Great Dane</option>
+                                        <option value="great-dane">Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="petsize" class="mb-1 ps-1">
+                                        Pet size:
+                                    </label>
+                                    <select id="petsize" name="pet" class="form-select mb-3">
+                                        <option value="" selected="selected">Select a weight...</option>
+                                        <option value="xsmall">Up to 5kg</option>
+                                        <option value="small">5kg to 10kg</option>
+                                        <option value="medium">10kg to 25kg</option>
+                                        <option value="large">25kg to 40kg</option>
+                                        <option value="xlarge">Over 40kg</option>
+                                    </select>
+
+
+
+                                </div>
+
                             </div>
-
-                            <div class="col-12 col-md-6 mb-3">
-                                <label for="petsize" class="mb-1 ps-1">
-                                    Pet size:
-                                </label>
-                                <select id="petsize" name="pet" class="form-select mb-3">
-                                    <option value="" selected="selected">Select a weight...</option>
-                                    <option value="xsmall">Up to 5kg</option>
-                                    <option value="small">5kg to 10kg</option>
-                                    <option value="medium">10kg to 25kg</option>
-                                    <option value="large">25kg to 40kg</option>
-                                    <option value="xlarge">Over 40kg</option>
-                                </select>
-
-
-
-                            </div>
-
                         </div>
-                    </div>
                     </div>
                 </div>
             </section>
@@ -1808,163 +1737,163 @@
                     </div>
                     <hr class="section-divider">
                     <div class="container py-4">
-                    <div class="py-4">
-                        <div class="card p-4 border-0">
-                            <table class="mb-0 table-responsive-table">
-                                <caption class="visually-hidden">Booking summary</caption>
+                        <div class="py-4">
+                            <div class="card p-4 border-0">
+                                <table class="mb-0 table-responsive-table">
+                                    <caption class="visually-hidden">Booking summary</caption>
 
-                                <thead>
-                                    <tr class="fs-3 font--dm">
-                                        <th class="fs-3 fw-bold pb-2" scope="col">Services</th>
-                                        <th class="fs-3 fw-bold font--dm pb-2" scope="col">Time</th>
-                                        <th class="fs-3 fw-bold font--dm pb-2" scope="col">Pet</th>
-                                        <th class="fs-3 fw-bold font--dm pb-2" scope="col">Total price</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="table-responsive-row">
-                                        <td data-label="Services">
-                                            <div class="d-flex justify-content-between pb-2">
-                                                <span class="fw-bold">Service 1:</span>
-                                                <span id="summary-service-1" class="fw-bold">-</span>
-                                            </div>
-                                            <div class="d-flex justify-content-between pb-2">
-                                                <span class="fw-bold">Service 2:</span>
-                                                <span id="summary-service-2">-</span>
-                                            </div>
-                                        </td>
-                                        <td data-label="Time">
-                                            <div class="d-flex justify-content-between pb-2">
-                                                <span class="fw-bold">Date:</span>
-                                                <span id="summary-date">-</span>
-                                            </div>
-                                            <div class="d-flex justify-content-between pb-2">
-                                                <span class="fw-bold">Time:</span>
-                                                <span id="summary-time">-</span>
-                                            </div>
-                                        </td>
-                                        <td data-label="Pet">
-                                            <div class="d-flex justify-content-between pb-2">
-                                                <span class="fw-bold">Name:</span>
-                                                <span id="summary-pet-name">-</span>
-                                            </div>
-                                            <div class="d-flex justify-content-between pb-2">
-                                                <span class="fw-bold">Breed:</span>
-                                                <span id="summary-pet-breed">-</span>
-                                            </div>
-                                            <div class="d-flex justify-content-between pb-2">
-                                                <span class="fw-bold">Age:</span>
-                                                <span id="summary-pet-age">-</span>
-                                            </div>
-                                        </td>
-                                        <td data-label="Total Price">
-                                            <div class="d-flex justify-content-between pb-2">
-                                                <span class="fw-bold">Service 1:</span>
-                                                <span id="summary-Service1-price">-</span>
-                                            </div>
-                                            <div class="d-flex justify-content-between pb-2">
-                                                <span class="fw-bold">Service 2:</span>
-                                                <span id="summary-Service2-price">-</span>
-                                            </div>
-                                            <div class="d-flex justify-content-between pb-2">
-                                                <span class="fw-bold">Total price:</span>
-                                                <span id="summary-total-price">-</span>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                    <thead>
+                                        <tr class="fs-3 font--dm">
+                                            <th class="fs-3 fw-bold pb-2" scope="col">Services</th>
+                                            <th class="fs-3 fw-bold font--dm pb-2" scope="col">Time</th>
+                                            <th class="fs-3 fw-bold font--dm pb-2" scope="col">Pet</th>
+                                            <th class="fs-3 fw-bold font--dm pb-2" scope="col">Total price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-responsive-row">
+                                            <td data-label="Services">
+                                                <div class="d-flex justify-content-between pb-2">
+                                                    <span class="fw-bold">Service 1:</span>
+                                                    <span id="summary-service-1" class="fw-bold">-</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between pb-2">
+                                                    <span class="fw-bold">Service 2:</span>
+                                                    <span id="summary-service-2">-</span>
+                                                </div>
+                                            </td>
+                                            <td data-label="Time">
+                                                <div class="d-flex justify-content-between pb-2">
+                                                    <span class="fw-bold">Date:</span>
+                                                    <span id="summary-date">-</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between pb-2">
+                                                    <span class="fw-bold">Time:</span>
+                                                    <span id="summary-time">-</span>
+                                                </div>
+                                            </td>
+                                            <td data-label="Pet">
+                                                <div class="d-flex justify-content-between pb-2">
+                                                    <span class="fw-bold">Name:</span>
+                                                    <span id="summary-pet-name">-</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between pb-2">
+                                                    <span class="fw-bold">Breed:</span>
+                                                    <span id="summary-pet-breed">-</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between pb-2">
+                                                    <span class="fw-bold">Age:</span>
+                                                    <span id="summary-pet-age">-</span>
+                                                </div>
+                                            </td>
+                                            <td data-label="Total Price">
+                                                <div class="d-flex justify-content-between pb-2">
+                                                    <span class="fw-bold">Service 1:</span>
+                                                    <span id="summary-Service1-price">-</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between pb-2">
+                                                    <span class="fw-bold">Service 2:</span>
+                                                    <span id="summary-Service2-price">-</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between pb-2">
+                                                    <span class="fw-bold">Total price:</span>
+                                                    <span id="summary-total-price">-</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="container py-5">
-                    <div class="py-5">
-                        <label for="additional-notes" class="ps-1">Additional notes:</label>
-                        <textarea id="additional-notes" name="additional-notes" class="form-control" rows="4"
-                            placeholder="Any additional information or special requests..."></textarea>
+                        <div class="container py-5">
+                            <div class="py-5">
+                                <label for="additional-notes" class="ps-1">Additional notes:</label>
+                                <textarea id="additional-notes" name="additional-notes" class="form-control" rows="4"
+                                    placeholder="Any additional information or special requests..."></textarea>
 
-                        <div class="pt-5 text-center">
-                            <!-- The button type should be submit, however I have used button in this instance, as there is no requirement for the form to be functional. Otherwise, submit would be the correct type to use in this instance. -->
-                            <button type="button" value="Submit"
-                                class="btn btn--wide shadow d-flex justify-content-center mx-auto mt-4 mb-0">Submit
-                                booking</button>
+                                <div class="pt-5 text-center">
+                                    <!-- The button type should be submit, however I have used button in this instance, as there is no requirement for the form to be functional. Otherwise, submit would be the correct type to use in this instance. -->
+                                    <button type="button" value="Submit"
+                                        class="btn btn--wide shadow d-flex justify-content-center mx-auto mt-4 mb-0">Submit
+                                        booking</button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    </div>
             </section>
         </form>
     </main>
-    
-<!-- adding the footer - refer to index.html for notes -->
-<footer class="footer py-5">
-    <div class="container">
-        <div class="row text-center text-lg-start">
-            <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                <div class="d-flex justify-content-center justify-content-lg-start align-items-center gap-3 mb-2">
-                    <img src="images/icons/logo-white.svg" alt="Snazzy Paws Grooming Logo" width="42" height="40"
-                        loading="lazy">
-                    <span class="fw-bold fs-5 fst-italic font--cabin">Snazzy Paws Grooming</span>
-                </div>
-                <div
-                    class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3 font--dm">
-                    <p>Open 9:00am - 5:00pm Monday to Saturday</p>
-                </div>
-                <div class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3">
-                    <span class="fw-bold fs-5 font--dm">Check out our socials!</span>
-                </div>
-                <div class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3">
-                    <a href="https://www.facebook.com/Snazzypaws/" target="_blank" rel="noopener noreferrer">
-                        <img src="images/icons/facebooksvg.svg" alt="Facebook (opens in a new tab)" width="30"
-                            height="30" loading="lazy">
-                    </a>
-                    <a href="https://www.instagram.com/snazzypawsdoggroomingnarangba/?hl=en" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="images/icons/instagram.svg" alt="Instagram (opens in a new tab)" width="30"
-                            height="30" loading="lazy">
-                    </a>
-                    <a href="https://www.tiktok.com/your-real-link" target="_blank" rel="noopener noreferrer">
-                        <img src="images/icons/tiktok.svg" alt="TikTok (opens in a new tab)" width="30" height="30"
+
+    <!-- adding the footer - refer to index.html for notes -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row text-center text-lg-start">
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                    <div class="d-flex justify-content-center justify-content-lg-start align-items-center gap-3 mb-2">
+                        <img src="images/icons/logo-white.svg" alt="Snazzy Paws Grooming Logo" width="42" height="40"
                             loading="lazy">
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                <div class="d-flex justify-content-center justify-content-lg-start">
-                    <div class="mx-auto text-center text-lg-start font--dm">
-                        <span class="fw-bold fs-5 d-block mb-3">Quick links</span>
-                        <ul class="list-unstyled ps-0 mb-0">
-                            <li><a class="external-link" href="index.html">HOME</a></li>
-                            <li><a class="external-link" href="services.html">SERVICES</a></li>
-                            <li><a class="external-link" href="gallery.html">GALLERY</a></li>
-                            <li><a class="external-link" href="contact.html">CONTACT US</a></li>
-                            <li><a class="external-link" href="booking.html">MAKE A BOOKING</a></li>
-                        </ul>
+                        <span class="fw-bold fs-5 fst-italic font--cabin">Snazzy Paws Grooming</span>
+                    </div>
+                    <div
+                        class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3 font--dm">
+                        <p>Open 9:00am - 5:00pm Monday to Saturday</p>
+                    </div>
+                    <div class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3">
+                        <span class="fw-bold fs-5 font--dm">Check out our socials!</span>
+                    </div>
+                    <div class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3">
+                        <a href="https://www.facebook.com/Snazzypaws/" target="_blank" rel="noopener noreferrer">
+                            <img src="images/icons/facebooksvg.svg" alt="Facebook (opens in a new tab)" width="30"
+                                height="30" loading="lazy">
+                        </a>
+                        <a href="https://www.instagram.com/snazzypawsdoggroomingnarangba/?hl=en" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="images/icons/instagram.svg" alt="Instagram (opens in a new tab)" width="30"
+                                height="30" loading="lazy">
+                        </a>
+                        <a href="https://www.tiktok.com/your-real-link" target="_blank" rel="noopener noreferrer">
+                            <img src="images/icons/tiktok.svg" alt="TikTok (opens in a new tab)" width="30" height="30"
+                                loading="lazy">
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                <div class="d-flex justify-content-center justify-content-lg-start">
-                    <div class="mx-auto text-center text-lg-start font--dm">
-                        <span class="fw-bold fs-5 d-block mb-3">Contact us</span>
-                        <p class="mb-0">Shop 3 - 501 Center Place</p>
-                        <p class="mb-0">Central CBD District</p>
-                        <p class="mb-0">Hamilton 2879</p>
-                        <p class="mt-4 mb-0">Phone: (000) 123 12345</p>
-                        <p class="mb-0">Email: <a
-                                href="mailto:hello@snazzypawsgrooming.co.nz?subject=General%20enquiry"
-                                class="external-link">
-                                hello@snazzypawsgrooming.co.nz
-                            </a>
-                        </p>
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <div class="mx-auto text-center text-lg-start font--dm">
+                            <span class="fw-bold fs-5 d-block mb-3">Quick links</span>
+                            <ul class="list-unstyled ps-0 mb-0">
+                                <li><a class="external-link" href="index.html">HOME</a></li>
+                                <li><a class="external-link" href="services.html">SERVICES</a></li>
+                                <li><a class="external-link" href="gallery.html">GALLERY</a></li>
+                                <li><a class="external-link" href="contact.html">CONTACT US</a></li>
+                                <li><a class="external-link" href="booking.html">MAKE A BOOKING</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <div class="mx-auto text-center text-lg-start font--dm">
+                            <span class="fw-bold fs-5 d-block mb-3">Contact us</span>
+                            <p class="mb-0">Shop 3 - 501 Center Place</p>
+                            <p class="mb-0">Central CBD District</p>
+                            <p class="mb-0">Hamilton 2879</p>
+                            <p class="mt-4 mb-0">Phone: (000) 123 12345</p>
+                            <p class="mb-0">Email: <a
+                                    href="mailto:hello@snazzypawsgrooming.co.nz?subject=General%20enquiry"
+                                    class="external-link">
+                                    hello@snazzypawsgrooming.co.nz
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-<!-- Bootstrap JS bundle for the toggle menu to work -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS bundle for the toggle menu to work -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

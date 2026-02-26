@@ -67,18 +67,17 @@
                     <!-- Adding the row for the search field -->
                     <div class="row">
 
-                        <!-- Setting the row to take up 12 columns and fill the width of the page -->
-                        <div class="col-12">
+
 
                             <!-- adding the label for the search field and assigning bootstrap classes to using formatting. Font size using fs-4 to set to 20px for the label. Form field label to add additional padding to the label -->
-                            <label for="service-search" class="form-label ps-1 form fs-4">
+                            <label for="service-search" class="form-label ps-3 form fs-4">
                                 Search for your perfect service:
                             </label>
 
                             <!-- input-group to add the search field and use bootstrap formatting. mb-4 to add spacing to the bottom of the search. -->
                             <div class="input-group mb-4">
 
-                                <!-- specifying id for the search to relate to the button. Defining the input type and using bootstrap form-control class for styling -->
+                                <!-- specifying id for the search to relate to the button. Defining the input type and using bootstrap form-control class for styling. Aria label added for screen readers and specify that the search button its the source of this -->
                                 <input id="service-search" type="text" class="form-control"
                                     placeholder="Search our services..." aria-label="Search our services"
                                     aria-describedby="search-button">
@@ -87,17 +86,16 @@
                                 <button class="btn btn--white" type="submit" id="search-button">Search</button>
                             </div>
 
-                        </div>
                     </div>
 
                     <!-- Adding second row for filters label -->
                     <div class="row">
                         <!-- second row should take all 12 columns (full width)-->
-                        <div class="col-12">
+
 
                             <!-- Adding the label for the filters. Setting font size to 20px, using bootstrap classes for styling.-->
-                            <label class="form-label ps-1 form fs-4">Show pricing by pet size:</label>
-                        </div>
+                            <label class="form-label ps-3 form fs-4">Show pricing by pet size:</label>
+
                     </div>
 
                     <!-- Adding third row for filters.-->
@@ -163,25 +161,32 @@
                 <hr class="section-divider">
             </div>
 
-            <!-- Adding a fluid container as the cards will be in a carousel -->
+            <!-- Adding a fluid container as the cards will be in a scrollable row when the screen hits a smaller size and they no longer fit.-->
             <div class="container-fluid">
+
+                <!-- using a custom class for the cards within for the container to allow them to scroll. The bootstrap carousel has not been used as these items should show all at the same time, rather than a bootstrap carousel that displays only one at a time. d-flex to turn the container in to a flexbox and the item sit side by side, nowrap to prevent the cards frim wrapping and dropping to new rows, overflow-auto so the page doesn't break and a scrollbar addded. gap 4 for consistent spacing between the cards, and pb-3 for spacing below the cards. font set to dm-sans for all cards-->
                 <div class="item-scroll-wrapper d-flex flex-nowrap overflow-auto gap-4 pb-3 font--dm">
 
+                    <!-- adding the first card. p-2 to add padding to the inside, and w-100 so that the card takes up all available space in terms of width-->
                     <div class="card p-2 w-100">
 
-                        <div class="card-header bg-transparent border-0 d-flex flex-column align-items-start gap-2 p-0">
+                        <!-- adding the card header. bg-white to remove the bootstrap card header default grey background, border 0 to remove the defaults border, d-flex/flex-column to make the icon and text stack. gap-2 to add space between the icon and text, and p-0 to remove padding from the card-header-->
+                        <div class="card-header bg-white border-0 d-flex flex-column gap-2 p-0">
 
 
-                            <!-- Icon is used instead of an image -->
+                            <!-- Adding the icon. Setting the width and height, and aria hidden as this is decorative only. Loading lazy as it is not important. -->
                             <img src="images/icons/toothbrush.svg" alt="" aria-hidden="true" width="60" height="60"
                                 loading="lazy">
 
+                                <!-- Adding the card title text. fw-bold for bold text, p-2 to add padding around it, and m-0 to remove margins.-->
                                 <h3 class="card-title fw-bold p-2 m-0">Teeth brushing
                             </h3>
                         </div>
-                        <!-- Card body containing the heading and list -->
+
+                        <!-- card-body for the text. pt-0 to remove default top padding -->
                         <div class="card-body pt-0">
 
+                            <!-- adding the list. ps-3 to add padding to the left side-->
                             <ul class="ps-3">
                                 <li>Pet safe toothpaste</li>
                                 <li>Gentle plaque removal</li>
@@ -206,7 +211,7 @@
                     <!-- Remaining two cards with the same settings -->
                     <div class="card p-2 w-100">
 
-                        <div class="card-header bg-transparent border-0 d-flex flex-column align-items-start gap-2 p-0">
+                        <div class="card-header bg-white border-0 d-flex flex-column gap-2 p-0">
                             <img src="images/icons/full-groom.svg" alt="" aria-hidden="true" width="60" height="60"
                                 loading="lazy">
                             <h3 class="card-title fw-bold p-2 m-0">Full Grooming Package</h3>
@@ -235,7 +240,7 @@
 
                     <div class="card p-2 w-100">
 
-                        <div class="card-header bg-transparent border-0 d-flex flex-column align-items-start gap-2 p-0">
+                        <div class="card-header bg-white border-0 d-flex flex-column gap-2 p-0">
                             <img src="images/icons/deshedding.svg" alt="" aria-hidden="true" width="60" height="60"
                                 loading="lazy">
                                 <h3 class="card-title fw-bold p-2 m-0">De-shedding add-on</h3>
@@ -290,7 +295,7 @@
                         <div class="card p-2 h-100">
 
                             <!-- setting d-flex so that the icon and header become flex items and sit beside eachother. Align items center, to sit centered, gap-2 for spacing between the icon and the text -->
-                            <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                            <div class="card-header bg-white border-0 d-flex align-items-center gap-2 p-0">
 
                                 <!-- Adding the icon. Setting sizing for the icon to ensure there is no shift when the page loads. No alt text as this is decorative, and aria hidden. Loading lazy as these are not important items to be loaded-->
                                 <img src="images/icons/bath-brush.svg" alt="" aria-hidden="true" width="60" height="60"
@@ -336,7 +341,7 @@
                     <!-- Remaining cards use the same formatting as above -->
                     <div class="col-12 col-md-6 col-xl-4">
                         <div class="card p-2 h-100">
-                            <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                            <div class="card-header bg-white border-0 d-flex align-items-center gap-2 p-0">
                                 <img src="images/icons/haircut.svg" alt="" aria-hidden="true" width="60" height="60"
                                     loading="lazy">
 
@@ -366,7 +371,7 @@
 
                     <div class="col-12 col-md-6 col-xl-4">
                         <div class="card p-2 h-100">
-                            <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                            <div class="card-header bg-white border-0 d-flex align-items-center gap-2 p-0">
                                 <img src="images/icons/nail.svg" alt="" aria-hidden="true" width="60" height="60"
                                     loading="lazy">
 
@@ -396,7 +401,7 @@
 
                     <div class="col-12 col-md-6 col-xl-4">
                         <div class="card p-2 h-100">
-                            <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                            <div class="card-header bg-white border-0 d-flex align-items-center gap-2 p-0">
                                 <img src="images/icons/ear.svg" alt="" aria-hidden="true" width="60" height="60"
                                     loading="lazy">
 
@@ -425,7 +430,7 @@
 
                     <div class="col-12 col-md-6 col-xl-4">
                         <div class="card p-2 h-100">
-                            <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                            <div class="card-header bg-white border-0 d-flex align-items-center gap-2 p-0">
                                 <img src="images/icons/toothbrush.svg" alt="" aria-hidden="true" width="60" height="60"
                                     loading="lazy">
 
@@ -455,7 +460,7 @@
 
                     <div class="col-12 col-md-6 col-xl-4">
                         <div class="card p-2 h-100">
-                            <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                            <div class="card-header bg-white border-0 d-flex align-items-center gap-2 p-0">
                                 <img src="images/icons/deshedding.svg" alt="" aria-hidden="true" width="60" height="60"
                                     loading="lazy">
 
@@ -484,7 +489,7 @@
 
                     <div class="col-12 col-md-6 col-xl-4">
                         <div class="card p-2 h-100">
-                            <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                            <div class="card-header bg-white border-0 d-flex align-items-center gap-2 p-0">
                                 <img src="images/icons/tick-and-flea.svg" alt="" aria-hidden="true" width="60"
                                     height="60" loading="lazy">
 
@@ -512,7 +517,7 @@
 
                     <div class="col-12 col-md-6 col-xl-4">
                         <div class="card p-2 h-100">
-                            <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                            <div class="card-header bg-white border-0 d-flex align-items-center gap-2 p-0">
                                 <img src="images/icons/spa.svg" alt="" aria-hidden="true" width="60" height="60"
                                     loading="lazy">
 
@@ -542,7 +547,7 @@
 
                     <div class="col-12 col-md-6 col-xl-4">
                         <div class="card p-2 h-100">
-                            <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                            <div class="card-header bg-white border-0 d-flex align-items-center gap-2 p-0">
                                 <img src="images/icons/express.svg" alt="" aria-hidden="true" width="60" height="60"
                                     loading="lazy">
 
@@ -570,7 +575,7 @@
 
                     <div class="col-12 col-md-6 col-xl-4">
                         <div class="card p-2 h-100">
-                            <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                            <div class="card-header bg-white border-0 d-flex align-items-center gap-2 p-0">
                                 <img src="images/icons/medicated-bath.svg" alt="" aria-hidden="true" width="60"
                                     height="60" loading="lazy">
 
@@ -598,7 +603,7 @@
 
                     <div class="col-12 col-md-6 col-xl-4">
                         <div class="card p-2 h-100">
-                            <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                            <div class="card-header bg-white border-0 d-flex align-items-center gap-2 p-0">
                                 <img src="images/icons/special-breed.svg" alt="" aria-hidden="true" width="60"
                                     height="60" loading="lazy">
 
@@ -625,7 +630,7 @@
 
                     <div class="col-12 col-md-6 col-xl-4">
                         <div class="card p-2 h-100">
-                            <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                            <div class="card-header bg-white border-0 d-flex align-items-center gap-2 p-0">
                                 <img src="images/icons/puppy.svg" alt="" aria-hidden="true" width="60" height="60"
                                     loading="lazy">
                                 <h3 class="card-title fw-bold p-2 m-0">Puppy package</h3>
@@ -652,7 +657,7 @@
 
                     <div class="col-12 col-md-6 col-xl-4">
                         <div class="card p-2 h-100">
-                            <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                            <div class="card-header bg-white border-0 d-flex align-items-center gap-2 p-0">
                                 <img src="images/icons/senior.svg" alt="" aria-hidden="true" width="60" height="60"
                                     loading="lazy">
 
@@ -680,7 +685,7 @@
 
                     <div class="col-12 col-md-6 col-xl-4">
                         <div class="card p-2 h-100">
-                            <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                            <div class="card-header bg-white border-0 d-flex align-items-center gap-2 p-0">
                                 <img src="images/icons/full-groom.svg" alt="" aria-hidden="true" width="60" height="60"
                                     loading="lazy">
                                 <h3 class="card-title fw-bold p-2 mb-0">Full grooming package</h3>
