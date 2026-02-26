@@ -25,12 +25,17 @@
 .roster-summary .card {
     background-color: var(--accent-green)
 }
-
 .contact-form,
-.contact-card,
+.contact-page form,
+.index-mobile-contact .card,
+.contact-page .card,
 .booking-date-time .card,
 .booking-summary .card{
     background-color: var(--accent-green);
+}
+
+.min-w-0{
+    min-width: 0;
 }
 
 /*Setting backgroun colour for the navbar*/
