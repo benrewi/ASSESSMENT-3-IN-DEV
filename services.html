@@ -18,37 +18,38 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark py-3 px-1 px-lg-5" aria-label="Main navigation">
-        <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center gap-1 gap-sm-3" href="index.html">
-                <img src="images/icons/logo-white.svg" alt="Snazzy Paws Grooming Logo" width="42" height="40"
-                    loading="eager">
-                <span class="navbar-brand font--cabin fst-italic">Snazzy Paws Grooming</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mainNav">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-2 font--dm text-center">
-                    <li class="nav-item">
-                        <a class="nav-link p-2 p-xl-3" href="index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active p-2 p-xl-3" aria-current="page" href="services.html">SERVICES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link p-2 p-xl-3" href="gallery.html">GALLERY</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link p-2 p-xl-3" href="contact.html">CONTACT US</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn--white shadow" href="booking.html">BOOK NOW</a>
-                    </li>
-                </ul>
-            </div>
+ <!-- Adding the nav bar - refer to index.html for notes -->
+ <nav class="navbar navbar-expand-lg navbar-dark py-3 px-1 px-lg-5" aria-label="Main navigation">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center gap-1 gap-sm-3" href="index.html">
+            <img src="images/icons/logo-white.svg" alt="Snazzy Paws Grooming Logo" width="42" height="40"
+                loading="eager">
+            <span class="font--cabin fst-italic">Snazzy Paws Grooming</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-4 gap-lg-2 font--dm text-center">
+                <li class="nav-item">
+                    <a class="nav-link p-2 p-xl-3" aria-current="page" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2 p-xl-3 active" href="services.html">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2 p-xl-3" href="gallery.html">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2 p-xl-3" href="contact.html">CONTACT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn--white shadow" href="booking.html">BOOK NOW</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <!-- Adding main heading section -->
     <main id="main">
@@ -718,41 +719,24 @@
         </section>
 
     </main>
-    <!-- Adding the footer for the page. Footer tag used to indicate this is the footer of the page. py-5 to add 48px padding top and bottom -->
+
+    <!-- adding the footer - refer to index.html for notes -->
     <footer class="footer py-5">
         <div class="container">
-
-            <!-- Adding a row to hold the footer content. text-center to align center on smaller screens, and text-lg-start to align left on larger screens -->
             <div class="row text-center text-lg-start">
-
-                <!-- Footer column 1. col-12 to take up full width on smaller screens, col-lg-4 to take up 1/3 of the width on larger screens, mb-4 to add 24px margin bottom on smaller screens, and mb-lg-0 to remove margin bottom on larger screens -->
                 <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-
-                    <!-- Adding logo and business name. d-flex to make the logo and text sit on the same line, align-items-center to vertically align, gap to add 16px between the logo and text, justify-content-center to center on smaller screens, and justify-content-lg-start to align left on larger screens. mb-2 to add 8px margin bottom -->
                     <div class="d-flex justify-content-center justify-content-lg-start align-items-center gap-3 mb-2">
-
-                        <!-- Adding logo image. Alt text provided for accessibility and in case of image load failure. Width and height provided to prevent layout shifts as the image loads -->
                         <img src="images/icons/logo-white.svg" alt="Snazzy Paws Grooming Logo" width="42" height="40"
                             loading="lazy">
-
-                        <!-- Adding business name. fw-bold to make the text bold, fs-5 to set 20px font size, and fst-italic to make the text italic -->
                         <span class="fw-bold fs-5 fst-italic font--cabin">Snazzy Paws Grooming</span>
                     </div>
-
-                    <!-- Adding opening hours. d-flex to make it a flex container, justify-content-center to center on smaller screens, justify-content-lg-start to align left on larger screens, align-items-center to vertically align, gap to add 24px between items, and mb-3 to add 16px margin bottom -->
                     <div
                         class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3 font--dm">
                         <p>Open 9:00am - 5:00pm Monday to Saturday</p>
                     </div>
-
-                    <!-- same as aboe -->
                     <div class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3">
-
-                        <!-- fw-bold to make the text bold, and fs-5 to set font size to 48px -->
                         <span class="fw-bold fs-5 font--dm">Check out our socials!</span>
                     </div>
-
-                    <!-- Adding social media icons with links. d-flex to make it a flex container, justify-content-center to center on smaller screens, justify-content-lg-start to align left on larger screens, align-items-center to vertically align, gap to add space between items, and mb-3 to add 16px margin bottom -->
                     <div class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3">
                         <a href="https://www.facebook.com/Snazzypaws/" target="_blank" rel="noopener noreferrer">
                             <img src="images/icons/facebooksvg.svg" alt="Facebook (opens in a new tab)" width="30"
@@ -769,20 +753,10 @@
                         </a>
                     </div>
                 </div>
-
-                <!-- Footer column 2. col-12 to take up full width on smaller screens, col-lg-4 to take up 1/3 of the width on larger screens, mb-4 to add 24px margin bottom on smaller screens, and mb-lg-0 to remove margin bottom on larger screens -->
                 <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-
-                    <!-- Adding quick links. d-flex to make it a flex container, justify-content-center to center on smaller screens, justify-content-lg-start to align left on larger screens, mx-auto to center the content within the column on smaller screens, text-center to align text center on smaller screens, and text-lg-start to align text left on larger screens -->
                     <div class="d-flex justify-content-center justify-content-lg-start">
-
-                        <!-- Adding quick links for navigation. mx-auto to center the content within the column on smaller screens, text-center to align text center on smaller screens, and text-lg-start to align text left on larger screens -->
                         <div class="mx-auto text-center text-lg-start font--dm">
-
-                            <!-- Adding column heading. fw-bold to make the text bold, fs-5 to set 20px font size, and d-block to make it display on a new line. mb-3 to add 16px margin bottom -->
                             <span class="fw-bold fs-5 d-block mb-3">Quick links</span>
-
-                            <!-- Adding the links for navigation. list-unstyled to remove bullet points, ps-0 to remove padding from the left, and mb-0 to remove margin bottom -->
                             <ul class="list-unstyled ps-0 mb-0">
                                 <li><a class="external-link" href="index.html">HOME</a></li>
                                 <li><a class="external-link" href="services.html">SERVICES</a></li>
@@ -793,29 +767,20 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Adding contact information. col-12 to take up full width on smaller screens, col-lg-4 to take up 1/3 of the width on larger screens. mb-4 to add 24px on smaller screens, and mb-lg-0 to remove the margin on larger screens-->
                 <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-
-                    <!-- Adding alignment rules. d-flex to make it a flex container, justify-content-center to center on smaller screens, justify-content-lg-start to align left on larger screens, mx-auto to center the content within the column on smaller screens, text-center to align text center on smaller screens, and text-lg-start to align text left on larger screens -->
                     <div class="d-flex justify-content-center justify-content-lg-start">
                         <div class="mx-auto text-center text-lg-start font--dm">
-
-                            <!-- Adding column heading. fw-bold to make the text bold, fs-5 to set 20px font size, and d-block to make it display on a new line. mb-3 to add 16px margin bottom -->
                             <span class="fw-bold fs-5 d-block mb-3">Contact us</span>
-
-                            <!-- Adding contact information text. mb-0 to remove margin bottom, and mt-4 to add 24px margin top to the phone number to create spacing from the address above. external-link class for custom styling on the email address -->
                             <p class="mb-0">Shop 3 - 501 Center Place</p>
                             <p class="mb-0">Central CBD District</p>
                             <p class="mb-0">Hamilton 2879</p>
-                            <p class="mt-4 mb-0">Phone: (000) 123 12335</p>
-
-                            <!-- Adding email with mailto link to allow users to click and email directly. external-link class for custom styling -->
+                            <p class="mt-4 mb-0">Phone: (000) 123 12345</p>
                             <p class="mb-0">Email: <a
                                     href="mailto:hello@snazzypawsgrooming.co.nz?subject=General%20enquiry"
                                     class="external-link">
                                     hello@snazzypawsgrooming.co.nz
-                                </a></p>
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
