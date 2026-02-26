@@ -1,0 +1,2020 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Snazzy Paws Grooming - Make a booking</title>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <meta name="description"
+        content="Book your dog grooming appointment online with Snazzy Paws Grooming in Hamilton CBD. Select your service, choose a time and confirm your booking easily.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/a3css.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Adding the navabr -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-3 px-1 px-lg-5" aria-label="Main navigation">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand d-flex align-items-center gap-1 gap-sm-3" href="index.html">
+
+                <img src="images/icons/logo-white.svg" alt="Snazzy Paws Grooming Logo" width="42" height="40"
+                    loading="eager">
+
+                <span class="navbar-brand-name font--cabin fst-italic">Snazzy Paws Grooming</span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="mainNav">
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-2 font--dm text-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-xl-3" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-xl-3" href="services.html">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-xl-3" href="gallery.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-xl-3" href="contact.html">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn--white shadow" href="booking.html">BOOK NOW</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main id="main">
+        <form action="#" method="post">
+
+            <!-- Adding the services section feature cards. -->
+            <section class="services-features-section py-5">
+
+                <div class="container">
+                    <div class="text-center mb-5 font--dm">
+                        <h1 class="fw-bold">Make a booking</h1>
+                        <p class="fs-4 fst-italic">Book your dog’s next groom in just a few clicks — quick, simple, and
+                            stress free</p>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3 mb-0">
+                        <img src="images/icons/star.svg" alt="" aria-hidden="true" class="services-logo-header"
+                            width="48" height="48" loading="lazy">
+                        <h2 class="fw-bold font--cabin fs-1 mb-0">Featured services</h2>
+                    </div>
+                    <hr class="section-divider">
+                </div>
+
+
+                <div class="container-fluid">
+                    <div class="item-scroll-wrapper d-flex flex-nowrap overflow-auto gap-4 pb-2 font--dm">
+
+                        <div class="card p-2 w-100">
+
+                            <div
+                                class="card-header bg-transparent border-0 d-flex flex-column align-items-start gap-2 p-0">
+                                <img src="images/icons/toothbrush.svg" alt="" aria-hidden="true" width="60" height="60"
+                                    loading="lazy">
+                                <h3 class="card-title fw-bold p-2 m-0">Teeth brushing</h3>
+                            </div>
+
+                            <div class="card-body pt-0">
+                                <ul class="ps-3">
+                                    <li>Pet safe toothpaste</li>
+                                    <li>Gentle plaque removal</li>
+                                    <li>Improves breath</li>
+                                </ul>
+                            </div>
+
+                            <div class="card-footer border-top bg-white pb-0">
+                                <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                    <div class="pb-md-0 pb-2">
+                                        <span class="d-block mb-0">Starting from:</span>
+                                        <span class="d-block fw-bold mb-0 fs-5">$10 – $15*</span>
+                                    </div>
+
+                                    <!-- Adding the  ability to select a service using a checkbox. This will use the btn-check class for formatting, to ensure consistent behaviour is used across all cards. ID set as ft-service-teeth as a unique ID, name set to services to group like information together when the form is submitted, value of teeth to identify the item that has been selected,  -->
+                                    <input type="checkbox" class="btn-check" id="ft-service-teeth" name="services"
+                                        value="teeth">
+
+                                    <label class="btn btn--select shadow-sm" for="ft-service-teeth">
+                                        Add
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Remaining two cards with the same settings -->
+                        <!-- Card 2 -->
+                        <div class="card p-2 w-100">
+                            <div
+                                class="card-header bg-transparent border-0 d-flex flex-column align-items-start gap-2 p-0">
+
+                                <img src="images/icons/full-groom.svg" alt="" aria-hidden="true" width="60" height="60"
+                                    loading="lazy">
+                                <h3 class="card-title fw-bold p-2 m-0"> Full Grooming Package</h3>
+                            </div>
+                            <div class="card-body pt-0">
+
+                                <ul class="ps-3">
+                                    <li>Full professional groom</li>
+                                    <li>Bath and haircut</li>
+                                    <li>Teeth brushing nail trim, and ear cleaning</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer border-top bg-white pb-0">
+                                <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                    <div class="pb-md-0 pb-2">
+                                        <span class="d-block mb-0">Starting from:</span>
+                                        <span class="d-block fw-bold mb-0 fs-5">$60 – $120*</span>
+                                    </div>
+                                    <input type="checkbox" class="btn-check" id="ft-service-fullgroom" name="services"
+                                        value="fullgroom">
+
+                                    <label class="btn btn--select shadow-sm" for="ft-service-fullgroom">
+                                        Add
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="card p-2 w-100">
+                            <div
+                                class="card-header bg-transparent border-0 d-flex flex-column align-items-start gap-2 p-0">
+                                <img src="images/icons/deshedding.svg" alt="" aria-hidden="true" width="60" height="60"
+                                    loading="lazy">
+                                <h3 class="card-title fw-bold p-2 m-0">De-shedding add-on</h3>
+                            </div>
+                            <div class="card-body pt-0">
+
+                                <ul class="ps-3">
+                                    <li>Deep undercoat removal</li>
+                                    <li>Lighter and smoother coat</li>
+                                    <li>Available with Bath and brush, or Haircut treatments</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer border-top bg-white pb-0">
+                                <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                    <div class="pb-md-0 pb-2">
+                                        <span class="d-block mb-0">Starting from:</span>
+                                        <span class="d-block fw-bold mb-0 fs-5">$20 – $40**</span>
+                                    </div>
+                                    <input type="checkbox" class="btn-check" id="ft-service-deshedding" name="services"
+                                        value="deshedding">
+                                    <label class="btn btn--select shadow-sm" for="ft-service-deshedding">
+                                        Add</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="booking-all-services pb-5">
+                <div class="container">
+
+                    <div class="d-flex align-items-center gap-3 mb-0">
+                        <img src="images/icons/all-services.svg" alt="" aria-hidden="true" class="services-logo-header"
+                            width="48" height="48" loading="lazy">
+
+                        <div class="pb-2 pb-md-0">
+                            <h2 class="fw-bold font--cabin fs-1 mb-0">All services</h2>
+                        </div>
+
+                    </div>
+                    <hr class="section-divider">
+
+                    <!-- This section doesn't have a carousel and is using the bootstrap grid system to order the cards instead -->
+
+                    <!-- Specifying that the cards should be in a row. g-4 sets the gutter between columns to 25px, keeping consistent space top and bottom-->
+
+                    <div class="row g-4 px-2">
+                        <!-- Card 1 -->
+
+                        <!-- used as a custom CSS class to set the minimum height for the cards to ensure they all maintain the same height at all times. col-12 makes the cards display on 1 row at screen sizes below 768px. col-md-6 puts two cards on 1 row at 768px and above, and col-xl-3 puts 3 cards on a row at 1200px and above-->
+
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+
+                            <div class="card p-2 h-100">
+                                <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                                    <img src="images/icons/bath-brush.svg" alt="" aria-hidden="true" width="60"
+                                        height="60" loading="lazy">
+
+                                    <h3 class="card-title fw-bold mb-0">Bath and brush
+                                    </h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="ps-3">
+                                        <li>Shampoo and blowdry</li>
+                                        <li>Brush out</li>
+                                        <li>Nail trim</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div class="pb-md-0 pb-2">
+                                            <span class="d-block">Starting from:</span>
+                                            <span class="d-block fw-bold fs-5 mb-0">$25 – $50*</span>
+                                        </div>
+
+                                        <input type="checkbox" class="btn-check" id="service-bathbrush" name="services"
+                                            value="bathbrush">
+
+                                        <label class="btn btn--select shadow-sm" for="service-bathbrush">
+                                            Add
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 h-100">
+                                <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                                    <img src="images/icons/haircut.svg" alt="" aria-hidden="true" width="60" height="60"
+                                        loading="lazy">
+
+                                    <h3 class="card-title fw-bold mb-0">Haircut
+                                    </h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="ps-3">
+                                        <li>Bath and blowdry</li>
+                                        <li>Haircut (based on breed standard or owner's preference)</li>
+                                        <li>Nail trim</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div class="pb-md-0 pb-2">
+                                            <span class="d-block">Starting from:</span>
+                                            <span class="d-block fw-bold fs-5 mb-0">$45 – $85*</span>
+                                        </div>
+
+                                        <input type="checkbox" class="btn-check" id="service-haircut" name="services"
+                                            value="haircut">
+
+                                        <label class="btn btn--select shadow-sm" for="service-haircut">
+                                            Add
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 h-100">
+                                <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                                    <img src="images/icons/nail.svg" alt="" aria-hidden="true" width="60" height="60"
+                                        loading="lazy">
+
+                                    <h3 class="card-title fw-bold mb-0">Nail trim
+                                    </h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="ps-3">
+                                        <li>Trim nails</li>
+                                        <li>Filing (if required)</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div class="pb-md-0 pb-2">
+                                            <span class="d-block">Starting from:</span>
+                                            <span class="d-block fw-bold fs-5 mb-0">$10 – $20*</span>
+                                        </div>
+
+                                        <input type="checkbox" class="btn-check" id="service-nailtrim" name="services"
+                                            value="nailtrim">
+
+                                        <label class="btn btn--select shadow-sm" for="service-nailtrim">
+                                            Add
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 h-100">
+                                <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                                    <img src="images/icons/ear.svg" alt="" aria-hidden="true" width="60" height="60"
+                                        loading="lazy">
+
+                                    <h3 class="card-title fw-bold mb-0">Ear cleaning
+                                    </h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="ps-3">
+                                        <li>Gentle cleaning</li>
+                                        <li>Removes wax and debris</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div class="pb-md-0 pb-2">
+                                            <span class="d-block">Starting from:</span>
+                                            <span class="d-block fw-bold fs-5 mb-0">$10 – $15*</span>
+                                        </div>
+
+                                        <input type="checkbox" class="btn-check" id="service-earcleaning"
+                                            name="services" value="earcleaning">
+
+                                        <label class="btn btn--select shadow-sm" for="service-earcleaning">
+                                            Add
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 h-100">
+                                <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                                    <img src="images/icons/toothbrush.svg" alt="" aria-hidden="true" width="60"
+                                        height="60" loading="lazy">
+
+                                    <h3 class="card-title fw-bold mb-0">Teeth brushing
+                                    </h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="ps-3">
+                                        <li>Pet safe toothpaste</li>
+                                        <li>Gentle plaque removal</li>
+                                        <li>Improves breath</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div class="pb-md-0 pb-2">
+                                            <span class="d-block">Starting from:</span>
+                                            <span class="d-block fw-bold fs-5 mb-0">$10 – $15*</span>
+                                        </div>
+
+                                        <input type="checkbox" class="btn-check" id="service-teeth" name="services"
+                                            value="teeth">
+
+                                        <label class="btn btn--select shadow-sm" for="service-teeth">
+                                            Add
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 h-100">
+                                <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                                    <img src="images/icons/deshedding.svg" alt="" aria-hidden="true" width="60"
+                                        height="60" loading="lazy">
+
+                                    <h3 class="card-title fw-bold mb-0">De-shedding add on</h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="ps-3">
+                                        <li>Removes loose fur and undercoat</li>
+                                        <li>Reduces shedding by up to 90%</li>
+                                        <li>Promotes healthier skin and coat</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div class="pb-md-0 pb-2">
+                                            <span class="d-block">Starting from:</span>
+                                            <span class="d-block fw-bold fs-5 mb-0">$20 – $40**</span>
+                                        </div>
+
+                                        <input type="checkbox" class="btn-check" id="service-deshedding" name="services"
+                                            value="deshedding2">
+
+                                        <label class="btn btn--select shadow-sm" for="service-deshedding">
+                                            Add
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 h-100">
+                                <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                                    <img src="images/icons/tick-and-flea.svg" alt="" aria-hidden="true" width="60"
+                                        height="60" loading="lazy">
+
+                                    <h3 class="card-title fw-bold mb-0">Flea and tick treatment</h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="ps-3">
+                                        <li>Shampoo</li>
+                                        <li>Preventative treatment</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div class="pb-md-0 pb-2">
+                                            <span class="d-block">Starting from:</span>
+                                            <span class="d-block fw-bold fs-5 mb-0">$15 – $30*</span>
+                                        </div>
+
+                                        <input type="checkbox" class="btn-check" id="service-flea" name="services"
+                                            value="flea">
+
+                                        <label class="btn btn--select shadow-sm" for="service-flea">
+                                            Add
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 h-100">
+                                <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                                    <img src="images/icons/spa.svg" alt="" aria-hidden="true" width="60" height="60"
+                                        loading="lazy">
+
+                                    <h3 class="card-title fw-bold mb-0">Spa package
+                                    </h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="ps-3">
+                                        <li>Bath and haircut</li>
+                                        <li>Teeth brushing and nail trim</li>
+                                        <li>Special scents and conditioners</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div class="pb-md-0 pb-2">
+                                            <span class="d-block">Starting from:</span>
+                                            <span class="d-block fw-bold fs-5 mb-0">$75 – $150*</span>
+                                        </div>
+
+                                        <input type="checkbox" class="btn-check" id="service-spa" name="services"
+                                            value="spa">
+
+                                        <label class="btn btn--select shadow-sm" for="service-spa">
+                                            Add
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 h-100">
+                                <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                                    <img src="images/icons/express.svg" alt="" aria-hidden="true" width="60" height="60"
+                                        loading="lazy">
+
+                                    <h3 class="card-title fw-bold mb-0">Express service</h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="ps-3">
+                                        <li>Minimal grooming</li>
+                                        <li>Great for touch ups</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div class="pb-md-0 pb-2">
+                                            <span class="d-block">Starting from:</span>
+                                            <span class="d-block fw-bold fs-5 mb-0">$15 – $25*</span>
+                                        </div>
+
+                                        <input type="checkbox" class="btn-check" id="service-express" name="services"
+                                            value="express">
+
+                                        <label class="btn btn--select shadow-sm" for="service-express">
+                                            Add
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 h-100">
+                                <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                                    <img src="images/icons/medicated-bath.svg" alt="" aria-hidden="true" width="60"
+                                        height="60" loading="lazy">
+
+                                    <h3 class="card-title fw-bold mb-0">Medicated bath</h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="ps-3">
+                                        <li>Ideal for pets with skin conditions</li>
+                                        <li>Special shampoo</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div class="pb-md-0 pb-2">
+                                            <span class="d-block">Starting from:</span>
+                                            <span class="d-block fw-bold fs-5 mb-0">$20 – $40*</span>
+                                        </div>
+
+                                        <input type="checkbox" class="btn-check" id="service-medicated" name="services"
+                                            value="medicated">
+
+                                        <label class="btn btn--select shadow-sm" for="service-medicated">
+                                            Add
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 h-100">
+                                <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                                    <img src="images/icons/special-breed.svg" alt="" aria-hidden="true" width="60"
+                                        height="60" loading="lazy">
+
+                                    <h3 class="card-title fw-bold mb-0">Special breed cut</h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="ps-3">
+                                        <li>Breed specific cuts</li>
+                                        <li>Custom styling based on owner preference</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div class="pb-md-0 pb-2">
+                                            <span class="d-block">Pricing subject to quotation</span>
+                                        </div>
+                                        <input type="checkbox" class="btn-check" id="service-specialbreed"
+                                            name="services" value="specialbreed">
+
+                                        <label class="btn btn--select shadow-sm" for="service-specialbreed">
+                                            Add
+                                        </label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 h-100">
+                                <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                                    <img src="images/icons/puppy.svg" alt="" aria-hidden="true" width="60" height="60"
+                                        loading="lazy">
+
+                                    <h3 class="card-title fw-bold mb-0">Puppy package</h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="ps-3">
+                                        <li>Introductory grooming service</li>
+                                        <li>Tailored for puppies</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div class="pb-md-0 pb-2">
+                                            <span class="d-block">Starting from:</span>
+                                            <span class="d-block fw-bold fs-5 mb-0">$30 – $60*</span>
+                                        </div>
+                                        <input type="checkbox" class="btn-check" id="service-puppy" name="services"
+                                            value="puppy">
+
+                                        <label class="btn btn--select shadow-sm" for="service-puppy">
+                                            Add
+                                        </label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 h-100">
+                                <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                                    <img src="images/icons/senior.svg" alt="" aria-hidden="true" width="60" height="60"
+                                        loading="lazy">
+
+                                    <h3 class="card-title fw-bold mb-0">Senior dog package</h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="ps-3">
+                                        <li>Tailored for older dogs</li>
+                                        <li>Special card and handling</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div class="pb-md-0 pb-2">
+                                            <span class="d-block">Starting from:</span>
+                                            <span class="d-block fw-bold fs-5 mb-0">$40 – $80*</span>
+                                        </div>
+
+                                        <input type="checkbox" class="btn-check" id="service-senior" name="services"
+                                            value="senior">
+
+                                        <label class="btn btn--select shadow-sm" for="service-senior">
+                                            Add
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                            <div class="card p-2 h-100">
+                                <div class="card-header bg-transparent border-0 d-flex align-items-center gap-2 p-0">
+                                    <img src="images/icons/full-groom.svg" alt="" aria-hidden="true" width="60"
+                                        height="60" loading="lazy">
+
+                                    <h3 class="card-title fw-bold mb-0">Full grooming package</h3>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <ul class="ps-3">
+                                        <li>Bath and haircut</li>
+                                        <li>Teeth brushing, nail trim and ear cleaning</li>
+                                        <li>Full professional groom</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-0">
+                                    <div class="d-grid d-md-flex justify-content-md-between align-items-md-center">
+                                        <div class="pb-md-0 pb-2">
+                                            <span class="d-block">Starting from:</span>
+                                            <span class="d-block fw-bold fs-5 mb-0">$60 – $120*</span>
+                                        </div>
+                                        <input type="checkbox" class="btn-check" id="service-fullgroom" name="services"
+                                            value="fullgroom">
+
+                                        <label class="btn btn--select shadow-sm" for="service-fullgroom">
+                                            Add
+                                        </label>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="booking-date-time">
+                <div class="container">
+
+                    <div class="d-flex align-items-center gap-3 mb-0">
+                        <img src="images/icons/calendar.svg" alt="" aria-hidden="true" class="services-logo-header"
+                            width="48" height="48" loading="lazy">
+
+
+                        <!-- Adding the heading to be on the same line as the icon-->
+                        <h2 class="fw-bold font--cabin fs-1 mb-0">Select a date and time</h2>
+
+
+
+                    </div>
+                    <hr class="section-divider">
+
+                    <div class="mb-5 font--dm w-100">
+                        <div class="row justify-content-between">
+                            <div class="col-12 col-lg-6 col-xl-5">
+
+                                <div class="d-flex align-items-baseline mb-2 mt-4">
+                                    <h3 class="fs-3 fw-bold">February 2026</h3>
+
+                                </div>
+
+                                <div class="row mb-3">
+
+                                    <div class="col text-center">Mon</div>
+                                    <div class="col text-center">Tue</div>
+                                    <div class="col text-center">Wed</div>
+                                    <div class="col text-center">Thu</div>
+                                    <div class="col text-center">Fri</div>
+                                    <div class="col text-center">Sat</div>
+                                    <div class="col text-center">Sun</div>
+                                </div>
+
+                                <div class="row row-cols-7 g-2 mb-2">
+
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <div class="w-100 h-100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <div class="w-100 h-100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <div class="w-100 h-100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <div class="w-100 h-100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <div class="w-100 h-100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <div class="w-100 h-100"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+
+                                            <input type="radio" class="btn-check" name="date" id="date20260201"
+                                                value="2026-02-01">
+
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260201" aria-label="Select February 1, 2026">
+                                                1
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-cols-7 g-2 mb-2">
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260202"
+                                                value="2026-02-02">
+
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260202" aria-label="Select February 2, 2026">
+                                                2
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260203"
+                                                value="2026-02-03">
+
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260203" aria-label="Select February 3, 2026">
+                                                3
+                                            </label>
+
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260204"
+                                                value="2026-02-04">
+
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260204" aria-label="Select February 4, 2026">
+                                                4
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260205"
+                                                value="2026-02-05">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260205" aria-label="Select February 5, 2026">
+                                                5
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260206"
+                                                value="2026-02-06">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260206" aria-label="Select February 6, 2026">
+                                                6
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260207"
+                                                value="2026-02-07">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260207" aria-label="Select February 7, 2026">
+                                                7
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260208"
+                                                value="2026-02-08">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260208" aria-label="Select February 8, 2026">
+                                                8
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-cols-7 g-2 mb-2">
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260209"
+                                                value="2026-02-09">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260209" aria-label="Select February 9, 2026">
+                                                9
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260210"
+                                                value="2026-02-10">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260210" aria-label="Select February 10, 2026">
+                                                10
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260211"
+                                                value="2026-02-11">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260211" aria-label="Select February 11, 2026">
+                                                11
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260212"
+                                                value="2026-02-12">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260212" aria-label="Select February 12, 2026">
+                                                12
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260213"
+                                                value="2026-02-13">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260213" aria-label="Select February 13, 2026">
+                                                13
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260214"
+                                                value="2026-02-14">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260214" aria-label="Select February 14, 2026">
+                                                14
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260215"
+                                                value="2026-02-15">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260215" aria-label="Select February 15, 2026">
+                                                15
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-cols-7 g-2 mb-2">
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260216"
+                                                value="2026-02-16">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260216" aria-label="Select February 16, 2026">
+                                                16
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260217"
+                                                value="2026-02-17">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260217" aria-label="Select February 17, 2026">
+                                                17
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260218"
+                                                value="2026-02-18">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260218" aria-label="Select February 18, 2026">
+                                                18
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260219"
+                                                value="2026-02-19">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260219" aria-label="Select February 19, 2026">
+                                                19
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260220"
+                                                value="2026-02-20">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260220" aria-label="Select February 20, 2026">
+                                                20
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260221"
+                                                value="2026-02-21">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260221" aria-label="Select February 21, 2026">
+                                                21
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260222"
+                                                value="2026-02-22">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260222" aria-label="Select February 22, 2026">
+                                                22
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-cols-7 g-2 mb-2">
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260223"
+                                                value="2026-02-23">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260223" aria-label="Select February 23, 2026">
+                                                23
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260224"
+                                                value="2026-02-24">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260224" aria-label="Select February 24, 2026">
+                                                24
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260225"
+                                                value="2026-02-25">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260225" aria-label="Select February 25, 2026">
+                                                25
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260226"
+                                                value="2026-02-26">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260226" aria-label="Select February 26, 2026">
+                                                26
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260227"
+                                                value="2026-02-27">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260227" aria-label="Select February 27, 2026">
+                                                27
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260228"
+                                                value="2026-02-28">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260228" aria-label="Select February 28, 2026">
+                                                28
+                                            </label>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <div class="w-100 h-100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 col-lg-6 col-xl-5">
+                                <div class="d-flex align-items-baseline mt-4 mb-2">
+                                    <h3 class="fs-3 fw-bold">March 2026</h3>
+                                </div>
+
+                                <div class="row row-cols-7 g-2 mb-2">
+                                    <div class="col text-center">Mon</div>
+                                    <div class="col text-center">Tue</div>
+                                    <div class="col text-center">Wed</div>
+                                    <div class="col text-center">Thu</div>
+                                    <div class="col text-center">Fri</div>
+                                    <div class="col text-center">Sat</div>
+                                    <div class="col text-center">Sun</div>
+                                </div>
+
+                                <div class="row row-cols-7 g-2 mb-2">
+
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <div class="w-100 h-100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <div class="w-100 h-100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <div class="w-100 h-100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <div class="w-100 h-100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <div class="w-100 h-100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <div class="w-100 h-100"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260301"
+                                                value="2026-03-01">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260301" aria-label="Select March 1, 2026">
+                                                1
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row row-cols-7 g-2 mb-2">
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260302"
+                                                value="2026-03-02">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260302" aria-label="Select March 2, 2026">
+                                                2
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260303"
+                                                value="2026-03-03">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260303" aria-label="Select March 3, 2026">
+                                                3
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260304"
+                                                value="2026-03-04">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260304" aria-label="Select March 4, 2026">
+                                                4
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260305"
+                                                value="2026-03-05">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260305" aria-label="Select March 5, 2026">
+                                                5
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260306"
+                                                value="2026-03-06">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260306" aria-label="Select March 6, 2026">
+                                                6
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260307"
+                                                value="2026-03-07">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260307" aria-label="Select March 7, 2026">
+                                                7
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260308"
+                                                value="2026-03-08">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260308" aria-label="Select March 8, 2026">
+                                                8
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-cols-7 g-2 mb-2">
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260309"
+                                                value="2026-03-09">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260309" aria-label="Select March 9, 2026">
+                                                9
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260310"
+                                                value="2026-03-10">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260310" aria-label="Select March 10, 2026">
+                                                10
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260311"
+                                                value="2026-03-11">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260311" aria-label="Select March 11, 2026">
+                                                11
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260312"
+                                                value="2026-03-12">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260312" aria-label="Select March 12, 2026">
+                                                12
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260313"
+                                                value="2026-03-13">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260313" aria-label="Select March 13, 2026">
+                                                13
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260314"
+                                                value="2026-03-14">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260314" aria-label="Select March 14, 2026">
+                                                14
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260315"
+                                                value="2026-03-15">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260315" aria-label="Select March 15, 2026">
+                                                15
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-cols-7 g-2 mb-2">
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260316"
+                                                value="2026-03-16">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260316" aria-label="Select March 16, 2026">
+                                                16
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260317"
+                                                value="2026-03-17">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260317" aria-label="Select March 17, 2026">
+                                                17
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260318"
+                                                value="2026-03-18">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260318" aria-label="Select March 18, 2026">
+                                                18
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260319"
+                                                value="2026-03-19">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260319" aria-label="Select March 19, 2026">
+                                                19
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260320"
+                                                value="2026-03-20">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260320" aria-label="Select March 20, 2026">
+                                                20
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260321"
+                                                value="2026-03-21">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260321" aria-label="Select March 21, 2026">
+                                                21
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260322"
+                                                value="2026-03-22">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260322" aria-label="Select March 22, 2026">
+                                                22
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-cols-7 g-2 mb-2">
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260323"
+                                                value="2026-03-23">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260323" aria-label="Select March 23, 2026">
+                                                23
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260324"
+                                                value="2026-03-24">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260324" aria-label="Select March 24, 2026">
+                                                24
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260325"
+                                                value="2026-03-25">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260325" aria-label="Select March 25, 2026">
+                                                25
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260326"
+                                                value="2026-03-26">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260326" aria-label="Select March 26, 2026">
+                                                26
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260327"
+                                                value="2026-03-27">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260327" aria-label="Select March 27, 2026">
+                                                27
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260328"
+                                                value="2026-03-28">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260328" aria-label="Select March 28, 2026">
+                                                28
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260329"
+                                                value="2026-03-29">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260329" aria-label="Select March 29, 2026">
+                                                29
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-cols-7 g-2 mb-2">
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260330"
+                                                value="2026-03-30">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260330" aria-label="Select March 30, 2026">
+                                                30
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <input type="radio" class="btn-check" name="date" id="date20260331"
+                                                value="2026-03-31">
+                                            <label
+                                                class="btn btn--select w-100 h-100 d-flex align-items-center justify-content-center shadow-none"
+                                                for="date20260331" aria-label="Select March 31, 2026">
+                                                31
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <div class="w-100 h-100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <div class="w-100 h-100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <div class="w-100 h-100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <div class="w-100 h-100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="ratio ratio-4x3">
+                                            <div class="w-100 h-100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Heading for the contact section. text-center to align center, fw-bold to make the text bold, font--cabin to apply the font, and fs-1 to set the font size to 40px -->
+
+                
+
+
+
+
+                <!-- Adding a card to hold the contact information. text-center to align center, text-break to ensure the text wraps as the screen size reduces, and contact-card for custom styling. py-3 to add 16px padding top and bottom -->
+                <div class="py-3">
+
+                    <h2 class="fw-bold font--cabin text-center fs-1 mb-4">Available times: </h2>
+
+                    <div class="card p-4 border-0 font--dm">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg-4 text-center">
+                                <h3>Morning</h3>
+
+                                <div class="d-grid gap-2 justify-content-center">
+
+                                    <input type="radio" name="time" id="timeslot0900" value="0900" class="btn-check">
+
+                                    <label
+                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        for="timeslot0900" aria-label="Select 9:00am time slot">9:00am</label>
+
+
+                                    <input type="radio" name="time" id="timeslot0930" value="0930" class="btn-check">
+
+                                    <label
+                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        for="timeslot0930" aria-label="Select 9:30am time slot">9:30am</label>
+
+
+                                    <input type="radio" name="time" id="timeslot1000" value="1000" class="btn-check">
+
+                                    <label
+                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        for="timeslot1000" aria-label="Select 10:00am time slot">10:00am</label>
+
+
+                                    <input type="radio" name="time" id="timeslot1030" value="1030" class="btn-check">
+
+                                    <label
+                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        for="timeslot1030" aria-label="Select 10:30am time slot">10:30am</label>
+
+
+                                    <input type="radio" name="time" id="timeslot1100" value="1100" class="btn-check">
+
+                                    <label
+                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        for="timeslot1100" aria-label="Select 11:00am time slot">11:00am</label>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 text-center">
+
+
+                                <h3>Noon</h3>
+                                <div class="d-grid gap-2 justify-content-center">
+
+                                    <input type="radio" name="time" id="timeslot1130" value="1130" class="btn-check">
+
+                                    <label
+                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        for="timeslot1130" aria-label="Select 11:30am time slot">11:30am</label>
+
+
+                                    <input type="radio" name="time" id="timeslot1200" value="1200" class="btn-check">
+
+                                    <label
+                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        for="timeslot1200" aria-label="Select 12:00pm time slot">12:00pm</label>
+
+
+                                    <input type="radio" name="time" id="timeslot1230" value="1230" class="btn-check">
+
+                                    <label
+                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        for="timeslot1230" aria-label="Select 12:30pm time slot">12:30pm</label>
+
+                                    <input type="radio" name="time" id="timeslot1300" value="1300" class="btn-check">
+
+                                    <label
+                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        for="timeslot1300" aria-label="Select 1:00pm time slot">1:00pm</label>
+
+                                    <input type="radio" name="time" id="timeslot1330" value="1330" class="btn-check">
+
+                                    <label
+                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        for="timeslot1330" aria-label="Select 1:30pm time slot">1:30pm</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 text-center">
+
+
+                                <h3>Afternoon</h3>
+                                <div class="d-grid gap-2 justify-content-center">
+                                    <input type="radio" name="time" id="timeslot1400" value="1400" class="btn-check">
+
+                                    <label
+                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        for="timeslot1400" aria-label="Select 2:00pm time slot">2:00pm</label>
+
+
+                                    <input type="radio" name="time" id="timeslot1430" value="1430" class="btn-check">
+
+                                    <label
+                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        for="timeslot1430" aria-label="Select 2:30pm time slot">2:30pm</label>
+
+
+                                    <input type="radio" name="time" id="timeslot1500" value="1500" class="btn-check">
+
+                                    <label
+                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        for="timeslot1500" aria-label="Select 3:00pm time slot">3:00pm</label>
+
+
+                                    <input type="radio" name="time" id="timeslot1530" value="1530" class="btn-check">
+
+                                    <label
+                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        for="timeslot1530" aria-label="Select 3:30pm time slot">3:30pm</label>
+
+
+
+                                    <input type="radio" name="time" id="timeslot1600" value="1600" class="btn-check">
+
+                                    <label
+                                        class="btn btn--wide btn--select d-flex align-items-center justify-content-center shadow-none"
+                                        for="timeslot1600" aria-label="Select 4:00pm time slot">4:00pm</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+
+            </section>
+
+            <section class="booking-customer-information py-5">
+                <div class="container">
+
+                    <div class="d-flex align-items-center gap-3 mb-0">
+                        <img src="images/icons/person.svg" alt="" aria-hidden="true" class="services-logo-header"
+                            width="48" height="48" loading="lazy">
+
+
+                        <h2 class="fw-bold font--cabin fs-1 mb-0">Customer information:</h2>
+
+
+                    </div>
+                    <hr class="section-divider">
+
+                    <div class="py-3">
+                        <div class="row">
+                            <div class="col-12 col-md-6 mb-3">
+                                <label class="mb-1 ps-1" for="fullname">Name:</label>
+                                <input id="fullname" class="form-control" type="text" name="fullname"
+                                    placeholder="Name...">
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                                <label class="mb-1 ps-1" for="phone">Contact phone number:</label>
+                                <input id="phone" class="form-control" type="tel" name="phone" placeholder="Name...">
+                                <input id="phone" class="form-control" type="tel" name="phone" placeholder="Phone number...">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 mb-3">
+                                <label class="mb-1 ps-1" for="email">Email address:</label>
+                                <input id="email" class="form-control" type="email" name="email" placeholder="Email...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="booking-pet-information">
+                <div class="container">
+
+                    <div class="d-flex align-items-center gap-3 mb-0">
+                        <img src="images/icons/dog.svg" alt="" aria-hidden="true" class="services-logo-header"
+                            width="48" height="48" loading="lazy">
+
+
+                        <h2 class="fw-bold font--cabin fs-1 mb-0">Pet information:</h2>
+
+
+                    </div>
+                    <hr class="section-divider">
+
+                    <div class="container py-3">
+                    <div class="py-3">
+                        <div class="row">
+                            <div class="col-12 col-md-6 mb-3">
+                                <label class="mb-1 ps-1" for="petname">Pet's name:</label>
+                                <input id="petname" class="form-control" type="text" name="petname"
+                                    placeholder="Name...">
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                                <span class="d-block mb-1 ps-1">Age:</span>
+
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <label class="visually-hidden" for="petageyears">Pet age in years</label>
+                                        <input id="petageyears" class="form-control" type="number"
+                                            placeholder="Years..." name="petageyears" min="0">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <label class="visually-hidden" for="petagemonths">Pet age in months</label>
+                                        <input id="petagemonths" class="form-control" type="number"
+                                            placeholder="Months..." name="petagemonths" min="0" max="11">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-md-6 mb-3">
+                                <label for="petbreed" class="mb-1 ps-1">
+                                    Breed:
+                                </label>
+                                <select id="petbreed" name="breeds" class="form-select mb-3">
+                                    <option value="" selected="selected">Select a breed...</option>
+                                    <option value="lab">Labrador</option>
+                                    <option value="poodle">Poodle</option>
+                                    <option value="jack-russel">Jack Russel</option>
+                                    <option value="miniature-schnauzer">Miniature Schnauzer</option>
+                                    <option value="cocker-spaniel">Cocker Spaniel</option>
+                                    <option value="great-dane">Great Dane</option>
+                                    <option value="great-dane">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12 col-md-6 mb-3">
+                                <label for="petsize" class="mb-1 ps-1">
+                                    Pet size:
+                                </label>
+                                <select id="petsize" name="pet" class="form-select mb-3">
+                                    <option value="" selected="selected">Select a weight...</option>
+                                    <option value="xsmall">Up to 5kg</option>
+                                    <option value="small">5kg to 10kg</option>
+                                    <option value="medium">10kg to 25kg</option>
+                                    <option value="large">25kg to 40kg</option>
+                                    <option value="xlarge">Over 40kg</option>
+                                </select>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="booking-summary py-5">
+                <div class="container">
+
+                    <div class="d-flex align-items-center gap-3 mb-0">
+                        <img src="images/icons/booking-summary.svg" alt="" aria-hidden="true"
+                            class="services-logo-header" width="48" height="48" loading="lazy">
+
+
+                        <h2 class="fw-bold font--cabin fs-1 mb-0">Booking summary</h2>
+
+
+                    </div>
+                    <hr class="section-divider">
+                    <div class="container py-4">
+                    <div class="py-4">
+                        <div class="card p-4 border-0">
+                            <table class="mb-0 table-responsive-table">
+                                <caption class="visually-hidden">Booking summary</caption>
+
+                                <thead>
+                                    <tr class="fs-3 font--dm">
+                                        <th class="fs-3 fw-bold pb-2" scope="col">Services</th>
+                                        <th class="fs-3 fw-bold font--dm pb-2" scope="col">Time</th>
+                                        <th class="fs-3 fw-bold font--dm pb-2" scope="col">Pet</th>
+                                        <th class="fs-3 fw-bold font--dm pb-2" scope="col">Total price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-responsive-row">
+                                        <td data-label="Services">
+                                            <div class="d-flex justify-content-between pb-2">
+                                                <span class="fw-bold">Service 1:</span>
+                                                <span id="summary-service-1" class="fw-bold">-</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between pb-2">
+                                                <span class="fw-bold">Service 2:</span>
+                                                <span id="summary-service-2">-</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Time">
+                                            <div class="d-flex justify-content-between pb-2">
+                                                <span class="fw-bold">Date:</span>
+                                                <span id="summary-date">-</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between pb-2">
+                                                <span class="fw-bold">Time:</span>
+                                                <span id="summary-time">-</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Pet">
+                                            <div class="d-flex justify-content-between pb-2">
+                                                <span class="fw-bold">Name:</span>
+                                                <span id="summary-pet-name">-</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between pb-2">
+                                                <span class="fw-bold">Breed:</span>
+                                                <span id="summary-pet-breed">-</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between pb-2">
+                                                <span class="fw-bold">Age:</span>
+                                                <span id="summary-pet-age">-</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Total Price">
+                                            <div class="d-flex justify-content-between pb-2">
+                                                <span class="fw-bold">Service 1:</span>
+                                                <span id="summary-Service1-price">-</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between pb-2">
+                                                <span class="fw-bold">Service 2:</span>
+                                                <span id="summary-Service2-price">-</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between pb-2">
+                                                <span class="fw-bold">Total price:</span>
+                                                <span id="summary-total-price">-</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="container py-5">
+                    <div class="py-5">
+                        <label for="additional-notes" class="ps-1">Additional notes:</label>
+                        <textarea id="additional-notes" name="additional-notes" class="form-control" rows="4"
+                            placeholder="Any additional information or special requests..."></textarea>
+
+                        <div class="pt-5 text-center">
+                            <!-- The button type should be submit, however I have used button in this instance, as there is no requirement for the form to be functional. Otherwise, submit would be the correct type to use in this instance. -->
+                            <button type="button" value="Submit"
+                                class="btn btn--wide shadow d-flex justify-content-center mx-auto mt-4 mb-0">Submit
+                                booking</button>
+                        </div>
+                    </div>
+                    </div>
+            </section>
+        </form>
+    </main>
+    <!-- Adding the footer for the page. Footer tag used to indicate this is the footer of the page. py-5 to add 48px padding top and bottom -->
+    <footer class="footer py-5">
+        <div class="container">
+
+            <!-- Adding a row to hold the footer content. text-center to align center on smaller screens, and text-lg-start to align left on larger screens -->
+            <div class="row text-center text-lg-start">
+
+                <!-- Footer column 1. col-12 to take up full width on smaller screens, col-lg-4 to take up 1/3 of the width on larger screens, mb-4 to add 24px margin bottom on smaller screens, and mb-lg-0 to remove margin bottom on larger screens -->
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+
+                    <!-- Adding logo and business name. d-flex to make the logo and text sit on the same line, align-items-center to vertically align, gap to add 16px between the logo and text, justify-content-center to center on smaller screens, and justify-content-lg-start to align left on larger screens. mb-2 to add 8px margin bottom -->
+                    <div class="d-flex justify-content-center justify-content-lg-start align-items-center gap-3 mb-2">
+
+                        <!-- Adding logo image. Alt text provided for accessibility and in case of image load failure. Width and height provided to prevent layout shifts as the image loads -->
+                        <img src="images/icons/logo-white.svg" alt="Snazzy Paws Grooming Logo" width="42" height="40"
+                            loading="lazy">
+
+                        <!-- Adding business name. fw-bold to make the text bold, fs-5 to set 20px font size, and fst-italic to make the text italic -->
+                        <span class="fw-bold fs-5 fst-italic font--cabin">Snazzy Paws Grooming</span>
+                    </div>
+
+                    <!-- Adding opening hours. d-flex to make it a flex container, justify-content-center to center on smaller screens, justify-content-lg-start to align left on larger screens, align-items-center to vertically align, gap to add 24px between items, and mb-3 to add 16px margin bottom -->
+                    <div
+                        class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3 font--dm">
+                        <p>Open 9:00am - 5:00pm Monday to Saturday</p>
+                    </div>
+
+                    <!-- same as aboe -->
+                    <div class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3">
+
+                        <!-- fw-bold to make the text bold, and fs-5 to set font size to 48px -->
+                        <span class="fw-bold fs-5 font--dm">Check out our socials!</span>
+                    </div>
+
+                    <!-- Adding social media icons with links. d-flex to make it a flex container, justify-content-center to center on smaller screens, justify-content-lg-start to align left on larger screens, align-items-center to vertically align, gap to add space between items, and mb-3 to add 16px margin bottom -->
+                    <div class="d-flex justify-content-center justify-content-lg-start align-items-center gap-4 mb-3">
+                        <a href="https://www.facebook.com/Snazzypaws/" target="_blank" rel="noopener noreferrer">
+                            <img src="images/icons/facebooksvg.svg" alt="Facebook (opens in a new tab)" width="30"
+                                height="30" loading="lazy">
+                        </a>
+                        <a href="https://www.instagram.com/snazzypawsdoggroomingnarangba/?hl=en" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="images/icons/instagram.svg" alt="Instagram (opens in a new tab)" width="30"
+                                height="30" loading="lazy">
+                        </a>
+                        <a href="https://www.tiktok.com/your-real-link" target="_blank" rel="noopener noreferrer">
+                            <img src="images/icons/tiktok.svg" alt="TikTok (opens in a new tab)" width="30" height="30"
+                                loading="lazy">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Footer column 2. col-12 to take up full width on smaller screens, col-lg-4 to take up 1/3 of the width on larger screens, mb-4 to add 24px margin bottom on smaller screens, and mb-lg-0 to remove margin bottom on larger screens -->
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+
+                    <!-- Adding quick links. d-flex to make it a flex container, justify-content-center to center on smaller screens, justify-content-lg-start to align left on larger screens, mx-auto to center the content within the column on smaller screens, text-center to align text center on smaller screens, and text-lg-start to align text left on larger screens -->
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+
+                        <!-- Adding quick links for navigation. mx-auto to center the content within the column on smaller screens, text-center to align text center on smaller screens, and text-lg-start to align text left on larger screens -->
+                        <div class="mx-auto text-center text-lg-start font--dm">
+
+                            <!-- Adding column heading. fw-bold to make the text bold, fs-5 to set 20px font size, and d-block to make it display on a new line. mb-3 to add 16px margin bottom -->
+                            <span class="fw-bold fs-5 d-block mb-3">Quick links</span>
+
+                            <!-- Adding the links for navigation. list-unstyled to remove bullet points, ps-0 to remove padding from the left, and mb-0 to remove margin bottom -->
+                            <ul class="list-unstyled ps-0 mb-0">
+                                <li><a class="external-link" href="index.html">HOME</a></li>
+                                <li><a class="external-link" href="services.html">SERVICES</a></li>
+                                <li><a class="external-link" href="gallery.html">GALLERY</a></li>
+                                <li><a class="external-link" href="contact.html">CONTACT US</a></li>
+                                <li><a class="external-link" href="booking.html">MAKE A BOOKING</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adding contact information. col-12 to take up full width on smaller screens, col-lg-4 to take up 1/3 of the width on larger screens. mb-4 to add 24px on smaller screens, and mb-lg-0 to remove the margin on larger screens-->
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+
+                    <!-- Adding alignment rules. d-flex to make it a flex container, justify-content-center to center on smaller screens, justify-content-lg-start to align left on larger screens, mx-auto to center the content within the column on smaller screens, text-center to align text center on smaller screens, and text-lg-start to align text left on larger screens -->
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <div class="mx-auto text-center text-lg-start font--dm">
+
+                            <!-- Adding column heading. fw-bold to make the text bold, fs-5 to set 20px font size, and d-block to make it display on a new line. mb-3 to add 16px margin bottom -->
+                            <span class="fw-bold fs-5 d-block mb-3">Contact us</span>
+
+                            <!-- Adding contact information text. mb-0 to remove margin bottom, and mt-4 to add 24px margin top to the phone number to create spacing from the address above. external-link class for custom styling on the email address -->
+                            <p class="mb-0">Shop 3 - 501 Center Place</p>
+                            <p class="mb-0">Central CBD District</p>
+                            <p class="mb-0">Hamilton 2879</p>
+                            <p class="mt-4 mb-0">Phone: (000) 123 12335</p>
+
+                            <!-- Adding email with mailto link to allow users to click and email directly. external-link class for custom styling -->
+                            <p class="mb-0">Email: <a
+                                    href="mailto:hello@snazzypawsgrooming.co.nz?subject=General%20enquiry"
+                                    class="external-link">
+                                    hello@snazzypawsgrooming.co.nz
+                                </a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS bundle for the toggle menu to work -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
