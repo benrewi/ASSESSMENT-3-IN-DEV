@@ -160,14 +160,14 @@
 
                                         <!-- Adding the input for the label. id specified to link the label and the input. Using bootstrap's form-control for formatting, setting the type to text, setting the name of the field, and adding placeholder text-->
                                         <input id="fullname" class="form-control" type="text" name="fullname"
-                                            placeholder="Name...">
+                                            placeholder="Name..." aria-required="true" required>
                                     </div>
 
                                     <!-- Same as above, however the type is e-mail. This helps with validation to ensure that an entry matches the format of an email address, and helps with auto population -->
                                     <div class="mb-3">
                                         <label class="form-label mb-1 ps-1" for="email">Email address:</label>
                                         <input id="email" class="form-control" type="email" name="email"
-                                            placeholder="Email...">
+                                            placeholder="Email..." aria-required="true" required>
                                     </div>
 
                                     <!-- As above, however the type is tel for telephone -->
@@ -188,13 +188,13 @@
                                     <div class="mb-3">
                                         <label class="form-label mb-1 ps-1" for="message">Message: </label>
                                         <textarea id="message" rows="10" class="form-control" name="message"
-                                            placeholder="Your message..."></textarea>
+                                            placeholder="Your message..." aria-required="true" required></textarea>
                                     </div>
 
                                     <!-- Adding the button. mt-4 to add a space between the input and button, and text-center to centre the button on the form -->
                                     <div class="mt-4 text-center">
                                         <button type="submit" value="Submit"
-                                            class="btn btn--wide shadow">Submit</button>
+                                            class="btn btn--wide shadow" aria-label="Send your message to Snazzy Paws Grooming">Submit</button>
                                     </div>
                                 </form>
                             </div>
