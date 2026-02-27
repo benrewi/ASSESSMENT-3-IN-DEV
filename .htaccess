@@ -1,6 +1,6 @@
 <Files "roster.html">
     AuthType Basic
-    AuthName "Secure directory"
-    AuthUserFile /Users/ben/Desktop/.htpasswd
+    AuthName "Staff Roster - Secure Access"
+    AuthUserFile " ".htpasswd
     Require valid-user
 </Files>

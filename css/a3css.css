@@ -208,6 +208,10 @@
     text-decoration: underline;
 }
 
+.external-link--green:hover {
+    color: var(--medium-green);
+}
+
 /* Setting form items */
 
 /* Setting the max width for the search bar on the services page*/
